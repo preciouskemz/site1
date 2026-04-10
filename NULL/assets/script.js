@@ -3,13 +3,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    if (mobileMenuBtn) {
+    const navList = document.querySelector('.nav-list');
+    if (mobileMenuBtn && navList) {
         mobileMenuBtn.addEventListener('click', function() {
-            if (window.innerWidth <= 1024) {
-                document.querySelectorAll('.dropdown').forEach(dropdown => {
-                    dropdown.classList.toggle('active');
-                });
-            }
+            navList.classList.toggle('active');
+            this.classList.toggle('active');
         });
     }
 
@@ -662,7 +660,15 @@ function showTab(tabName) {
     tabs.forEach(tab => tab.classList.remove('active'));
     
     const contents = document.querySelectorAll('.match-grid');
-    contents.forEach(content => content.style.display = 'none');
+    contents.forEach(content => {
+        content.style.display = 'none';
+        // Reset animation on all cards
+        const cards = content.querySelectorAll('.match-card');
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.animation = 'none';
+        });
+    });
     
     const activeTab = document.querySelector(`.tab-btn[onclick="showTab('${tabName}')"]`);
     if (activeTab) activeTab.classList.add('active');
@@ -670,7 +676,15 @@ function showTab(tabName) {
     const activeContent = document.getElementById(tabName);
     if (activeContent) {
         activeContent.style.display = 'grid';
-        activeContent.style.animation = 'floatInUp 0.5s ease-out forwards';
+        
+        // Apply wave animation with staggered delays
+        const cards = activeContent.querySelectorAll('.match-card');
+        cards.forEach((card, index) => {
+            card.style.animation = 'none'; // Reset
+            card.offsetHeight; // Trigger reflow
+            card.style.animation = `waveSlideIn 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards`;
+            card.style.animationDelay = `${index * 0.15}s`;
+        });
     }
 }
 
