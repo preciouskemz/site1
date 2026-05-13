@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahudiyannem Football Club</title>
     <link rel="icon" href="assets/logo.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Saira:wght@400;500;600;700&family=Playwrite+IE:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -21,7 +21,7 @@
                 <span class="logo-text" id="logoText">Ahudiyannem FC</span>
             </a>
             
-            <nav class="nav-menu" id="navMenu">
+            <nav class="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="#watch" class="nav-link">Watch</a>
@@ -101,7 +101,7 @@
                                 </div>
                                 <div class="dropdown-right">
                                     <div class="logo-box">
-                                        <img src="assets/Wom.jpg" alt="Ahudiyannem Women Logo">
+                                        <img src="assets/logo.png" alt="Ahudiyannem Women Logo">
                                     </div>
                                 </div>
                             </div>
@@ -171,11 +171,6 @@
         
         <div class="container banner-content">
             <div class="banner-text">
-                <!-- Title shifted to left, smaller size -->
-                <h1 class="banner-title">Ahudiyannem Football Club</h1>
-                
-                <p class="banner-desc">Victory through harmony</p>
-                
                 <!-- Next Match - Centered -->
                 <div class="next-match-wrapper" data-match-type="men">
                     <p class="next-match-label">Next Match</p>
@@ -637,6 +632,18 @@
                                     <td>-6</td>
                                     <td>37</td>
                                 </tr>
+                                <tr data-team="Ahudiyannem FC">
+                                    <td>17</td>
+                                    <td>AHUDIYANNEM FC</td>
+                                    <td class="played">4</td>
+                                    <td class="won">2</td>
+                                    <td class="drawn">1</td>
+                                    <td class="lost">1</td>
+                                    <td class="gf">6</td>
+                                    <td class="ga">4</td>
+                                    <td>+2</td>
+                                    <td class="pts">7</td>
+                                </tr>
                                 <tr>
                                     <td>17</td>
                                     <td>Warri Wolves</td>
@@ -779,14 +786,14 @@
                                     <tr data-team="Ahudiyannem Queens">
                                         <td>6</td>
                                         <td>AHUDIYANNEM QUEENS</td>
-                                        <td class="played">13</td>
-                                        <td class="won">4</td>
-                                        <td class="drawn">3</td>
-                                        <td class="lost">6</td>
-                                        <td class="gf">14</td>
-                                        <td class="ga">14</td>
-                                        <td>0</td>
-                                        <td class="pts">15</td>
+                                        <td class="played">17</td>
+                                        <td class="won">6</td>
+                                        <td class="drawn">4</td>
+                                        <td class="lost">7</td>
+                                        <td class="gf">21</td>
+                                        <td class="ga">18</td>
+                                        <td>+3</td>
+                                        <td class="pts">22</td>
                                     </tr>
                                     <tr>
                                         <td>7</td>
@@ -847,49 +854,48 @@
     <!-- END SECTION 3: RESULTS / FIXTURES -->
 
     <!-- ========================================
-         SECTION 4: TEAMS (Male / Female Buttons)
+         SECTION 4: TEAMS (Men / Women Buttons)
          ======================================== -->
     <section class="section teams-section" id="teams">
-        <img src="assets/fem.png" alt="Women Team" class="teams-bg-image">
         <div class="container">
             <h2 class="section-title">Our Teams</h2>
             <div class="teams-grid">
                 <button class="team-card male-team-btn">
                     <div class="team-icon">⚽</div>
-                    <h3>Male Team</h3>
+                     <h3>Men's Team</h3>
                     <p>Senior squad competing in national leagues</p>
                     <div class="team-submenu">
-                        <span class="submenu-item" onclick="event.stopPropagation(); openMenRosterModal('men-players')">Players Profile</span>
-                        <span class="submenu-item" onclick="event.stopPropagation(); openMenRosterModal('men-staff')">Staff Profile</span>
+                        <span class="submenu-item submenu-players" onclick="event.stopPropagation(); openMenRosterModal('men-players')">Players Profile</span>
+                        <span class="submenu-item submenu-staff" onclick="event.stopPropagation(); openMenRosterModal('men-staff')">Staff Profile</span>
                     </div>
                 </button>
                 <button class="team-card female-team-btn">
                     <div class="team-icon">👟</div>
-                    <h3>Female Team</h3>
+                     <h3>Women's Team</h3>
                     <p>Our talented women's team</p>
                     <div class="team-submenu">
-                        <span class="submenu-item" onclick="event.stopPropagation(); openRosterModal('players')">Players Profile</span>
-                        <span class="submenu-item" onclick="event.stopPropagation(); openRosterModal('staff')">Staff Profile</span>
+                        <span class="submenu-item submenu-players" onclick="event.stopPropagation(); openRosterModal('players')">Players Profile</span>
+                        <span class="submenu-item submenu-staff" onclick="event.stopPropagation(); openRosterModal('staff')">Staff Profile</span>
                     </div>
                 </button>
             </div>
         </div>
     </section>
-    <!-- END SECTION 4: TEAMS (Male / Female Buttons) -->
+    <!-- END SECTION 4: TEAMS (Men / Women Buttons) -->
 
 
 
 
 
     <!-- ========================================
-         SECTION 4B: MATCH CENTER (Men's / Women's Tabs)
+         SECTION 4B: RESULT SECTION
          ======================================== -->
     <section class="section match-center-section">
         <div class="match-center">
             <div class="tab-toggle-container">
                 <div class="tab-toggle">
-                    <button class="tab-btn active" onclick="showTab('mens')">Mens Result</button>
-                    <button class="tab-btn" onclick="showTab('womens')">Womens Result</button>
+                    <button class="tab-btn active" onclick="showTab('mens')">Men's Result</button>
+                    <button class="tab-btn" onclick="showTab('womens')">Women's Result</button>
                 </div>
             </div>
 
@@ -1057,9 +1063,11 @@
                     <p>2026</p>
                 </div>
             </div>
-            <button class="btn-gallery">
-                <i class="fas fa-camera"></i> View Gallery
-            </button>
+            <div class="gallery-btn-wrapper">
+                <button class="btn-gallery">
+                    <i class="fas fa-camera"></i> View Gallery
+                </button>
+            </div>
         </div>
     </section>
     <!-- END SECTION 5: ACHIEVEMENTS / TROPHIES -->
@@ -1345,6 +1353,6 @@
         </div>
     </div>
 
-    <script src="assets/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

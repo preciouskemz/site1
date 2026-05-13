@@ -31,30 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('scrolled');
         }
     });
-
-    // Scroll Reveal Animation
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-                entry.target.classList.remove('animate-out');
-            }
-        });
-    }, observerOptions);
-
-    // Sections to animate
-    const sectionsToAnimate = document.querySelectorAll('.teams-section, .match-center-section, .achievements-section, .news-section, .gallery-section, .partners-section, .results-section');
-    
-    sectionsToAnimate.forEach((section, index) => {
-        section.classList.add('scroll-animate');
-        section.style.animationDelay = `${index * 0.1}s`;
-        observer.observe(section);
-    });
 });
 
 // All Matches Data - UPDATE HERE
