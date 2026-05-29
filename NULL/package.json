@@ -1,0 +1,21 @@
+{
+  "name": "ahudiyannem-fc",
+  "version": "1.0.0",
+  "description": "Ahudiyannem Football Club Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "football",
+    "club",
+    "website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "express": "^4.18.2"
+  }
+}
