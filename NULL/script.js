@@ -83,117 +83,98 @@ const allMatches = [
     {
         id: 'men-1',
         league: 'men',
-        leagueLogo: 'https://npfl.com.ng/wp-content/uploads/2019/04/NPFL-Favicon.png',
-        leagueName: '2026 President Federation Cup',
-        matchDate: '2026-04-09T15:00:00',
-        score: '2 - 1',
-        status: 'concluded',
+        leagueLogo: 'assets/nlo-logo.png',
+        leagueName: 'NLO Abia Centre',
+        matchDate: '2026-06-14T15:00:00',
+        score: null,
+        status: 'upcoming',
         homeTeam: 'Ahudiyannem FC',
         homeCity: 'Abiriba, Abia State',
         homeLogo: 'assets/logo.png',
-        awayTeam: 'Booga FC',
+        awayTeam: 'Galadima FC',
         awayCity: 'Abia State',
         awayLogo: null,
-        stadium: 'Ubakala Mini Stadium',
-        city: 'Ubakala, Umuahia',
-        hostDesc: 'A stunning victory for Ahudiyannem FC as they edge past Booga FC in a thrilling President Federation Cup quarter-final! The home team came out with intent, taking the lead through a well-worked team goal in the first half.',
-        awayDesc: 'Booga FC can hold their heads high despite the narrow defeat. The Abia-based side matched Ahudiyannem FC throughout and deservedly equalized after the break. However, costly errors in the dying minutes proved decisive.'
+        stadium: 'Umuahia Township Stadium',
+        city: 'Umuahia, Abia',
+        hostDesc: 'Ahudiyannem FC returns to home soil for a crucial NLO Abia Centre fixture against Galadima FC. The team has been impressive this season and will look to continue their fine form.',
+        awayDesc: 'Galadima FC travel to Umuahia with determination. The away side will need to be at their defensive best to contain the home team\'s attacking threats.'
     },
     {
         id: 'men-2',
         league: 'men',
-        leagueLogo: 'https://npfl.com.ng/wp-content/uploads/2019/04/NPFL-Favicon.png',
-        leagueName: 'Nigeria Premier League',
+        leagueLogo: 'assets/nlo-logo.png',
+        leagueName: 'NLO Abia Centre',
         matchDate: '2026-06-07T15:00:00',
         score: null,
         status: 'upcoming',
-        homeTeam: 'Kano Pillars',
-        homeCity: 'Kano State',
+        homeTeam: 'Right 2 Win FC Abia',
+        homeCity: 'Abia State',
         homeLogo: null,
         awayTeam: 'Ahudiyannem FC',
         awayCity: 'Abiriba, Abia State',
         awayLogo: 'assets/logo.png',
-        stadium: 'Sani Abacha Stadium',
-        city: 'Kano, Kano State',
-        hostDesc: 'Kano Pillars, one of the most supported clubs in Nigerian football, host Ahudiyannem FC at the iconic Sani Abacha Stadium. Known for their fierce home support and defensive solidity.',
-        awayDesc: 'Ahudiyannem FC travels to Kano for a challenging away fixture. The team has shown character in away games this season and will look to frustrate the home side.'
+        stadium: 'Ubakala Mini Stadium',
+        city: 'Ubakala, Umuahia',
+        hostDesc: 'Right 2 Win FC Abia, current league leaders, host Ahudiyannem FC in a top-of-the-table NLO clash. The home side has been formidable this season with an impressive goal difference.',
+        awayDesc: 'Ahudiyannem FC travels for this challenging away fixture against the league leaders. The team will need to be at its absolute best to get a result.'
     },
     // WOMEN'S MATCHES
     {
         id: 'women-1',
         league: 'women',
-        leagueLogo: 'https://thenwfl.com/wp-content/uploads/2022/05/nwfl-premiership-copyy-1024x300.png',
+        leagueLogo: 'assets/nwfl-logo.png',
         leagueName: 'NWFL Premiership',
-        matchDate: '2026-04-01T16:00:00',
-        score: '1 - 1',
-        status: 'concluded',
+        matchDate: '2026-06-10T16:00:00',
+        score: null,
+        status: 'upcoming',
         homeTeam: 'Ahudiyannem Queens',
         homeCity: 'Abiriba, Abia State',
         homeLogo: 'assets/logo.png',
-        awayTeam: 'FC Robo Queens',
-        awayCity: 'Lagos State',
+        awayTeam: 'Remo Stars Ladies',
+        awayCity: 'Ogun State',
         awayLogo: null,
-        stadium: 'Umuahia Stadium',
+        stadium: 'Umuahia Township Stadium',
         city: 'Umuahia, Abia',
-        hostDesc: 'A hard-fought draw at home sees Ahudiyannem Queens claim a valuable point against a strong FC Robo Queens side. The team showed great character and defensive resilience throughout the match.',
-        awayDesc: 'FC Robo Queens will be satisfied with a point from their travels to Abia. The Lagos side dominated possession for large periods and looked dangerous on the counter-attack.'
+        hostDesc: 'Ahudiyannem Queens face Remo Stars Ladies in the NWFL Super Six Championship round. The Queens finished 4th in Group B and will be eager to prove themselves against the top sides.',
+        awayDesc: 'Remo Stars Ladies, who finished 6th in Group B with 24 points, travel to Umuahia for this Super Six encounter. Both teams will be fighting for a strong finish.'
     },
     {
         id: 'women-2',
         league: 'women',
-        leagueLogo: 'https://thenwfl.com/wp-content/uploads/2022/05/nwfl-premiership-copyy-1024x300.png',
+        leagueLogo: 'assets/nwfl-logo.png',
         leagueName: 'NWFL Premiership',
-        matchDate: '2026-06-01T16:00:00',
-        score: null,
-        status: 'upcoming',
+        matchDate: '2026-05-03T16:00:00',
+        score: '0 - 2',
+        status: 'concluded',
         homeTeam: 'Ahudiyannem Queens',
         homeCity: 'Abiriba, Abia State',
         homeLogo: 'assets/logo.png',
-        awayTeam: 'Dannaz Ladies',
-        awayCity: 'Lagos State',
+        awayTeam: 'Nasarawa Amazons',
+        awayCity: 'Lafia, Nasarawa State',
         awayLogo: null,
-        stadium: 'Umuahia Stadium',
+        stadium: 'Umuahia Township Stadium',
         city: 'Umuahia, Abia',
-        hostDesc: 'Ahudiyannem Queens face Dannaz Ladies in a crucial league encounter at home. The team will look to build on recent performances and secure vital home points.',
-        awayDesc: 'Dannaz Ladies, in their second season in the NWFL Premiership, travel from Lagos with ambition. Promoted last season, they have established themselves as competitive contenders.'
+        hostDesc: 'Ahudiyannem Queens fell to a 2-0 defeat against Nasarawa Amazons in their final Group B fixture of the regular season. The Amazons\' clinical finishing proved the difference.',
+        awayDesc: 'Nasarawa Amazons secured a crucial away victory to cement their 2nd place finish in Group B. The visitors were organized and took their chances when they came.'
     },
     {
         id: 'women-3',
         league: 'women',
-        leagueLogo: 'https://thenwfl.com/wp-content/uploads/2022/05/nwfl-premiership-copyy-1024x300.png',
+        leagueLogo: 'assets/nwfl-logo.png',
         leagueName: 'NWFL Premiership',
-        matchDate: '2026-06-14T16:00:00',
-        score: null,
-        status: 'upcoming',
-        homeTeam: 'Confluence Queens',
-        homeCity: 'Lokoja, Kogi State',
-        homeLogo: null,
-        awayTeam: 'Ahudiyannem Queens',
-        awayCity: 'Abiriba, Abia State',
-        awayLogo: 'assets/logo.png',
-        stadium: 'Iyamho Stadium',
-        city: 'Iyamho, Edo State',
-        hostDesc: 'Confluence Queens welcome Ahudiyannem Queens to Iyamho Stadium in Edo State. The team has been inconsistent this season but possesses quality players who can change games.',
-        awayDesc: 'Ahudiyannem Queens make the journey to Edo State for this away fixture. The team has shown improvement and will focus on defensive organization.'
-    },
-    {
-        id: 'women-4',
-        league: 'women',
-        leagueLogo: 'https://thenwfl.com/wp-content/uploads/2022/05/nwfl-premiership-copyy-1024x300.png',
-        leagueName: 'NWFL Premiership',
-        matchDate: '2026-06-21T16:00:00',
-        score: null,
-        status: 'upcoming',
-        homeTeam: 'Abia Angels FC',
-        homeCity: 'Umuahia, Abia State',
-        homeLogo: null,
-        awayTeam: 'Ahudiyannem Queens',
-        awayCity: 'Abiriba, Abia State',
-        awayLogo: 'assets/logo.png',
-        stadium: 'Enyimba Stadium',
-        city: 'Aba, Abia',
-        hostDesc: 'Abia Angels FC host their local rivals Ahudiyannem Queens at Enyimba Stadium in Aba. This is a highly anticipated Abia derby with both teams fighting for crucial points.',
-        awayDesc: 'Ahudiyannem Queens face their Abia derby rivals in what promises to be an intense encounter. The team will focus on maintaining composure in this high-pressure fixture.'
+        matchDate: '2026-04-26T16:00:00',
+        score: '3 - 0',
+        status: 'concluded',
+        homeTeam: 'Ahudiyannem Queens',
+        homeCity: 'Abiriba, Abia State',
+        homeLogo: 'assets/logo.png',
+        awayTeam: 'Osun Babes',
+        awayCity: 'Osogbo, Osun State',
+        awayLogo: null,
+        stadium: 'Umuahia Township Stadium',
+        city: 'Umuahia, Abia',
+        hostDesc: 'A commanding 3-0 victory for Ahudiyannem Queens at home! The Queens dominated from start to finish with Grace Aaron scoring a brace.',
+        awayDesc: 'Osun Babes struggled to contain the home side\'s attacking intensity. The defeat leaves them in the relegation battle.'
     },
     // FRIENDLY
     {
@@ -207,13 +188,13 @@ const allMatches = [
         homeTeam: 'Ahudiyannem FC',
         homeCity: 'Abiriba, Abia State',
         homeLogo: 'assets/logo.png',
-        awayTeam: 'Local Club XI',
-        awayCity: 'Abia State',
+        awayTeam: 'Abia Comets',
+        awayCity: 'Umuahia, Abia State',
         awayLogo: null,
         stadium: 'Ahudiyannem Stadium',
         city: 'Abiriba, Abia',
-        hostDesc: 'Ahudiyannem FC hosts a friendly against a Local Club XI as part of their preparation regimen. These matches provide valuable minutes for squad players.',
-        awayDesc: 'The Local Club XI brings local talent and enthusiasm to this friendly encounter. Playing against professional opposition will be a great learning experience.'
+        hostDesc: 'Ahudiyannem FC hosts Abia Comets in a pre-season friendly. These matches provide valuable minutes for squad players and help build team cohesion.',
+        awayDesc: 'Abia Comets bring local derby intensity to this friendly encounter. Both clubs will use this as preparation for the upcoming season.'
     }
 ];
 
@@ -357,118 +338,32 @@ function getInitials(name) {
     return name.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
 }
 
-// UPDATE TABLES
+// UPDATE TABLES — tables now use hardcoded standings
 function updateTables() {
-    // Men's Table - Filter Ahudiyannem's results
-    const menResults = allMatches.filter(m => m.league === 'men' && m.status === 'concluded');
-    const womenResults = allMatches.filter(m => m.league === 'women' && m.status === 'concluded');
-    
-    // Update men's table if Ahudiyannem played (as home or away)
-    menResults.forEach(match => {
-        const row = document.querySelector(`#menTableBody tr[data-team="Ahudiyannem FC"]`);
-        if (row) {
-            const isHome = match.homeTeam === 'Ahudiyannem FC';
-            const isAway = match.awayTeam === 'Ahudiyannem FC';
-            if (isHome || isAway) {
-                row.querySelector('.played').textContent = parseInt(row.querySelector('.played').textContent) + 1;
-                if (match.score) {
-                    const [h, a] = match.score.split(' - ').map(s => parseInt(s.trim()));
-                    if (isHome) {
-                        row.querySelector('.gf').textContent = parseInt(row.querySelector('.gf').textContent) + h;
-                        row.querySelector('.ga').textContent = parseInt(row.querySelector('.ga').textContent) + a;
-                        if (h > a) {
-                            row.querySelector('.won').textContent = parseInt(row.querySelector('.won').textContent) + 1;
-                            row.querySelector('.pts').textContent = parseInt(row.querySelector('.pts').textContent) + 3;
-                        } else if (h === a) {
-                            row.querySelector('.drawn').textContent = parseInt(row.querySelector('.drawn').textContent) + 1;
-                            row.querySelector('.pts').textContent = parseInt(row.querySelector('.pts').textContent) + 1;
-                        } else {
-                            row.querySelector('.lost').textContent = parseInt(row.querySelector('.lost').textContent) + 1;
-                        }
-                    } else {
-                        row.querySelector('.gf').textContent = parseInt(row.querySelector('.gf').textContent) + a;
-                        row.querySelector('.ga').textContent = parseInt(row.querySelector('.ga').textContent) + h;
-                        if (a > h) {
-                            row.querySelector('.won').textContent = parseInt(row.querySelector('.won').textContent) + 1;
-                            row.querySelector('.pts').textContent = parseInt(row.querySelector('.pts').textContent) + 3;
-                        } else if (a === h) {
-                            row.querySelector('.drawn').textContent = parseInt(row.querySelector('.drawn').textContent) + 1;
-                            row.querySelector('.pts').textContent = parseInt(row.querySelector('.pts').textContent) + 1;
-                        } else {
-                            row.querySelector('.lost').textContent = parseInt(row.querySelector('.lost').textContent) + 1;
-                        }
-                    }
-                }
-            }
-        }
-    });
-    
-    // Update women's table (as home or away)
-    womenResults.forEach(match => {
-        const row = document.querySelector(`#womenTableBody tr[data-team="Ahudiyannem Queens"]`);
-        if (row) {
-            const isHome = match.homeTeam === 'Ahudiyannem Queens';
-            const isAway = match.awayTeam === 'Ahudiyannem Queens';
-            if (isHome || isAway) {
-                row.querySelector('.played').textContent = parseInt(row.querySelector('.played').textContent) + 1;
-                if (match.score) {
-                    const [h, a] = match.score.split(' - ').map(s => parseInt(s.trim()));
-                    if (isHome) {
-                        row.querySelector('.gf').textContent = parseInt(row.querySelector('.gf').textContent) + h;
-                        row.querySelector('.ga').textContent = parseInt(row.querySelector('.ga').textContent) + a;
-                        if (h > a) {
-                            row.querySelector('.won').textContent = parseInt(row.querySelector('.won').textContent) + 1;
-                            row.querySelector('.pts').textContent = parseInt(row.querySelector('.pts').textContent) + 3;
-                        } else if (h === a) {
-                            row.querySelector('.drawn').textContent = parseInt(row.querySelector('.drawn').textContent) + 1;
-                            row.querySelector('.pts').textContent = parseInt(row.querySelector('.pts').textContent) + 1;
-                        } else {
-                            row.querySelector('.lost').textContent = parseInt(row.querySelector('.lost').textContent) + 1;
-                        }
-                    } else {
-                        row.querySelector('.gf').textContent = parseInt(row.querySelector('.gf').textContent) + a;
-                        row.querySelector('.ga').textContent = parseInt(row.querySelector('.ga').textContent) + h;
-                        if (a > h) {
-                            row.querySelector('.won').textContent = parseInt(row.querySelector('.won').textContent) + 1;
-                            row.querySelector('.pts').textContent = parseInt(row.querySelector('.pts').textContent) + 3;
-                        } else if (a === h) {
-                            row.querySelector('.drawn').textContent = parseInt(row.querySelector('.drawn').textContent) + 1;
-                            row.querySelector('.pts').textContent = parseInt(row.querySelector('.pts').textContent) + 1;
-                        } else {
-                            row.querySelector('.lost').textContent = parseInt(row.querySelector('.lost').textContent) + 1;
-                        }
-                    }
-                }
-            }
-        }
-    });
+    // No dynamic table updates needed — standings are hardcoded
 }
 
 // TOGGLE GENDER (Male/Female switch for results section)
 function toggleGender() {
-    const toggle = document.getElementById('toggleSwitch');
+    const checkbox = document.getElementById('genderCheckbox');
     const maleTable = document.getElementById('maleTable');
     const femaleTable = document.getElementById('femaleTable');
+    const maleSidebar = document.getElementById('maleSidebar');
+    const femaleSidebar = document.getElementById('femaleSidebar');
     const resultsSection = document.querySelector('.results-section');
-    const maleLabel = document.getElementById('maleLabel');
-    const femaleLabel = document.getElementById('femaleLabel');
     
-    toggle.classList.toggle('female');
-    
-    if (toggle.classList.contains('female')) {
-        // Show female table
+    if (checkbox.checked) {
         if (maleTable) maleTable.style.display = 'none';
         if (femaleTable) femaleTable.style.display = 'block';
+        if (maleSidebar) maleSidebar.style.display = 'none';
+        if (femaleSidebar) femaleSidebar.style.display = 'block';
         if (resultsSection) resultsSection.classList.add('female-mode');
-        if (maleLabel) maleLabel.classList.remove('active');
-        if (femaleLabel) femaleLabel.classList.add('active');
     } else {
-        // Show male table
         if (maleTable) maleTable.style.display = 'block';
         if (femaleTable) femaleTable.style.display = 'none';
+        if (maleSidebar) maleSidebar.style.display = 'block';
+        if (femaleSidebar) femaleSidebar.style.display = 'none';
         if (resultsSection) resultsSection.classList.remove('female-mode');
-        if (maleLabel) maleLabel.classList.add('active');
-        if (femaleLabel) femaleLabel.classList.remove('active');
     }
 }
 
@@ -742,53 +637,7 @@ function init() {
     }
 });
 
-// SHOP CAROUSEL AUTO-SCROLL — INFINITE LOOP
-(function() {
-    const carousel = document.querySelector('.club-carousel');
-    if (!carousel) return;
-    const track = carousel.querySelector('.track');
-    if (!track || !track.children.length) return;
-    let interval = null;
-    const slideW = 236; // 220px card + 16px gap
-    const origSlides = Array.from(track.children);
-    const visibleCount = 5;
-
-    // Clone first 5 slides and append for seamless loop
-    for (let i = 0; i < visibleCount; i++) {
-        const clone = origSlides[i].cloneNode(true);
-        track.appendChild(clone);
-    }
-
-    carousel.style.maxWidth = visibleCount * slideW + 'px';
-
-    const origWidth = origSlides.length * slideW;
-    let pos = 0;
-
-    track.style.transition = 'transform 0.4s ease';
-
-    function scrollNext() {
-        pos -= slideW;
-        if (Math.abs(pos) >= origWidth) {
-            pos = 0;
-            track.style.transition = 'none';
-            track.style.transform = 'translateX(' + pos + 'px)';
-            track.offsetHeight; // force reflow
-            track.style.transition = 'transform 0.4s ease';
-        } else {
-            track.style.transform = 'translateX(' + pos + 'px)';
-        }
-    }
-
-    function startAutoScroll() { interval = setInterval(scrollNext, 2000); }
-    function stopAutoScroll() { clearInterval(interval); }
-
-    startAutoScroll();
-
-    carousel.addEventListener('mouseenter', stopAutoScroll);
-    carousel.addEventListener('mouseleave', startAutoScroll);
-    carousel.addEventListener('touchstart', stopAutoScroll);
-    carousel.addEventListener('touchend', startAutoScroll);
-})();
+// Match banner gender toggle
         }, { threshold: 0.5 });
         
         observer.observe(matchSection);
@@ -811,6 +660,92 @@ function init() {
         }
     }, 60000);
 }
+
+// SHOP CAROUSEL — PAGINATION SLIDE WITH AUTO-PLAY
+(function() {
+    const track = document.getElementById('productTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const wrapper = document.querySelector('.carousel-wrapper');
+    if (!track || !prevBtn || !nextBtn) return;
+
+    let currentStep = 0;
+    const itemsPerView = 4;
+    let autoInterval = null;
+
+    function updateCarousel() {
+        const totalItems = track.children.length;
+        const maxSteps = Math.ceil(totalItems / itemsPerView) - 1;
+
+        const itemWidth = track.children[0].getBoundingClientRect().width;
+        const gap = 25;
+        const slideDistance = (itemWidth * itemsPerView) + (gap * itemsPerView);
+
+        track.style.transform = 'translateX(-' + (currentStep * slideDistance) + 'px)';
+    }
+
+    function nextSlide() {
+        const totalItems = track.children.length;
+        const maxSteps = Math.ceil(totalItems / itemsPerView) - 1;
+        if (currentStep >= maxSteps) {
+            currentStep = 0;
+        } else {
+            currentStep++;
+        }
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        const totalItems = track.children.length;
+        const maxSteps = Math.ceil(totalItems / itemsPerView) - 1;
+        if (currentStep <= 0) {
+            currentStep = maxSteps;
+        } else {
+            currentStep--;
+        }
+        updateCarousel();
+    }
+
+    function startAutoPlay() {
+        stopAutoPlay();
+        autoInterval = setInterval(nextSlide, 3000);
+    }
+
+    function stopAutoPlay() {
+        if (autoInterval) {
+            clearInterval(autoInterval);
+            autoInterval = null;
+        }
+    }
+
+    nextBtn.addEventListener('click', function() {
+        nextSlide();
+        startAutoPlay();
+    });
+
+    prevBtn.addEventListener('click', function() {
+        prevSlide();
+        startAutoPlay();
+    });
+
+    if (wrapper) {
+        wrapper.addEventListener('mouseenter', stopAutoPlay);
+        wrapper.addEventListener('mouseleave', startAutoPlay);
+        wrapper.addEventListener('touchstart', stopAutoPlay);
+        wrapper.addEventListener('touchend', startAutoPlay);
+    }
+
+    function recalc() {
+        requestAnimationFrame(updateCarousel);
+    }
+
+    window.addEventListener('resize', recalc);
+    setTimeout(updateCarousel, 100);
+    window.addEventListener('load', function() {
+        updateCarousel();
+        startAutoPlay();
+    });
+})();
 
 // ROSTER MODAL FUNCTIONS
 function openRosterModal(tab = 'players') {

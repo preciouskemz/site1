@@ -6,8 +6,14 @@
     <title>Ahudiyannem Football Club</title>
     <link rel="icon" href="assets/logo.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Saira:wght@400;500;600;700&family=Playwrite+IE:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Saira:wght@400;500;600;700&family=Playwrite+IE:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" as="image" href="assets/news1.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/news2.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/news3.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/news4.jpg">
+    <link rel="preload" as="image" href="assets/news5.jpg">
+    <link rel="preload" as="image" href="assets/news6.jpg">
 </head>
 <body>
 
@@ -145,6 +151,13 @@
     </header>
 
     <div class="mobile-menu-overlay" id="mobileOverlay">
+        <div class="mobile-vector-bg">
+            <span class="vec-circle"></span>
+            <span class="vec-diamond"></span>
+            <span class="vec-dots"></span>
+            <span class="vec-line"></span>
+            <span class="vec-triangle"></span>
+        </div>
         <button class="close-mobile-menu" id="closeMenu">&times;</button>
         <nav class="mobile-nav-links">
             <a href="#">Home</a>
@@ -169,6 +182,16 @@
             <div class="hero-particles">
                 <span></span><span></span><span></span><span></span><span></span>
                 <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="hero-vector-bg">
+                <span class="hv-triangle-1"></span>
+                <span class="hv-triangle-2"></span>
+                <span class="hv-diamond"></span>
+                <span class="hv-ring"></span>
+                <span class="hv-dots-grid"></span>
+                <span class="hv-line-1"></span>
+                <span class="hv-line-2"></span>
+                <span class="hv-arc"></span>
             </div>
         </div>
 
@@ -199,11 +222,11 @@
             <h1 class="hero-title" data-reveal>Where Passion<br><span class="hero-highlight">Meets Glory</span></h1>
             <p class="hero-subtitle" data-reveal>Abiriba  •  Abia State  •  Nigeria</p>
             <div class="hero-cta" data-reveal>
-                <a href="#news" class="hero-btn hero-btn-primary">Latest News</a>
+                <a href="#news" class="hero-btn hero-btn-primary"><span class="btn-text">Latest News</span><span class="btn-wipe"></span></a>
                 <a href="#" class="hero-btn hero-btn-live" id="liveBtn" onclick="event.preventDefault();">
-                    Live
+                    <span class="btn-text">Live</span><span class="btn-wipe"></span>
                 </a>
-                <a href="#futuristicResults" class="hero-btn hero-btn-secondary">View Results</a>
+                <a href="#futuristicResults" class="hero-btn hero-btn-secondary"><span class="btn-text">View Results</span><span class="btn-wipe"></span></a>
             </div>
         </div>
         <div class="hero-bottom-cycle">
@@ -228,9 +251,9 @@
                 <img src="assets/logo.png" alt="Ahudiyannem FC" class="about-logo">
                 <h2 class="about-title">WELCOME TO AHUDIYANNEM<br><span class="about-title-highlight">FOOTBALL CLUB</span></h2>
                 <div class="about-divider"></div>
-                <p class="about-text">Ahudiyannem Football Club, founded by Dr. Robert Daniel Onyeani, is a Nigerian football club based in Abiriba, Abia State. The club has rapidly risen through the ranks of Nigerian football, with both a men's team and a women's team (Ahudiyannem Queens) competing at the highest levels.</p>
-                <p class="about-text">The men's team made headlines by winning the 2025 Abia FA Cup, and now stands as one of the two state representatives flying Abia's flag in the Nigeria Presidential Cup 2026 — having reached back-to-back finals and claiming the title as champions.</p>
-                <p class="about-text">The women's team, Ahudiyannem Queens, gained promotion to the Nigeria Women Football League (NWFL) Premiership in 2025, competing against the best teams in the country. They are the reigning champions of the Abia State FA Cup (Women), having retained their title as back-to-back champions for the second consecutive year. Known for resilience, teamwork, and an unbreakable fighting spirit, Ahudiyannem FC continues to grow and make its mark on Nigerian football.</p>
+                <p class="about-text">Ahudiyannem Football Club, founded by Dr. Robert Daniel Onyeani, is a Nigerian football club based in Abiriba, Abia State. The club has rapidly risen through the ranks of Nigerian football, with the men's team competing in the NLO 2026 (Nationwide League One) and the women's team (Ahudiyannem Queens) competing in the NWFL Premiership — the highest women's league in Nigeria.</p>
+                <p class="about-text">The men's team are the champions of the 2025 Abia State Presidential Cup (State FA Cup), a historic achievement that marked the club as one of Abia's brightest football prospects. They now compete in the NLO 2026, flying the flag of Abia State in the Nationwide League.</p>
+                <p class="about-text">The women's team, Ahudiyannem Queens, gained promotion to the Nigeria Women Football League (NWFL) Premiership in 2025, competing against the best teams in the country. They are the reigning champions of the Abia State FA Cup (Women), having retained their title as back-to-back champions of the Abia State Presidential Cup for the second consecutive year. Known for resilience, teamwork, and an unbreakable fighting spirit, Ahudiyannem FC continues to grow and make its mark on Nigerian football.</p>
                 <div class="about-stats">
                     <div class="about-stat"><span class="stat-num">2025</span><span class="stat-label">Abia FA Cup</span></div>
                     <div class="about-stat"><span class="stat-num">2026</span><span class="stat-label">Presidential Cup</span></div>
@@ -333,55 +356,75 @@
                 <button class="nav-btn prev" onclick="slideMatches('prev')">&#10094;</button>
                 
                 <div class="match-slider" id="matchSlider" data-no-anim>
-                    <!-- Match Card - Result (Completed) -->
+                    <!-- Match Card - Result (Women: Ahudiyannem Queens 3-0 Osun Babes) -->
                     <div class="match-card result-card" data-category="women" data-match-id="match-1">
                         <div class="league-info">
-                            <img src="https://thenwfl.com/wp-content/uploads/2022/05/nwfl-premiership-copyy-1024x300.png" alt="NWFL" class="league-badge">
-                            <p>NWFL Premiership<br><span>01 Apr 2026 • FULL TIME</span></p>
+                            <img src="assets/nwfl-logo.png" alt="NWFL" class="league-badge">
+                            <p>NWFL Premiership<br><span>26 Apr 2026 • FULL TIME</span></p>
                         </div>
-                        <div class="date-large">01 Apr</div>
+                        <div class="date-large">26 Apr</div>
                         <div class="teams">
                             <div class="team">
                                 <img src="assets/logo.png" alt="Ahudiyannem" class="team-img">
                                 <span class="team-name">Ahudiyannem Queens</span>
                             </div>
-                            <div class="score">1 - 1</div>
+                            <div class="score">3 - 0</div>
                             <div class="team">
-                                <div class="team-logo">RR</div>
-                                <span class="team-name">FC Robo Queens</span>
+                                <div class="team-logo">OB</div>
+                                <span class="team-name">Osun Babes</span>
                             </div>
                         </div>
-                        <div class="venue">Umuahia Stadium, Abia</div>
+                        <div class="venue">Umuahia Township Stadium, Abia</div>
                     </div>
 
-                    <!-- Match Card - Men's Result -->
+                    <!-- Match Card - Men's Result (Ahudiyannem 1-2 Plateau United) -->
                     <div class="match-card result-card" data-category="men" data-match-id="match-2">
                         <div class="league-info">
-                            <img src="https://npfl.com.ng/wp-content/uploads/2019/04/NPFL-Favicon.png" alt="NPFL" class="league-badge">
-                            <p>2026 President Federation Cup QF<br><span>09 Apr 2026 • FULL TIME</span></p>
+                            <img src="assets/nlo-logo.png" alt="NLO" class="league-badge">
+                            <p>President Federation Cup R64<br><span>19 May 2026 • FULL TIME</span></p>
                         </div>
-                        <div class="date-large">09 Apr</div>
+                        <div class="date-large">19 May</div>
                         <div class="teams">
                             <div class="team">
                                 <img src="assets/logo.png" alt="Ahudiyannem" class="team-img">
                                 <span class="team-name">Ahudiyannem FC</span>
                             </div>
-                            <div class="score">2 - 1</div>
+                            <div class="score">1 - 2</div>
                             <div class="team">
-                                <div class="team-logo">BG</div>
-                                <span class="team-name">Booga FC</span>
+                                <div class="team-logo">PU</div>
+                                <span class="team-name">Plateau United</span>
                             </div>
                         </div>
                         <div class="venue">Ubakala Mini Stadium, Umuahia</div>
                     </div>
 
-                    <!-- Match Card -->
-                    <div class="match-card" data-category="women" data-match-id="match-3">
+                    <!-- Match Card - Upcoming Men's -->
+                    <div class="match-card" data-category="men" data-match-id="match-3">
                         <div class="league-info">
-                            <img src="https://thenwfl.com/wp-content/uploads/2022/05/nwfl-premiership-copyy-1024x300.png" alt="NWFL" class="league-badge">
-                            <p>NWFL Premiership<br><span>08 Apr 2026 • 4:00 PM</span></p>
+                            <img src="assets/nlo-logo.png" alt="NLO" class="league-badge">
+                            <p>NLO Abia Centre<br><span>07 Jun 2026 • 3:00 PM</span></p>
                         </div>
-                        <div class="date-large">08 Apr</div>
+                        <div class="date-large">07 Jun</div>
+                        <div class="teams">
+                            <div class="team">
+                                <div class="team-logo">RW</div>
+                                <span class="team-name">Right 2 Win FC</span>
+                            </div>
+                            <div class="vs-text">VS</div>
+                            <div class="team">
+                                <img src="assets/logo.png" alt="Ahudiyannem" class="team-img">
+                                <span class="team-name">Ahudiyannem FC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Match Card - Upcoming Women's -->
+                    <div class="match-card" data-category="women" data-match-id="match-4">
+                        <div class="league-info">
+                            <img src="assets/nwfl-logo.png" alt="NWFL" class="league-badge">
+                            <p>NWFL Premiership<br><span>10 Jun 2026 • 4:00 PM</span></p>
+                        </div>
+                        <div class="date-large">10 Jun</div>
                         <div class="teams">
                             <div class="team">
                                 <img src="assets/logo.png" alt="Ahudiyannem" class="team-img">
@@ -389,28 +432,8 @@
                             </div>
                             <div class="vs-text">VS</div>
                             <div class="team">
-                                <div class="team-logo">DL</div>
-                                <span class="team-name">Dannaz Ladies</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Match Card -->
-                    <div class="match-card" data-category="men" data-match-id="match-4">
-                        <div class="league-info">
-                            <img src="https://npfl.com.ng/wp-content/uploads/2019/04/NPFL-Favicon.png" alt="NPFL" class="league-badge">
-                            <p>Nigeria Premier League<br><span>19 Apr 2026 • 3:00 PM</span></p>
-                        </div>
-                        <div class="date-large">19 Apr</div>
-                        <div class="teams">
-                            <div class="team">
-                                <div class="team-logo">KP</div>
-                                <span class="team-name">Kano Pillars</span>
-                            </div>
-                            <div class="vs-text">VS</div>
-                            <div class="team">
-                                <img src="assets/logo.png" alt="Ahudiyannem" class="team-img">
-                                <span class="team-name">Ahudiyannem FC</span>
+                                <div class="team-logo">RL</div>
+                                <span class="team-name">Remo Stars Ladies</span>
                             </div>
                         </div>
                     </div>
@@ -419,9 +442,9 @@
                     <div class="match-card" data-category="friendly" data-match-id="match-5">
                         <div class="league-info">
                             <img src="assets/logo.png" alt="Friendly" class="league-badge">
-                            <p>Friendly Match<br><span>25 Apr 2026 • 5:00 PM</span></p>
+                            <p>Friendly Match<br><span>28 Jun 2026 • 5:00 PM</span></p>
                         </div>
-                        <div class="date-large">25 Apr</div>
+                        <div class="date-large">28 Jun</div>
                         <div class="teams">
                             <div class="team">
                                 <img src="assets/logo.png" alt="Ahudiyannem" class="team-img">
@@ -429,52 +452,52 @@
                             </div>
                             <div class="vs-text">VS</div>
                             <div class="team">
-                                <div class="team-logo">LC</div>
-                                <span class="team-name">Local Club XI</span>
+                                <div class="team-logo">AC</div>
+                                <span class="team-name">Abia Comets</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Match Card -->
-                    <div class="match-card" data-category="women" data-match-id="match-6">
+                    <!-- Match Card - Result (Women: Ahudiyannem 0-2 Nasarawa) -->
+                    <div class="match-card result-card" data-category="women" data-match-id="match-6">
                         <div class="league-info">
-                            <img src="https://thenwfl.com/wp-content/uploads/2022/05/nwfl-premiership-copyy-1024x300.png" alt="NWFL" class="league-badge">
-                            <p>NWFL Premiership<br><span>15 Apr 2026 • 4:00 PM</span></p>
+                            <img src="assets/nwfl-logo.png" alt="NWFL" class="league-badge">
+                            <p>NWFL Premiership<br><span>03 May 2026 • FULL TIME</span></p>
                         </div>
-                        <div class="date-large">15 Apr</div>
+                        <div class="date-large">03 May</div>
                         <div class="teams">
-                            <div class="team">
-                                <div class="team-logo">CQ</div>
-                                <span class="team-name">Confluence Queens</span>
-                            </div>
-                            <div class="vs-text">VS</div>
                             <div class="team">
                                 <img src="assets/logo.png" alt="Ahudiyannem" class="team-img">
                                 <span class="team-name">Ahudiyannem Queens</span>
                             </div>
+                            <div class="score">0 - 2</div>
+                            <div class="team">
+                                <div class="team-logo">NA</div>
+                                <span class="team-name">Nasarawa Amazons</span>
+                            </div>
                         </div>
-                        <div class="venue">Iyamho Stadium, Edo</div>
+                        <div class="venue">Umuahia Township Stadium, Abia</div>
                     </div>
 
-                    <!-- Match Card -->
-                    <div class="match-card" data-category="women" data-match-id="match-7">
+                    <!-- Match Card - Upcoming Men's Home -->
+                    <div class="match-card" data-category="men" data-match-id="match-7">
                         <div class="league-info">
-                            <img src="https://thenwfl.com/wp-content/uploads/2022/05/nwfl-premiership-copyy-1024x300.png" alt="NWFL" class="league-badge">
-                            <p>NWFL Premiership<br><span>22 Apr 2026 • 4:00 PM</span></p>
+                            <img src="assets/nlo-logo.png" alt="NLO" class="league-badge">
+                            <p>NLO Abia Centre<br><span>14 Jun 2026 • 3:00 PM</span></p>
                         </div>
-                        <div class="date-large">22 Apr</div>
+                        <div class="date-large">14 Jun</div>
                         <div class="teams">
                             <div class="team">
-                                <div class="team-logo">AA</div>
-                                <span class="team-name">Abia Angels FC</span>
+                                <img src="assets/logo.png" alt="Ahudiyannem" class="team-img">
+                                <span class="team-name">Ahudiyannem FC</span>
                             </div>
                             <div class="vs-text">VS</div>
                             <div class="team">
-                                <div class="team-logo">AQ</div>
-                                <span class="team-name">Ahudiyannem Queens</span>
+                                <div class="team-logo">GF</div>
+                                <span class="team-name">Galadima FC</span>
                             </div>
                         </div>
-                        <div class="venue">Enyimba Stadium, Aba</div>
+                        <div class="venue">Umuahia Township Stadium</div>
                     </div>
                 </div>
 
@@ -486,459 +509,238 @@
 
 
     <!-- ========================================
-         SECTION 3: RESULTS / FIXTURES
+         SECTION 3: RESULTS / FIXTURES (Redesigned)
          ======================================== -->
     <section class="section results-section" id="results">
         <div class="container">
-            <!-- Toggle Button -->
-            <div class="toggle-container">
-                <div class="toggle-wrapper">
-                    <span class="toggle-label" id="maleLabel">Men</span>
-                    <div class="toggle-switch" id="toggleSwitch" onclick="toggleGender()">
-                        <div class="toggle-slider"></div>
-                    </div>
-                    <span class="toggle-label" id="femaleLabel">Women</span>
-                </div>
-            </div>
-            <div class="league-session-container">
-                <!-- MALE TABLE (Visible by default) -->
-                <div class="league-table" id="maleTable">
-                    <div class="table-header">
-                        <img src="https://npfl.com.ng/wp-content/uploads/2019/04/NPFL-Favicon.png" alt="NPFL Logo" class="league-logo">
-                        <div class="header-text">
-                            <div>Nigerian Professional League</div>
-                            <div>Matchday 32</div>
+            <div class="nwfl-section-container">
+                <!-- Left Column -->
+                <div class="left-panel-column">
+                    <h1 class="branded-heading">LEAGUE<br><span class="accent-text">TABLE</span></h1>
+                    <p class="branded-subtext">The battle for the title heats up. Our teams are pushing hard — every point matters.</p>
+
+                    <aside class="sidebar-display-card" id="maleSidebar">
+                        <div class="sidebar-card-header">
+                            <div class="badge-num bg-green">2</div>
+                            <div>
+                                <h3>AHUDIYANNEM FC</h3>
+                                <p class="meta-label">2ND PLACE — NLO 2026 Abia Centre</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="table-scroll-container">
-                        <table class="standings-table">
-                            <thead>
-                                <tr>
-                                    <th>Pos</th>
-                                    <th class="team-name">Team</th>
-                                    <th>Pld</th>
-                                    <th>W</th>
-                                    <th>D</th>
-                                    <th>L</th>
-                                    <th>GF</th>
-                                    <th>GA</th>
-                                <th>GD</th>
-                                <th>Pts</th>
-                            </tr>
-                        </thead>
-                        <tbody id="menTableBody">
-                            <tr data-team="Enugu Rangers">
-                                <td>1</td>
-                                <td>Enugu Rangers</td>
-                                    <td>31</td>
-                                    <td>15</td>
-                                    <td>9</td>
-                                    <td>7</td>
-                                    <td>38</td>
-                                    <td>21</td>
-                                    <td>+17</td>
-                                    <td>54</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Rivers United FC</td>
-                                    <td>31</td>
-                                    <td>14</td>
-                                    <td>10</td>
-                                    <td>7</td>
-                                    <td>29</td>
-                                    <td>23</td>
-                                    <td>+6</td>
-                                    <td>52</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Nasarawa United</td>
-                                    <td>32</td>
-                                    <td>14</td>
-                                    <td>8</td>
-                                    <td>10</td>
-                                    <td>31</td>
-                                    <td>26</td>
-                                    <td>+5</td>
-                                    <td>50</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Ikorodu City</td>
-                                    <td>31</td>
-                                    <td>13</td>
-                                    <td>10</td>
-                                    <td>8</td>
-                                    <td>29</td>
-                                    <td>23</td>
-                                    <td>+6</td>
-                                    <td>49</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Abia Warriors</td>
-                                    <td>31</td>
-                                    <td>14</td>
-                                    <td>7</td>
-                                    <td>10</td>
-                                    <td>26</td>
-                                    <td>23</td>
-                                    <td>+3</td>
-                                    <td>49</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Shooting Stars</td>
-                                    <td>31</td>
-                                    <td>14</td>
-                                    <td>5</td>
-                                    <td>12</td>
-                                    <td>32</td>
-                                    <td>34</td>
-                                    <td>-2</td>
-                                    <td>47</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>Bendel Insurance</td>
-                                    <td>32</td>
-                                    <td>11</td>
-                                    <td>13</td>
-                                    <td>8</td>
-                                    <td>38</td>
-                                    <td>30</td>
-                                    <td>+8</td>
-                                    <td>46</td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td>Plateau United</td>
-                                    <td>32</td>
-                                    <td>13</td>
-                                    <td>4</td>
-                                    <td>15</td>
-                                    <td>33</td>
-                                    <td>35</td>
-                                    <td>-2</td>
-                                    <td>43</td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td>Katsina United</td>
-                                    <td>31</td>
-                                    <td>11</td>
-                                    <td>9</td>
-                                    <td>11</td>
-                                    <td>28</td>
-                                    <td>29</td>
-                                    <td>-1</td>
-                                    <td>42</td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td>Barau</td>
-                                    <td>31</td>
-                                    <td>10</td>
-                                    <td>11</td>
-                                    <td>10</td>
-                                    <td>25</td>
-                                    <td>26</td>
-                                    <td>-1</td>
-                                    <td>41</td>
-                                </tr>
-                                <tr>
-                                    <td>11</td>
-                                    <td>El Kanemi Warriors</td>
-                                    <td>31</td>
-                                    <td>10</td>
-                                    <td>10</td>
-                                    <td>11</td>
-                                    <td>28</td>
-                                    <td>29</td>
-                                    <td>-1</td>
-                                    <td>40</td>
-                                </tr>
-                                <tr>
-                                    <td>12</td>
-                                    <td>Enyimba International</td>
-                                    <td>31</td>
-                                    <td>10</td>
-                                    <td>9</td>
-                                    <td>12</td>
-                                    <td>28</td>
-                                    <td>33</td>
-                                    <td>-5</td>
-                                    <td>39</td>
-                                </tr>
-                                <tr>
-                                    <td>13</td>
-                                    <td>Niger Tornadoes</td>
-                                    <td>31</td>
-                                    <td>11</td>
-                                    <td>6</td>
-                                    <td>14</td>
-                                    <td>32</td>
-                                    <td>30</td>
-                                    <td>+2</td>
-                                    <td>39</td>
-                                </tr>
-                                <tr>
-                                    <td>14</td>
-                                    <td>Kwara United</td>
-                                    <td>32</td>
-                                    <td>10</td>
-                                    <td>9</td>
-                                    <td>13</td>
-                                    <td>26</td>
-                                    <td>29</td>
-                                    <td>-3</td>
-                                    <td>39</td>
-                                </tr>
-                                <tr>
-                                    <td>15</td>
-                                    <td>Wikki Tourists</td>
-                                    <td>31</td>
-                                    <td>9</td>
-                                    <td>10</td>
-                                    <td>12</td>
-                                    <td>26</td>
-                                    <td>32</td>
-                                    <td>-6</td>
-                                    <td>37</td>
-                                </tr>
-                                <tr>
-                                    <td>16</td>
-                                    <td>Bayelsa United</td>
-                                    <td>31</td>
-                                    <td>9</td>
-                                    <td>10</td>
-                                    <td>12</td>
-                                    <td>26</td>
-                                    <td>32</td>
-                                    <td>-6</td>
-                                    <td>37</td>
-                                </tr>
-                                <tr data-team="Ahudiyannem FC">
-                                    <td>17</td>
-                                    <td>AHUDIYANNEM FC</td>
-                                    <td class="played">4</td>
-                                    <td class="won">2</td>
-                                    <td class="drawn">1</td>
-                                    <td class="lost">1</td>
-                                    <td class="gf">6</td>
-                                    <td class="ga">4</td>
-                                    <td>+2</td>
-                                    <td class="pts">7</td>
-                                </tr>
-                                <tr>
-                                    <td>17</td>
-                                    <td>Warri Wolves</td>
-                                    <td>31</td>
-                                    <td>10</td>
-                                    <td>3</td>
-                                    <td>18</td>
-                                    <td>26</td>
-                                    <td>38</td>
-                                    <td>-12</td>
-                                    <td>33</td>
-                                </tr>
-                                <tr>
-                                    <td>18</td>
-                                    <td>Kano Pillars</td>
-                                    <td>32</td>
-                                    <td>10</td>
-                                    <td>9</td>
-                                    <td>13</td>
-                                    <td>23</td>
-                                    <td>29</td>
-                                    <td>-6</td>
-                                    <td>36</td>
-                                </tr>
-                                <tr>
-                                    <td>19</td>
-                                    <td>Remo Stars</td>
-                                    <td>31</td>
-                                    <td>11</td>
-                                    <td>3</td>
-                                    <td>17</td>
-                                    <td>32</td>
-                                    <td>40</td>
-                                    <td>-8</td>
-                                    <td>36</td>
-                                </tr>
-                                <tr>
-                                    <td>20</td>
-                                    <td>Kun Khalifat</td>
-                                    <td>30</td>
-                                    <td>8</td>
-                                    <td>9</td>
-                                    <td>13</td>
-                                    <td>28</td>
-                                    <td>33</td>
-                                    <td>-5</td>
-                                    <td>33</td>
-                                </tr>
-                            </tbody>
-                            </table>
+                        <div class="sidebar-stats-grid">
+                            <div class="grid-stat-box large-stat stat-points">
+                                <span class="v-num">17</span>
+                                <span class="v-lbl">POINTS</span>
+                            </div>
+                            <div class="grid-stat-box stat-played">
+                                <span class="v-num">8</span>
+                                <span class="v-lbl">PLAYED</span>
+                            </div>
+                            <div class="grid-stat-box stat-gd">
+                                <span class="v-num">+9</span>
+                                <span class="v-lbl">GD</span>
+                            </div>
                         </div>
+                    </aside>
+
+                    <aside class="sidebar-display-card" id="femaleSidebar" style="display:none;">
+                        <div class="sidebar-card-header">
+                            <div class="badge-num bg-maroon">4</div>
+                            <div>
+                                <h3>AHUDIYANNEM QUEENS</h3>
+                                <p class="meta-label">4TH PLACE — NWFL Premiership Group B</p>
+                            </div>
+                        </div>
+                        <div class="sidebar-stats-grid">
+                            <div class="grid-stat-box large-stat stat-points">
+                                <span class="v-num">25</span>
+                                <span class="v-lbl">POINTS</span>
+                            </div>
+                            <div class="grid-stat-box stat-played">
+                                <span class="v-num">18</span>
+                                <span class="v-lbl">PLAYED</span>
+                            </div>
+                            <div class="grid-stat-box stat-gd">
+                                <span class="v-num">+5</span>
+                                <span class="v-lbl">GD</span>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
 
-                <!-- FEMALE TABLE (Visible on female toggle) -->
-                <div class="league-table" id="femaleTable" style="display: none;">
-                    <div class="table-header">
-                        <img src="https://thenwfl.com/wp-content/uploads/2022/05/nwfl-premiership-copyy-1024x300.png" alt="NWFL Logo" class="league-logo">
-                        <div class="header-text">
-                            <div>NWFL Premiership</div>
-                            <div>Matchday 13</div>
-                        </div>
+                <!-- Right Column -->
+                <div class="right-table-column">
+                    <div class="gender-toggle-bar">
+                        <span class="lbl-toggle">Men</span>
+                        <label class="switch-toggle">
+                            <input type="checkbox" id="genderCheckbox" onchange="toggleGender()">
+                            <span class="toggle-slider-rs"></span>
+                        </label>
+                        <span class="lbl-toggle">Women</span>
                     </div>
-                    <div class="table-scroll-container">
-                        <table class="standings-table">
+
+                    <!-- MALE TABLE -->
+                    <main class="table-card-wrapper" id="maleTable">
+                        <div class="nwfl-brand-header">
+                            <img src="assets/nlo-logo.png" alt="NLO Logo" class="nwfl-logo-img">
+                            <div class="brand-text-block">
+                                <h2>NLO 2026 Abia Centre</h2>
+                                <p>Matchday 8</p>
+                            </div>
+                        </div>
+                        <table class="nwfl-league-table men-table">
                             <thead>
                                 <tr>
-                                    <th>Pos</th>
-                                    <th class="team-name">Team</th>
-                                    <th>Pld</th>
+                                    <th>POS</th>
+                                    <th>CLUB</th>
+                                    <th>P</th>
                                     <th>W</th>
                                     <th>D</th>
                                     <th>L</th>
-                                    <th>GF</th>
-                                    <th>GA</th>
                                     <th>GD</th>
-                                    <th>Pts</th>
+                                    <th>PTS</th>
+                                    <th>FORM</th>
                                 </tr>
                             </thead>
-                            <tbody id="womenTableBody">
-                                <tr>
-                                    <td>1</td>
-                                    <td>FC ROBO QUEENS</td>
-                                    <td>13</td>
-                                    <td>9</td>
-                                    <td>1</td>
-                                    <td>3</td>
-                                    <td>26</td>
-                                    <td>10</td>
-                                    <td>16</td>
-                                    <td>28</td>
+                            <tbody>
+                                <tr class="ahudiyannem-row">
+                                    <td><span class="row-index highlight-gold">1</span></td>
+                                    <td><span class="team-title-text">RIGHT 2 WIN FC ABIA</span></td>
+                                    <td>8</td><td>6</td><td>1</td><td>1</td><td>+12</td><td><strong>19</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot win"></span><span class="dot win"></span><span class="dot win"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr class="our-team-row">
+                                    <td><span class="row-index highlight-green">2</span></td>
+                                    <td><span class="team-title-text text-green">AHUDIYANNEM FC</span></td>
+                                    <td>8</td><td>5</td><td>2</td><td>1</td><td>+9</td><td><strong>17</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot draw"></span><span class="dot win"></span><span class="dot win"></span><span class="dot draw"></span></div></td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>ABIA ANGELS</td>
-                                    <td>13</td>
-                                    <td>7</td>
-                                    <td>3</td>
-                                    <td>3</td>
-                                    <td>18</td>
-                                    <td>9</td>
-                                    <td>9</td>
-                                    <td>24</td>
+                                    <td><span class="row-index">3</span></td>
+                                    <td><span class="team-title-text">HYPEBUZZ FC</span></td>
+                                    <td>8</td><td>5</td><td>0</td><td>3</td><td>+5</td><td><strong>15</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot win"></span></div></td>
                                 </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>REMO STARS LADIES</td>
-                                        <td>13</td>
-                                        <td>6</td>
-                                        <td>5</td>
-                                        <td>2</td>
-                                        <td>19</td>
-                                        <td>6</td>
-                                        <td>13</td>
-                                        <td>23</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>NASARAWA AMAZONS</td>
-                                        <td>13</td>
-                                        <td>6</td>
-                                        <td>5</td>
-                                        <td>2</td>
-                                        <td>14</td>
-                                        <td>8</td>
-                                        <td>6</td>
-                                        <td>23</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>DELTA QUEENS</td>
-                                        <td>13</td>
-                                        <td>4</td>
-                                        <td>4</td>
-                                        <td>5</td>
-                                        <td>13</td>
-                                        <td>16</td>
-                                        <td>-3</td>
-                                        <td>16</td>
-                                    </tr>
-                                    <tr data-team="Ahudiyannem Queens">
-                                        <td>6</td>
-                                        <td>AHUDIYANNEM QUEENS</td>
-                                        <td class="played">17</td>
-                                        <td class="won">6</td>
-                                        <td class="drawn">4</td>
-                                        <td class="lost">7</td>
-                                        <td class="gf">21</td>
-                                        <td class="ga">18</td>
-                                        <td>+3</td>
-                                        <td class="pts">22</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>CONFLUENCE QUEENS</td>
-                                        <td>13</td>
-                                        <td>3</td>
-                                        <td>5</td>
-                                        <td>5</td>
-                                        <td>14</td>
-                                        <td>22</td>
-                                        <td>-8</td>
-                                        <td>14</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>DANNAZ LADIES</td>
-                                        <td>13</td>
-                                        <td>4</td>
-                                        <td>1</td>
-                                        <td>8</td>
-                                        <td>9</td>
-                                        <td>24</td>
-                                        <td>-15</td>
-                                        <td>13</td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td>SUNSHINE QUEENS</td>
-                                        <td>13</td>
-                                        <td>2</td>
-                                        <td>6</td>
-                                        <td>5</td>
-                                        <td>5</td>
-                                        <td>8</td>
-                                        <td>-3</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td>OSUN BABES</td>
-                                        <td>13</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>8</td>
-                                        <td>6</td>
-                                        <td>21</td>
-                                        <td>-15</td>
-                                        <td>9</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                <tr>
+                                    <td><span class="row-index">4</span></td>
+                                    <td><span class="team-title-text">JNR DANBURAN FC</span></td>
+                                    <td>8</td><td>3</td><td>2</td><td>3</td><td>0</td><td><strong>11</strong></td>
+                                    <td><div class="form-dots"><span class="dot draw"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot draw"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">5</span></td>
+                                    <td><span class="team-title-text">OZALLA FA</span></td>
+                                    <td>8</td><td>2</td><td>2</td><td>4</td><td>-4</td><td><strong>8</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot draw"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">6</span></td>
+                                    <td><span class="team-title-text">GALADIMA FC</span></td>
+                                    <td>8</td><td>1</td><td>1</td><td>6</td><td>-8</td><td><strong>4</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot loss"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">7</span></td>
+                                    <td><span class="team-title-text">LAPAI FA</span></td>
+                                    <td>8</td><td>1</td><td>0</td><td>7</td><td>-14</td><td><strong>3</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot loss"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </main>
+
+                    <!-- FEMALE TABLE -->
+                    <main class="table-card-wrapper" id="femaleTable" style="display:none;">
+                        <div class="nwfl-brand-header">
+                            <img src="assets/nwfl-logo.png" alt="NWFL Logo" class="nwfl-logo-img">
+                            <div class="brand-text-block">
+                                <h2>NWFL Premiership Group B</h2>
+                                <p>Matchday 18</p>
+                            </div>
                         </div>
-                    </div>
+                        <table class="nwfl-league-table">
+                            <thead>
+                                <tr>
+                                    <th>POS</th>
+                                    <th>CLUB</th>
+                                    <th>P</th>
+                                    <th>W</th>
+                                    <th>D</th>
+                                    <th>L</th>
+                                    <th>GD</th>
+                                    <th>PTS</th>
+                                    <th>FORM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="row-index highlight-gold">1</span></td>
+                                    <td><span class="team-title-text">ROBO QUEENS</span></td>
+                                    <td>18</td><td>12</td><td>2</td><td>4</td><td>+19</td><td><strong>38</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot win"></span><span class="dot draw"></span><span class="dot win"></span><span class="dot win"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">2</span></td>
+                                    <td><span class="team-title-text">NASARAWA AMAZONS</span></td>
+                                    <td>18</td><td>9</td><td>5</td><td>4</td><td>+10</td><td><strong>32</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot draw"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot win"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">3</span></td>
+                                    <td><span class="team-title-text">ABIA ANGELS</span></td>
+                                    <td>18</td><td>8</td><td>4</td><td>6</td><td>+7</td><td><strong>28</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot draw"></span><span class="dot win"></span></div></td>
+                                </tr>
+                                <tr class="our-team-row">
+                                    <td><span class="row-index highlight-green">4</span></td>
+                                    <td><span class="team-title-text text-green">AHUDIYANNEM QUEENS</span></td>
+                                    <td>18</td><td>7</td><td>4</td><td>7</td><td>+5</td><td><strong>25</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot win"></span><span class="dot draw"></span><span class="dot win"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">5</span></td>
+                                    <td><span class="team-title-text">DELTA QUEENS</span></td>
+                                    <td>18</td><td>7</td><td>4</td><td>7</td><td>0</td><td><strong>25</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot loss"></span><span class="dot draw"></span><span class="dot win"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">6</span></td>
+                                    <td><span class="team-title-text">REMO STARS LADIES</span></td>
+                                    <td>18</td><td>6</td><td>6</td><td>6</td><td>+7</td><td><strong>24</strong></td>
+                                    <td><div class="form-dots"><span class="dot draw"></span><span class="dot win"></span><span class="dot draw"></span><span class="dot loss"></span><span class="dot win"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">7</span></td>
+                                    <td><span class="team-title-text">DANNAZ LADIES</span></td>
+                                    <td>18</td><td>7</td><td>2</td><td>9</td><td>-13</td><td><strong>23</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot loss"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">8</span></td>
+                                    <td><span class="team-title-text">SUNSHINE QUEENS</span></td>
+                                    <td>18</td><td>5</td><td>7</td><td>6</td><td>+2</td><td><strong>22</strong></td>
+                                    <td><div class="form-dots"><span class="dot draw"></span><span class="dot draw"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot draw"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">9</span></td>
+                                    <td><span class="team-title-text">OSUN BABES</span></td>
+                                    <td>18</td><td>5</td><td>3</td><td>10</td><td>-18</td><td><strong>18</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot draw"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">10</span></td>
+                                    <td><span class="team-title-text">CONFLUENCE QUEENS</span></td>
+                                    <td>18</td><td>3</td><td>5</td><td>10</td><td>-19</td><td><strong>14</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot draw"></span><span class="dot loss"></span><span class="dot loss"></span><span class="dot draw"></span></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </main>
                 </div>
             </div>
         </div>
     </section>
-    <!-- END SECTION 3: RESULTS / FIXTURES -->
+<!-- END SECTION 3: RESULTS / FIXTURES -->
 
     <!-- ========================================
          SECTION 3C: OUR FIXTURES
@@ -1037,67 +839,67 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="result-win">
-                            <td>09 Apr 2026</td>
-                            <td>President Federation Cup QF</td>
-                            <td>Ahudiyannem FC</td>
-                            <td class="score-cell">2 - 1</td>
-                            <td>Booga FC</td>
-                            <td>Ubakala Mini Stadium</td>
-                            <td><span class="result-badge-table win">W</span></td>
-                        </tr>
-                        <tr class="result-draw">
-                            <td>05 Apr 2026</td>
-                            <td>NPFL</td>
-                            <td>Ahudiyannem FC</td>
-                            <td class="score-cell">1 - 1</td>
-                            <td>Ilorin Arsenal</td>
-                            <td>Umuahia Stadium</td>
-                            <td><span class="result-badge-table draw">D</span></td>
-                        </tr>
-                        <tr class="result-win">
-                            <td>30 Mar 2026</td>
-                            <td>NPFL</td>
-                            <td>Ahudiyannem FC</td>
-                            <td class="score-cell">3 - 0</td>
-                            <td>Sokoto City</td>
-                            <td>Umuahia Stadium</td>
-                            <td><span class="result-badge-table win">W</span></td>
-                        </tr>
-                        <tr class="result-draw">
-                            <td>22 Mar 2026</td>
-                            <td>NPFL</td>
-                            <td>Abia Warriors</td>
-                            <td class="score-cell">1 - 1</td>
-                            <td>Ahudiyannem FC</td>
-                            <td>Umuahia Stadium</td>
-                            <td><span class="result-badge-table draw">D</span></td>
-                        </tr>
                         <tr class="result-loss">
-                            <td>16 Mar 2026</td>
-                            <td>NPFL</td>
-                            <td>Heartland FC</td>
-                            <td class="score-cell">2 - 0</td>
+                            <td>19 May 2026</td>
+                            <td>President Federation Cup R64</td>
                             <td>Ahudiyannem FC</td>
-                            <td>Dan Anyiam Stadium</td>
+                            <td class="score-cell">1 - 2</td>
+                            <td>Plateau United</td>
+                            <td>Ubakala Mini Stadium</td>
                             <td><span class="result-badge-table loss">L</span></td>
                         </tr>
                         <tr class="result-win">
-                            <td>07 Mar 2026</td>
-                            <td>NPFL</td>
+                            <td>10 May 2026</td>
+                            <td>NLO Abia Centre</td>
+                            <td>Right 2 Win FC Abia</td>
+                            <td class="score-cell">1 - 3</td>
+                            <td>Ahudiyannem FC</td>
+                            <td>Ubakala Mini Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>03 May 2026</td>
+                            <td>NLO Abia Centre</td>
                             <td>Ahudiyannem FC</td>
                             <td class="score-cell">2 - 0</td>
-                            <td>Kano Pillars</td>
-                            <td>Umuahia Stadium</td>
+                            <td>Ozal FA</td>
+                            <td>Umuahia Township Stadium</td>
                             <td><span class="result-badge-table win">W</span></td>
                         </tr>
                         <tr class="result-draw">
-                            <td>26 Feb 2026</td>
-                            <td>NPFL</td>
+                            <td>27 Apr 2026</td>
+                            <td>Abia State FA Cup Final</td>
                             <td>Ahudiyannem FC</td>
+                            <td class="score-cell">0 - 4</td>
+                            <td>Enyimba FC</td>
+                            <td>Umuahia Township Stadium</td>
+                            <td><span class="result-badge-table loss">L</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>20 Apr 2026</td>
+                            <td>NLO Abia Centre</td>
+                            <td>Hypebuzz FC</td>
+                            <td class="score-cell">0 - 1</td>
+                            <td>Ahudiyannem FC</td>
+                            <td>Ubakala Mini Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>13 Apr 2026</td>
+                            <td>NLO Abia Centre</td>
+                            <td>Ahudiyannem FC</td>
+                            <td class="score-cell">4 - 1</td>
+                            <td>Lapai FA</td>
+                            <td>Umuahia Township Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-draw">
+                            <td>06 Apr 2026</td>
+                            <td>NLO Abia Centre</td>
+                            <td>Jnr Danburan FC</td>
                             <td class="score-cell">1 - 1</td>
-                            <td>Plateau United</td>
-                            <td>Umuahia Stadium</td>
+                            <td>Ahudiyannem FC</td>
+                            <td>Ubakala Mini Stadium</td>
                             <td><span class="result-badge-table draw">D</span></td>
                         </tr>
                     </tbody>
@@ -1118,59 +920,68 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="result-win">
-                            <td>06 Apr 2026</td>
-                            <td>NWFL Premiership</td>
-                            <td>Ahudiyannem Queens</td>
-                            <td class="score-cell">2 - 0</td>
-                            <td>Nigerian Queens</td>
-                            <td>Umuahia Stadium</td>
-                            <td><span class="result-badge-table win">W</span></td>
-                        </tr>
                         <tr class="result-loss">
-                            <td>29 Mar 2026</td>
+                            <td>03 May 2026</td>
                             <td>NWFL Premiership</td>
-                            <td>Confluence Queens</td>
-                            <td class="score-cell">3 - 1</td>
                             <td>Ahudiyannem Queens</td>
-                            <td>Iyamho Stadium</td>
+                            <td class="score-cell">0 - 2</td>
+                            <td>Nasarawa Amazons</td>
+                            <td>Umuahia Township Stadium</td>
                             <td><span class="result-badge-table loss">L</span></td>
                         </tr>
                         <tr class="result-win">
-                            <td>23 Mar 2026</td>
+                            <td>26 Apr 2026</td>
                             <td>NWFL Premiership</td>
                             <td>Ahudiyannem Queens</td>
-                            <td class="score-cell">4 - 1</td>
-                            <td>Falcons Queens</td>
-                            <td>Umuahia Stadium</td>
+                            <td class="score-cell">3 - 0</td>
+                            <td>Osun Babes</td>
+                            <td>Umuahia Township Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>19 Apr 2026</td>
+                            <td>NWFL Premiership</td>
+                            <td>Sunshine Queens</td>
+                            <td class="score-cell">0 - 1</td>
+                            <td>Ahudiyannem Queens</td>
+                            <td>Akure Township Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-loss">
+                            <td>12 Apr 2026</td>
+                            <td>NWFL Premiership</td>
+                            <td>Delta Queens</td>
+                            <td class="score-cell">2 - 1</td>
+                            <td>Ahudiyannem Queens</td>
+                            <td>Stephen Keshi Stadium</td>
+                            <td><span class="result-badge-table loss">L</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>05 Apr 2026</td>
+                            <td>NWFL Premiership</td>
+                            <td>Remo Stars Ladies</td>
+                            <td class="score-cell">1 - 2</td>
+                            <td>Ahudiyannem Queens</td>
+                            <td>Remo Stars Stadium</td>
                             <td><span class="result-badge-table win">W</span></td>
                         </tr>
                         <tr class="result-draw">
-                            <td>15 Mar 2026</td>
+                            <td>29 Mar 2026</td>
                             <td>NWFL Premiership</td>
-                            <td>Bayelsa Queens</td>
-                            <td class="score-cell">0 - 0</td>
                             <td>Ahudiyannem Queens</td>
-                            <td>Samson Siasia Stadium</td>
+                            <td class="score-cell">0 - 0</td>
+                            <td>Sunshine Queens</td>
+                            <td>Umuahia Township Stadium</td>
                             <td><span class="result-badge-table draw">D</span></td>
                         </tr>
                         <tr class="result-win">
-                            <td>07 Mar 2026</td>
+                            <td>22 Mar 2026</td>
                             <td>NWFL Premiership</td>
                             <td>Ahudiyannem Queens</td>
-                            <td class="score-cell">3 - 1</td>
-                            <td>Delta Queens</td>
-                            <td>Umuahia Stadium</td>
+                            <td class="score-cell">5 - 1</td>
+                            <td>Confluence Queens</td>
+                            <td>Umuahia Township Stadium</td>
                             <td><span class="result-badge-table win">W</span></td>
-                        </tr>
-                        <tr class="result-loss">
-                            <td>02 Mar 2026</td>
-                            <td>NWFL Premiership</td>
-                            <td>Rivers Queens</td>
-                            <td class="score-cell">2 - 1</td>
-                            <td>Ahudiyannem Queens</td>
-                            <td>Adokiye Amiesimaka Stadium</td>
-                            <td><span class="result-badge-table loss">L</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -1180,71 +991,225 @@
     <!-- END SECTION 3B: MATCH RESULTS -->
 
     <!-- ========================================
-         SECTION 4: TEAMS (Men / Women Buttons)
+         SECTION 4: TEAMS (Ultra-Modern)
          ======================================== -->
     <section class="section teams-section" id="teams">
+        <div class="teams-vector-bg">
+            <span class="tv-chevron"></span>
+            <span class="tv-triangle"></span>
+            <span class="tv-hex"></span>
+            <span class="tv-zigzag"></span>
+            <span class="tv-diamond"></span>
+            <span class="tv-arrow"></span>
+            <span class="tv-stripe"></span>
+        </div>
         <div class="container">
             <h2 class="section-title">Our Teams</h2>
-            <div class="teams-grid">
-                <button class="team-card male-team-btn">
-                    <div class="team-icon">⚽</div>
-                     <h3>Men's Team</h3>
-                    <p>Senior squad competing in national leagues</p>
-                    <div class="team-submenu">
-                        <span class="submenu-item submenu-players" onclick="event.stopPropagation(); openMenRosterModal('men-players')">Players Profile</span>
-                        <span class="submenu-item submenu-staff" onclick="event.stopPropagation(); openMenRosterModal('men-staff')">Staff Profile</span>
+            <div class="teams-grid-modern">
+                <div class="team-card-modern male-team-card" onclick="openMenRosterModal('men-players')">
+                    <div class="team-card-bg">
+                        <div class="team-card-pattern"></div>
+                        <div class="team-card-shine"></div>
                     </div>
-                </button>
-                <button class="team-card female-team-btn">
-                    <div class="team-icon">👟</div>
-                     <h3>Women's Team</h3>
-                    <p>Our talented women's team</p>
-                    <div class="team-submenu">
-                        <span class="submenu-item submenu-players" onclick="event.stopPropagation(); openRosterModal('players')">Players Profile</span>
-                        <span class="submenu-item submenu-staff" onclick="event.stopPropagation(); openRosterModal('staff')">Staff Profile</span>
+                    <div class="team-card-content">
+                        <div class="team-card-badge">
+                            <svg viewBox="0 0 60 70" class="team-shield">
+                                <defs>
+                                    <linearGradient id="shieldGradM" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#22c55e"/>
+                                        <stop offset="100%" stop-color="#0d9488"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M30 5 L55 15 L55 35 C55 52 30 65 30 65 C30 65 5 52 5 35 L5 15 Z" fill="url(#shieldGradM)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                                <text x="30" y="38" text-anchor="middle" fill="white" font-size="18" font-weight="900">A</text>
+                            </svg>
+                        </div>
+                        <h3 class="team-card-name">Men's Team</h3>
+                        <div class="team-card-divider"></div>
+                        <p class="team-card-desc">Senior squad competing in the NLO 2026 — Abia State Presidential Cup champions 2025</p>
+                        <div class="team-card-stats">
+                            <div class="team-stat">
+                                <span class="team-stat-num">2025</span>
+                                <span class="team-stat-label">Abia FA Cup</span>
+                            </div>
+                            <div class="team-stat">
+                                <span class="team-stat-num">2026</span>
+                                <span class="team-stat-label">Presidential Cup</span>
+                            </div>
+                        </div>
+                        <div class="team-card-actions" onclick="event.stopPropagation();">
+                            <button class="team-action-btn" onclick="event.stopPropagation(); openMenRosterModal('men-players')">
+                                <i class="fas fa-users"></i> Players
+                            </button>
+                            <button class="team-action-btn" onclick="event.stopPropagation(); openMenRosterModal('men-staff')">
+                                <i class="fas fa-briefcase"></i> Staff
+                            </button>
+                        </div>
                     </div>
-                </button>
+                    <div class="team-card-glow"></div>
+                </div>
+
+                <div class="team-card-modern female-team-card" onclick="openRosterModal('players')">
+                    <div class="team-card-bg">
+                        <div class="team-card-pattern"></div>
+                        <div class="team-card-shine"></div>
+                    </div>
+                    <div class="team-card-content">
+                        <div class="team-card-badge">
+                            <svg viewBox="0 0 60 70" class="team-shield">
+                                <defs>
+                                    <linearGradient id="shieldGradW" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#ec4899"/>
+                                        <stop offset="100%" stop-color="#8b5cf6"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M30 5 L55 15 L55 35 C55 52 30 65 30 65 C30 65 5 52 5 35 L5 15 Z" fill="url(#shieldGradW)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                                <text x="30" y="38" text-anchor="middle" fill="white" font-size="18" font-weight="900">Q</text>
+                            </svg>
+                        </div>
+                        <h3 class="team-card-name">Women's Team</h3>
+                        <div class="team-card-divider"></div>
+                        <p class="team-card-desc">Ahudiyannem Queens — NWFL Premiership (highest women's league) — back-to-back Abia State FA Cup champions</p>
+                        <div class="team-card-stats">
+                            <div class="team-stat">
+                                <span class="team-stat-num">2025</span>
+                                <span class="team-stat-label">NWFL Promotion</span>
+                            </div>
+                            <div class="team-stat">
+                                <span class="team-stat-num">2026</span>
+                                <span class="team-stat-label">FA Cup Champions</span>
+                            </div>
+                        </div>
+                        <div class="team-card-actions" onclick="event.stopPropagation();">
+                            <button class="team-action-btn" onclick="event.stopPropagation(); openRosterModal('players')">
+                                <i class="fas fa-users"></i> Players
+                            </button>
+                            <button class="team-action-btn" onclick="event.stopPropagation(); openRosterModal('staff')">
+                                <i class="fas fa-briefcase"></i> Staff
+                            </button>
+                        </div>
+                    </div>
+                    <div class="team-card-glow"></div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- END SECTION 4: TEAMS (Men / Women Buttons) -->
+    <!-- END SECTION 4: TEAMS -->
 
     <!-- ========================================
-         SECTION 5: ACHIEVEMENTS / TROPHIES
+         SECTION 5: ACHIEVEMENTS / TROPHIES (Realistic)
          ======================================== -->
-    <section class="section teams-section" id="teams">
+    <section class="section achievements-section" id="achievements">
+        <!-- Vector background elements -->
+        <div class="ach-geo-shapes">
+            <div class="ach-geo ach-geo-circle"></div>
+            <div class="ach-geo ach-geo-diamond"></div>
+            <div class="ach-geo ach-geo-triangle"></div>
+            <div class="ach-geo ach-geo-small-circle"></div>
+            <div class="ach-geo ach-geo-line"></div>
+            <div class="ach-geo ach-geo-grid"></div>
+        </div>
+        <div class="ach-glow-orb ach-glow-orb-1"></div>
+        <div class="ach-glow-orb ach-glow-orb-2"></div>
+        <div class="ach-glow-orb ach-glow-orb-3"></div>
+        <div class="ach-particles">
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+        </div>
         <div class="container">
             <h2 class="section-title">Achievements</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="trophy-icon">🏆</div>
-                    <h4>National League</h4>
-                    <p>2024</p>
+            <div class="achievements-grid-modern">
+                <div class="achievement-card-modern ach-1">
+                    <div class="ach-trophy-wrap">
+                        <div class="ach-trophy-icon">
+                            <img src="assets/trophy-gold.png" alt="National League Trophy" class="ach-trophy-img">
+                        </div>
+                    </div>
+                    <div class="ach-content">
+                        <span class="ach-year">2024</span>
+                        <h4 class="ach-title">National League</h4>
+                        <div class="ach-divider"></div>
+                        <div class="ach-medal">
+                            <span class="ach-medal-text">Champions</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="achievement-card">
-                    <div class="trophy-icon">🏆</div>
-                    <h4>Regional Cup</h4>
-                    <p>2025</p>
+
+                <div class="achievement-card-modern ach-2">
+                    <div class="ach-trophy-wrap">
+                        <div class="ach-trophy-icon">
+                            <img src="assets/trophy-silver.png" alt="Abia FA Cup Trophy" class="ach-trophy-img">
+                        </div>
+                    </div>
+                    <div class="ach-content">
+                        <span class="ach-year">2025</span>
+                        <h4 class="ach-title">Abia FA Cup</h4>
+                        <div class="ach-divider"></div>
+                        <div class="ach-medal">
+                            <span class="ach-medal-text">Winners</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="achievement-card">
-                    <div class="trophy-icon">🏆</div>
-                    <h4>Super Cup</h4>
-                    <p>2024</p>
+
+                <div class="achievement-card-modern ach-3">
+                    <div class="ach-trophy-wrap">
+                        <div class="ach-trophy-icon">
+                            <img src="assets/trophy-gold-v2.png" alt="Super Cup Trophy" class="ach-trophy-img">
+                        </div>
+                    </div>
+                    <div class="ach-content">
+                        <span class="ach-year">2024</span>
+                        <h4 class="ach-title">Super Cup</h4>
+                        <div class="ach-divider"></div>
+                        <div class="ach-medal">
+                            <span class="ach-medal-text">Champions</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="achievement-card">
-                    <div class="trophy-icon">🏆</div>
-                    <h4>State Championship</h4>
-                    <p>2023</p>
+
+                <div class="achievement-card-modern ach-4">
+                    <div class="ach-trophy-wrap">
+                        <div class="ach-trophy-icon">
+                            <img src="assets/trophy-gold-v3.png" alt="State Championship Trophy" class="ach-trophy-img">
+                        </div>
+                    </div>
+                    <div class="ach-content">
+                        <span class="ach-year">2023</span>
+                        <h4 class="ach-title">State Championship</h4>
+                        <div class="ach-divider"></div>
+                        <div class="ach-medal">
+                            <span class="ach-medal-text">Gold</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="achievement-card">
-                    <div class="trophy-icon">🏆</div>
-                    <h4>Friendly Cup</h4>
-                    <p>2026</p>
+
+                <div class="achievement-card-modern ach-5">
+                    <div class="ach-trophy-wrap">
+                        <div class="ach-trophy-icon">
+                            <img src="assets/trophy-bronze.png" alt="Presidential Cup Trophy" class="ach-trophy-img">
+                        </div>
+                    </div>
+                    <div class="ach-content">
+                        <span class="ach-year">2026</span>
+                        <h4 class="ach-title">Presidential Cup</h4>
+                        <div class="ach-divider"></div>
+                        <div class="ach-medal">
+                            <span class="ach-medal-text">Finalists</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="gallery-btn-wrapper">
-                <button class="btn-gallery">
-                    <i class="fas fa-camera"></i> View Gallery
+                <button class="btn-gallery-ultra">
+                    <span class="btn-gallery-text">View Gallery</span>
+                    <span class="btn-gallery-icon"><i class="fas fa-arrow-right"></i></span>
+                    <div class="btn-gallery-shimmer"></div>
                 </button>
             </div>
         </div>
@@ -1320,46 +1285,46 @@
         <div class="container">
             <h2 class="section-title">Latest News</h2>
             <div class="news-container">
-                <div class="tile green" data-id="1" data-title="Ahudiyannem FC Announces New Season Plans" data-date="01/07/2026" data-image="assets/news1.jpg" data-highlight="New strategies and training programs announced for the upcoming season" data-content="The club is preparing for an exciting new season with new strategies and training programs. Our coaching staff has been working tirelessly to develop innovative approaches that will give our team the competitive edge needed to dominate the league. With new recruits joining and our existing stars in peak condition, we are confident that this season will be one for the history books. Stay tuned for more updates as we approach the kickoff date.">
-                    <img src="assets/news1.jpg" alt="News 1">
+                <div class="tile green" data-id="1" data-title="Ahudiyannem FC Battles Hard in Federation Cup Debut" data-date="19/05/2026" data-image="assets/news1.jpg" data-highlight="Ahudiyannem FC fall 1-2 to Plateau United in President Federation Cup Round of 64" data-content="Ahudiyannem FC made their President Federation Cup debut, falling 1-2 to NPFL side Plateau United in the Round of 64 at Ubakala Mini Stadium. The NLO side showed tremendous spirit, taking the game to their more experienced opponents. After going behind early, Ahudiyannem equalized through a well-worked counter-attack. However, Plateau United's quality told in the second half as they scored the winner. Despite the defeat, the club earned respect nationwide for their fearless performance against top-flight opposition.">
+                    <img src="assets/news1.jpg" alt="News 1" fetchpriority="high" decoding="async">
                     <div class="tile-details">
-                        <p class="tile-date">07/04/2026</p>
-                        <h3>New strategies and training programs announced for the upcoming season</h3>
+                        <p class="tile-date">19/05/2026</p>
+                        <h3>Ahudiyannem FC fall 1-2 to Plateau United in Federation Cup</h3>
                     </div>
                 </div>
-                <div class="tile blue" data-id="2" data-title="Ahudiyannem Queens Defeats Robo angels" data-date="20/04/2026" data-image="assets/news2.jpg" data-highlight="Open trials for young talents aged 8-16 starting next month" data-content="We are holding open trials for young talents aged 8-16. Join us and take the first step towards professional football. The trials will be conducted by our professional coaching staff who have years of experience developing young players into elite athletes. Don't miss this opportunity to showcase your skills and potentially join the Ahudiyannem FC family.">
-                    <img src="assets/news2.jpg" alt="News 2">
+                <div class="tile blue" data-id="2" data-title="NLO 2026 Season Kicks Off with Victory" data-date="10/04/2026" data-image="assets/news2.jpg" data-highlight="Ahudiyannem FC begin NLO campaign with impressive away win" data-content="The 2026 NLO season kicked off with Ahudiyannem FC securing a vital away victory. The team has been training intensively under the coaching staff, focusing on a possession-based style of play. With a blend of experienced campaigners and exciting young talents, the club aims to challenge for the Abia Centre title this season. The players have shown remarkable cohesion in pre-season, and the early results suggest a promising campaign ahead for the Abiriba-based club.">
+                    <img src="assets/news2.jpg" alt="News 2" fetchpriority="high" decoding="async">
                     <div class="tile-details">
-                        <p class="tile-date">05/04/2026</p>
-                        <h3>Open trials for young talents aged 8-16 starting next month</h3>
+                        <p class="tile-date">10/04/2026</p>
+                        <h3>NLO 2026 season begins with away victory</h3>
                     </div>
                 </div>
-                <div class="tile purple" data-id="3" data-title="Match Day: Victory Abia Angels" data-date="02/04/2026" data-image="assets/news3.jpg" data-highlight="Thrilling 2-1 victory puts team at top of the table" data-content="A thrilling match that ended 2-1 in our favor. The team showed great spirit and determination throughout the 90 minutes. From the kickoff, our players displayed incredible teamwork and tactical awareness. The opposition took an early lead, but our boys fought back with two spectacular goals in the second half. This victory pushes us up the table and boosts our confidence for the upcoming fixtures.">
-                    <img src="assets/news3.jpg" alt="News 3">
+                <div class="tile purple" data-id="3" data-title="Ahudiyannem Queens Dominate Osun Babes" data-date="26/04/2026" data-image="assets/news3.jpg" data-highlight="Grace Aaron brace powers Queens to commanding 3-0 home victory" data-content="Ahudiyannem Queens produced a dominant display at Umuahia Township Stadium, thrashing Osun Babes 3-0 in the NWFL Premiership. Star forward Grace Aaron was the standout performer, netting a brilliant brace that showcased her clinical finishing ability. Nwabueze Charles added the third as the Queens controlled proceedings from start to finish. The victory was crucial in their push for a top-half finish in Group B, with the team showing significant improvement under the guidance of the coaching staff.">
+                    <img src="assets/news3.jpg" alt="News 3" fetchpriority="high" decoding="async">
                     <div class="tile-details">
-                        <p class="tile-date">02/04/2026</p>
-                        <h3>Thrilling 2-1 victory puts team at top of the table</h3>
+                        <p class="tile-date">26/04/2026</p>
+                        <h3>Grace Aaron brace powers Queens to 3-0 victory</h3>
                     </div>
                 </div>
-                <div class="tile orange" data-id="4" data-title="Community Outreach Program Launched" data-date="01/04/2026" data-image="assets/news4.jpg" data-highlight="Bringing football to underserved areas across the region" data-content="Ahudiyannem FC is proud to announce our new community outreach program aimed at bringing football to underserved areas. Through partnerships with local schools and community centers, we will be providing free training sessions, equipment, and mentorship to aspiring young footballers from all backgrounds. This initiative reflects our commitment to using football as a force for positive change in our community.">
-                    <img src="assets/news4.jpg" alt="News 4">
+                <div class="tile orange" data-id="4" data-title="Ahudiyannem Reach Abia State FA Cup Final" data-date="27/04/2026" data-image="assets/news4.jpg" data-highlight="Ahudiyannem FC finish runners-up in Abia State FA Cup after valiant run" data-content="Ahudiyannem FC's remarkable run in the Abia State FA Cup ended in the final with a 4-0 defeat to NPFL giants Enyimba FC at Umuahia Township Stadium. The journey to the final was nothing short of extraordinary, with the club defeating several higher-division opponents along the way. Their performances earned them a spot in the national President Federation Cup Round of 64, a historic achievement for the club. The experience gained from facing top-flight opposition has been invaluable for the squad's development.">
+                    <img src="assets/news4.jpg" alt="News 4" loading="lazy" decoding="async">
                     <div class="tile-details">
-                        <p class="tile-date">01/04/2026</p>
-                        <h3>Bringing football to underserved areas across the region</h3>
+                        <p class="tile-date">27/04/2026</p>
+                        <h3>Ahudiyannem finish runners-up in Abia State FA Cup</h3>
                     </div>
                 </div>
-                <div class="tile red" data-id="5" data-title="Star Player Signs 3-Year Extension" data-date="30/03/2026" data-image="assets/news5.jpg" data-highlight="Club legend commits future to Ahudiyannem FC" data-content="In a major announcement that has thrilled fans across the region, our star player has committed his future to Ahudiyannem FC by signing a new 3-year contract extension. The player, who has been instrumental in our recent successes, expressed his delight at staying with the club and his excitement for the future. This deal ensures our key talents remain at the club as we continue our pursuit of silverware.">
-                    <img src="assets/news5.jpg" alt="News 5">
+                <div class="tile red" data-id="5" data-title="Queens Finish Fourth in NWFL Group B" data-date="06/05/2026" data-image="assets/news5.jpg" data-highlight="Ahudiyannem Queens secure 4th place in NWFL Premiership Group B with 25 points" data-content="Ahudiyannem Queens concluded their debut NWFL Premiership season with a solid 4th-place finish in Group B, amassing 25 points from 18 matches. The Queens recorded 7 wins, 4 draws, and 7 losses, with notable victories including a 5-1 demolition of Confluence Queens and a 3-0 triumph over Osun Babes. Key performers included Grace Aaron, who emerged as the team's top scorer, and goalkeeper Amarachi Okonkwo, whose consistent performances earned praise. The club looks forward to building on this foundation for the next season.">
+                    <img src="assets/news5.jpg" alt="News 5" loading="lazy" decoding="async">
                     <div class="tile-details">
-                        <p class="tile-date">30/03/2026</p>
-                        <h3>Club legend commits future to Ahudiyannem FC</h3>
+                        <p class="tile-date">06/05/2026</p>
+                        <h3>Queens finish 4th in NWFL Premiership Group B</h3>
                     </div>
                 </div>
-                <div class="tile green" data-id="6" data-title="Facility upgrade for the Team" data-date="28/03/2026" data-image="assets/news6.jpg" data-highlight="State-of-the-art training complex now operational" data-content="We are thrilled to announce the opening of our brand new training facility. This state-of-the-art complex features modern amenities including professional-grade pitches, a fully equipped gym, recovery rooms, and video analysis suites. Our players and coaching staff are excited to utilize these world-class facilities as we continue our journey towards excellence.">
-                    <img src="assets/news6.jpg" alt="News 6">
+                <div class="tile green" data-id="6" data-title="Ahudiyannem Queens Secure Away Win at Sunshine" data-date="19/04/2026" data-image="assets/news6.jpg" data-highlight="Ahudiyannem Queens claim vital away victory at Sunshine Queens" data-content="Ahudiyannem Queens secured a crucial 1-0 away victory against Sunshine Queens at the Akure Township Stadium. The solitary goal was enough to earn all three points as the Queens displayed impressive defensive organization and composure on the road. The win was particularly significant as it moved the team up the NWFL Group B standings during a tight mid-season battle. Head coach praised the team's discipline and tactical execution, highlighting the growing confidence within the squad as they continue their debut season in Nigeria's top women's league.">
+                    <img src="assets/news6.jpg" alt="News 6" loading="lazy" decoding="async">
                     <div class="tile-details">
-                        <p class="tile-date">28/03/2026</p>
-                        <h3>State-of-the-art training complex now operational</h3>
+                        <p class="tile-date">19/04/2026</p>
+                        <h3>Queens secure vital away victory at Sunshine Queens</h3>
                     </div>
                 </div>
             </div>
@@ -1392,53 +1357,99 @@
          SECTION 6B: OUR KITS SHOP - COLLECTION
          ======================================== -->
     <section id="kits-shop" class="shop-vault">
-        <div class="container">
-            <h2 class="section-title">Shop our collection</h2>
-            <div class="club-carousel">
-                <div class="track">
-                    <div class="slide" style="--sc: #ef4444">
-                        <img src="assets/jersey.svg" alt="Home Kit">
-                        <h3>HOME KIT 2026</h3>
-                        <p>N20,000</p>
-                        <button class="shop-btn">SHOP NOW</button>
+        <div class="shop-container">
+            <div class="bg-watermark">store</div>
+            <div class="shop-header">
+                <div class="header-left">
+                    <div class="shop-tag">OUR STORE</div>
+                    <h1>SHOP OUR COLLECTION</h1>
+                </div>
+                <div class="header-right">
+                    <span>Get notified when new kits drop</span>
+                    <button class="btn-notify">Notify Me</button>
+                </div>
+            </div>
+            <div class="carousel-wrapper">
+                <button class="nav-arrow" id="prevBtn">&#10216;</button>
+                <div class="carousel-window">
+                    <div class="product-grid" id="productTrack">
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="badge bestseller">bestseller</span>
+                            <img src="assets/jersey.jpg" alt="Home Kit">
+                        </div>
+                        <div class="product-title">HOME KIT 2026</div>
+                        <div class="price-container">
+                            <span class="price-normal">N20,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
                     </div>
-                    <div class="slide" style="--sc: #3b82f6">
-                        <img src="assets/scarf.svg" alt="Club Scarf">
-                        <h3>MATCHDAY SCARF</h3>
-                        <p>N5,000</p>
-                        <button class="shop-btn">SHOP NOW</button>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <img src="assets/scarf.jpg" alt="Club Scarf">
+                        </div>
+                        <div class="product-title">MATCHDAY SCARF</div>
+                        <div class="price-container">
+                            <span class="price-normal">N5,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
                     </div>
-                    <div class="slide" style="--sc: #f59e0b">
-                        <img src="assets/football.svg" alt="Match Ball">
-                        <h3>CLUB FOOTBALL</h3>
-                        <p>N8,000</p>
-                        <button class="shop-btn">SHOP NOW</button>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="badge sale">sale</span>
+                            <img src="assets/football.jpg" alt="Match Ball">
+                        </div>
+                        <div class="product-title">CLUB FOOTBALL</div>
+                        <div class="price-container">
+                            <span class="price-normal">N8,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
                     </div>
-                    <div class="slide" style="--sc: #10b981">
-                        <img src="assets/cap.svg" alt="Club Cap">
-                        <h3>TEAM CAP</h3>
-                        <p>N5,000</p>
-                        <button class="shop-btn">SHOP NOW</button>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <img src="assets/cap.jpg" alt="Club Cap">
+                        </div>
+                        <div class="product-title">TEAM CAP</div>
+                        <div class="price-container">
+                            <span class="price-normal">N5,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
                     </div>
-                    <div class="slide" style="--sc: #8b5cf6">
-                        <img src="assets/jacket.svg" alt="Anthem Jacket">
-                        <h3>ANTHEM JACKET</h3>
-                        <p>N15,000</p>
-                        <button class="shop-btn">SHOP NOW</button>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="badge limited">limited</span>
+                            <img src="assets/jacket.jpg" alt="Anthem Jacket">
+                        </div>
+                        <div class="product-title">ANTHEM JACKET</div>
+                        <div class="price-container">
+                            <span class="price-normal">N15,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
                     </div>
-                    <div class="slide" style="--sc: #f97316">
-                        <img src="assets/shorts.svg" alt="Shorts">
-                        <h3>SHORTS 2026</h3>
-                        <p>N3,000</p>
-                        <button class="shop-btn">SHOP NOW</button>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <img src="assets/shorts.jpg" alt="Shorts">
+                        </div>
+                        <div class="product-title">SHORTS 2026</div>
+                        <div class="price-container">
+                            <span class="price-normal">N3,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
                     </div>
-                    <div class="slide" style="--sc: #06b6d4">
-                        <img src="assets/training.svg" alt="Training Top">
-                        <h3>TRAINING TOP</h3>
-                        <p>N12,000</p>
-                        <button class="shop-btn">SHOP NOW</button>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <div class="stock-banner">Out of Stock</div>
+                            <img src="assets/training.jpg" alt="Training Top">
+                        </div>
+                        <div class="product-title">TRAINING TOP</div>
+                        <div class="price-container">
+                            <span class="price-normal">N12,000</span>
+                        </div>
+                        <button class="btn-order disabled">Order Now</button>
+                    </div>
                     </div>
                 </div>
+                <button class="nav-arrow" id="nextBtn">&#10217;</button>
             </div>
         </div>
     </section>
@@ -1450,10 +1461,21 @@
     <section class="section partners-section">
         <div class="container">
             <h2 class="section-title">Official Partners</h2>
+            <p class="partners-subtitle">Trusted brands that power our journey</p>
             <div class="partners-grid">
                 <div class="partner-logo">
-                    <a href="https://www.eliorindustries.com/" target="_blank" rel="noopener"><img src="assets/elior.png" alt="Elior Nig Ltd"></a>
+                    <a href="https://www.eliorindustries.com/" target="_blank" rel="noopener">
+                        <img src="assets/elior.png" alt="Elior Nig Ltd">
+                    </a>
                 </div>
+            </div>
+            <div class="partner-info">
+                <p class="partner-description">
+                    Elior Industries Nig. Ltd. is a premier Nigerian import/export company specializing in premium Turkey doors, heavy-duty Turkey ladders, door accessories, and general merchandise. With over 25 years of experience, they deliver world-class building and interior solutions across Nigeria.
+                </p>
+                <a href="https://www.eliorindustries.com/" target="_blank" rel="noopener" class="partner-visit-link">
+                    Visit www.eliorindustries.com &rarr;
+                </a>
             </div>
         </div>
     </section>
