@@ -1,6 +1,13 @@
 // Ahudiyannem FC - JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Remove carousel on mobile
+    if (window.innerWidth <= 480) {
+        document.querySelectorAll('.carousel-viewport').forEach(function(el) {
+            el.remove();
+        });
+    }
+
     // Mobile hamburger overlay
     const hamburger = document.getElementById('hamburger');
     const closeBtn = document.getElementById('closeMenu');
@@ -28,16 +35,54 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Swipe from left edge to open mobile menu
+    var touchStartX = 0;
+    var touchStartY = 0;
+    document.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].clientX;
+        touchStartY = e.changedTouches[0].clientY;
+    }, { passive: true });
+
+    document.addEventListener('touchmove', function(e) {
+        if (!overlay || overlay.classList.contains('active')) return;
+        if (window.innerWidth > 1024) return;
+        var touch = e.changedTouches[0];
+        var dx = touch.clientX - touchStartX;
+        var dy = touch.clientY - touchStartY;
+        if (touchStartX <= 20 && dx > 40 && Math.abs(dy) < 60) {
+            overlay.classList.add('active');
+            document.body.classList.add('no-scroll');
+        }
+    }, { passive: true });
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
+            var href = this.getAttribute('href');
+            if (href === '#') {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                return;
+            }
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
+
+    // Mobile: tapping header opens the menu
+    var headerInner = document.querySelector('.header-inner');
+    if (headerInner) {
+        headerInner.addEventListener('click', function(e) {
+            if (e.target.closest('.mobile-hamburger') || e.target.closest('.logo')) return;
+            if (window.innerWidth <= 900 && overlay) {
+                overlay.classList.add('active');
+                document.body.classList.add('no-scroll');
+            }
+        });
+    }
 
     // Header scroll effect - SHOW ON SCROLL UP, HIDE ON SCROLL DOWN
     const header = document.getElementById('mainHeader');
@@ -661,7 +706,7 @@ function init() {
     }, 60000);
 }
 
-// SHOP CAROUSEL — PAGINATION SLIDE WITH AUTO-PLAY
+// SHOP CAROUSEL — INFINITE SINGLE-ITEM SLIDE
 (function() {
     const track = document.getElementById('productTrack');
     const prevBtn = document.getElementById('prevBtn');
@@ -669,41 +714,68 @@ function init() {
     const wrapper = document.querySelector('.carousel-wrapper');
     if (!track || !prevBtn || !nextBtn) return;
 
-    let currentStep = 0;
-    const itemsPerView = 4;
-    let autoInterval = null;
+    const realCards = Array.from(track.children);
+    const N = realCards.length;
+    if (N === 0) return;
 
-    function updateCarousel() {
-        const totalItems = track.children.length;
-        const maxSteps = Math.ceil(totalItems / itemsPerView) - 1;
+    // Clone ALL items for seamless infinite loop
+    for (var i = N - 1; i >= 0; i--) {
+        var clone = realCards[i].cloneNode(true);
+        track.insertBefore(clone, track.firstChild);
+    }
+    for (var i = 0; i < N; i++) {
+        var clone = realCards[i].cloneNode(true);
+        track.appendChild(clone);
+    }
 
-        const itemWidth = track.children[0].getBoundingClientRect().width;
-        const gap = 25;
-        const slideDistance = (itemWidth * itemsPerView) + (gap * itemsPerView);
+    var currentIndex = N; // start at first real item (in the middle set)
+    var autoInterval = null;
+    var isTransitioning = false;
 
-        track.style.transform = 'translateX(-' + (currentStep * slideDistance) + 'px)';
+    function getSlideStep() {
+        var first = track.children[0];
+        var style = window.getComputedStyle(track);
+        var gap = parseFloat(style.gap) || 25;
+        return first.getBoundingClientRect().width + gap;
+    }
+
+    function slideTo(index, animate) {
+        var step = getSlideStep();
+        if (!animate) {
+            track.style.transition = 'none';
+        } else {
+            track.style.transition = 'transform 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
+        }
+        track.style.transform = 'translateX(-' + (index * step) + 'px)';
+        if (!animate) {
+            void track.offsetHeight;
+            track.style.transition = 'transform 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
+        }
+    }
+
+    function handleTransitionEnd() {
+        if (currentIndex >= N * 2) {
+            currentIndex -= N;
+            slideTo(currentIndex, false);
+        } else if (currentIndex < N) {
+            currentIndex += N;
+            slideTo(currentIndex, false);
+        }
+        isTransitioning = false;
     }
 
     function nextSlide() {
-        const totalItems = track.children.length;
-        const maxSteps = Math.ceil(totalItems / itemsPerView) - 1;
-        if (currentStep >= maxSteps) {
-            currentStep = 0;
-        } else {
-            currentStep++;
-        }
-        updateCarousel();
+        if (isTransitioning) return;
+        isTransitioning = true;
+        currentIndex++;
+        slideTo(currentIndex, true);
     }
 
     function prevSlide() {
-        const totalItems = track.children.length;
-        const maxSteps = Math.ceil(totalItems / itemsPerView) - 1;
-        if (currentStep <= 0) {
-            currentStep = maxSteps;
-        } else {
-            currentStep--;
-        }
-        updateCarousel();
+        if (isTransitioning) return;
+        isTransitioning = true;
+        currentIndex--;
+        slideTo(currentIndex, true);
     }
 
     function startAutoPlay() {
@@ -728,6 +800,8 @@ function init() {
         startAutoPlay();
     });
 
+    track.addEventListener('transitionend', handleTransitionEnd);
+
     if (wrapper) {
         wrapper.addEventListener('mouseenter', stopAutoPlay);
         wrapper.addEventListener('mouseleave', startAutoPlay);
@@ -735,14 +809,96 @@ function init() {
         wrapper.addEventListener('touchend', startAutoPlay);
     }
 
-    function recalc() {
-        requestAnimationFrame(updateCarousel);
+    // Mouse + Touch drag support
+    var dragStartX = 0;
+    var dragStartY = 0;
+    var dragOffset = 0;
+    var isDragging = false;
+    var currentTranslate = 0;
+
+    function getBaseTranslate() {
+        var step = getSlideStep();
+        return -(currentIndex * step);
     }
 
-    window.addEventListener('resize', recalc);
-    setTimeout(updateCarousel, 100);
+    function onDragStart(clientX, clientY) {
+        isDragging = true;
+        dragStartX = clientX;
+        dragStartY = clientY;
+        dragOffset = 0;
+        currentTranslate = getBaseTranslate();
+        track.style.transition = 'none';
+        track.style.cursor = 'grabbing';
+        stopAutoPlay();
+    }
+
+    function onDragMove(clientX, clientY) {
+        if (!isDragging) return;
+        var dx = clientX - dragStartX;
+        var dy = clientY - dragStartY;
+        // Only trigger if horizontal drag dominates
+        if (Math.abs(dx) > 5 || Math.abs(dragOffset) > 5) {
+            dragOffset = dx;
+            track.style.transform = 'translateX(' + (currentTranslate + dragOffset) + 'px)';
+        }
+    }
+
+    function onDragEnd() {
+        if (!isDragging) return;
+        isDragging = false;
+        track.style.cursor = '';
+        var step = getSlideStep();
+        var threshold = step * 0.25;
+        if (dragOffset < -threshold) {
+            nextSlide();
+        } else if (dragOffset > threshold) {
+            prevSlide();
+        } else {
+            slideTo(currentIndex, true);
+        }
+        startAutoPlay();
+    }
+
+    track.addEventListener('mousedown', function(e) {
+        onDragStart(e.clientX, e.clientY);
+        e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', function(e) {
+        onDragMove(e.clientX, e.clientY);
+    });
+
+    document.addEventListener('mouseup', function(e) {
+        onDragEnd();
+    });
+
+    track.addEventListener('touchstart', function(e) {
+        onDragStart(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
+    }, { passive: true });
+
+    track.addEventListener('touchmove', function(e) {
+        onDragMove(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
+    }, { passive: true });
+
+    track.addEventListener('touchend', function(e) {
+        onDragEnd();
+    }, { passive: true });
+
+    // Prevent track from being selected during drag
+    track.addEventListener('dragstart', function(e) { e.preventDefault(); });
+
+    slideTo(currentIndex, false);
+
+    var resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            slideTo(currentIndex, false);
+        }, 100);
+    });
+
     window.addEventListener('load', function() {
-        updateCarousel();
+        slideTo(currentIndex, false);
         startAutoPlay();
     });
 })();

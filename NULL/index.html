@@ -14,6 +14,13 @@
     <link rel="preload" as="image" href="assets/news4.jpg">
     <link rel="preload" as="image" href="assets/news5.jpg">
     <link rel="preload" as="image" href="assets/news6.jpg">
+<style>
+@media (max-width: 900px) {
+    .carousel-viewport { display: none !important; }
+    .hero-cta { flex-direction: column !important; gap: 12px; align-items: center; }
+    .hero-mobile-video { display: block; opacity: 0.15; }
+}
+</style>
 </head>
 <body>
 
@@ -151,12 +158,11 @@
     </header>
 
     <div class="mobile-menu-overlay" id="mobileOverlay">
-        <div class="mobile-vector-bg">
-            <span class="vec-circle"></span>
-            <span class="vec-diamond"></span>
-            <span class="vec-dots"></span>
-            <span class="vec-line"></span>
-            <span class="vec-triangle"></span>
+        <div class="mobile-wave-bg">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+            <div class="wave wave-4"></div>
         </div>
         <button class="close-mobile-menu" id="closeMenu">&times;</button>
         <nav class="mobile-nav-links">
@@ -183,16 +189,11 @@
                 <span></span><span></span><span></span><span></span><span></span>
                 <span></span><span></span><span></span><span></span><span></span>
             </div>
-            <div class="hero-vector-bg">
-                <span class="hv-triangle-1"></span>
-                <span class="hv-triangle-2"></span>
-                <span class="hv-diamond"></span>
-                <span class="hv-ring"></span>
-                <span class="hv-dots-grid"></span>
-                <span class="hv-line-1"></span>
-                <span class="hv-line-2"></span>
-                <span class="hv-arc"></span>
-            </div>
+        </div>
+
+        <!-- Mobile Background Video -->
+        <div class="hero-mobile-video">
+            <video autoplay muted loop playsinline src="assets/mobile-bg.mp4"></video>
         </div>
 
         <!-- Men's Player Carousel (Left) -->
@@ -994,21 +995,11 @@
          SECTION 4: TEAMS (Ultra-Modern)
          ======================================== -->
     <section class="section teams-section" id="teams">
-        <div class="teams-vector-bg">
-            <span class="tv-chevron"></span>
-            <span class="tv-triangle"></span>
-            <span class="tv-hex"></span>
-            <span class="tv-zigzag"></span>
-            <span class="tv-diamond"></span>
-            <span class="tv-arrow"></span>
-            <span class="tv-stripe"></span>
-        </div>
         <div class="container">
             <h2 class="section-title">Our Teams</h2>
             <div class="teams-grid-modern">
                 <div class="team-card-modern male-team-card" onclick="openMenRosterModal('men-players')">
                     <div class="team-card-bg">
-                        <div class="team-card-pattern"></div>
                         <div class="team-card-shine"></div>
                     </div>
                     <div class="team-card-content">
@@ -1051,20 +1042,19 @@
 
                 <div class="team-card-modern female-team-card" onclick="openRosterModal('players')">
                     <div class="team-card-bg">
-                        <div class="team-card-pattern"></div>
                         <div class="team-card-shine"></div>
                     </div>
                     <div class="team-card-content">
                         <div class="team-card-badge">
                             <svg viewBox="0 0 60 70" class="team-shield">
                                 <defs>
-                                    <linearGradient id="shieldGradW" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <linearGradient id="shieldGradF" x1="0%" y1="0%" x2="100%" y2="100%">
                                         <stop offset="0%" stop-color="#ec4899"/>
-                                        <stop offset="100%" stop-color="#8b5cf6"/>
+                                        <stop offset="100%" stop-color="#a855f7"/>
                                     </linearGradient>
                                 </defs>
-                                <path d="M30 5 L55 15 L55 35 C55 52 30 65 30 65 C30 65 5 52 5 35 L5 15 Z" fill="url(#shieldGradW)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-                                <text x="30" y="38" text-anchor="middle" fill="white" font-size="18" font-weight="900">Q</text>
+                                <path d="M30 5 L55 15 L55 35 C55 52 30 65 30 65 C30 65 5 52 5 35 L5 15 Z" fill="url(#shieldGradF)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                                <text x="30" y="38" text-anchor="middle" fill="white" font-size="18" font-weight="900">A</text>
                             </svg>
                         </div>
                         <h3 class="team-card-name">Women's Team</h3>
@@ -1100,15 +1090,6 @@
          SECTION 5: ACHIEVEMENTS / TROPHIES (Realistic)
          ======================================== -->
     <section class="section achievements-section" id="achievements">
-        <!-- Vector background elements -->
-        <div class="ach-geo-shapes">
-            <div class="ach-geo ach-geo-circle"></div>
-            <div class="ach-geo ach-geo-diamond"></div>
-            <div class="ach-geo ach-geo-triangle"></div>
-            <div class="ach-geo ach-geo-small-circle"></div>
-            <div class="ach-geo ach-geo-line"></div>
-            <div class="ach-geo ach-geo-grid"></div>
-        </div>
         <div class="ach-glow-orb ach-glow-orb-1"></div>
         <div class="ach-glow-orb ach-glow-orb-2"></div>
         <div class="ach-glow-orb ach-glow-orb-3"></div>
@@ -1128,7 +1109,7 @@
                 <div class="achievement-card-modern ach-1">
                     <div class="ach-trophy-wrap">
                         <div class="ach-trophy-icon">
-                            <img src="assets/trophy-gold.png" alt="National League Trophy" class="ach-trophy-img">
+                            <img src="assets/trophy-gold-sm.png" alt="National League Trophy" class="ach-trophy-img">
                         </div>
                     </div>
                     <div class="ach-content">
@@ -1144,7 +1125,7 @@
                 <div class="achievement-card-modern ach-2">
                     <div class="ach-trophy-wrap">
                         <div class="ach-trophy-icon">
-                            <img src="assets/trophy-silver.png" alt="Abia FA Cup Trophy" class="ach-trophy-img">
+                            <img src="assets/trophy-silver-sm.png" alt="Abia FA Cup Trophy" class="ach-trophy-img">
                         </div>
                     </div>
                     <div class="ach-content">
@@ -1160,7 +1141,7 @@
                 <div class="achievement-card-modern ach-3">
                     <div class="ach-trophy-wrap">
                         <div class="ach-trophy-icon">
-                            <img src="assets/trophy-gold-v2.png" alt="Super Cup Trophy" class="ach-trophy-img">
+                            <img src="assets/trophy-gold-v2-sm.png" alt="Super Cup Trophy" class="ach-trophy-img">
                         </div>
                     </div>
                     <div class="ach-content">
@@ -1176,7 +1157,7 @@
                 <div class="achievement-card-modern ach-4">
                     <div class="ach-trophy-wrap">
                         <div class="ach-trophy-icon">
-                            <img src="assets/trophy-gold-v3.png" alt="State Championship Trophy" class="ach-trophy-img">
+                            <img src="assets/trophy-gold-v3-sm.png" alt="State Championship Trophy" class="ach-trophy-img">
                         </div>
                     </div>
                     <div class="ach-content">
@@ -1192,7 +1173,7 @@
                 <div class="achievement-card-modern ach-5">
                     <div class="ach-trophy-wrap">
                         <div class="ach-trophy-icon">
-                            <img src="assets/trophy-bronze.png" alt="Presidential Cup Trophy" class="ach-trophy-img">
+                            <img src="assets/trophy-bronze-sm.png" alt="Presidential Cup Trophy" class="ach-trophy-img">
                         </div>
                     </div>
                     <div class="ach-content">
@@ -1376,7 +1357,7 @@
                     <div class="product-card">
                         <div class="image-container">
                             <span class="badge bestseller">bestseller</span>
-                            <img src="assets/jersey.jpg" alt="Home Kit">
+                            <img src="assets/jersey.png" alt="Home Kit">
                         </div>
                         <div class="product-title">HOME KIT 2026</div>
                         <div class="price-container">
@@ -1386,7 +1367,7 @@
                     </div>
                     <div class="product-card">
                         <div class="image-container">
-                            <img src="assets/scarf.jpg" alt="Club Scarf">
+                            <img src="assets/scarf.png" alt="Club Scarf">
                         </div>
                         <div class="product-title">MATCHDAY SCARF</div>
                         <div class="price-container">
@@ -1397,9 +1378,9 @@
                     <div class="product-card">
                         <div class="image-container">
                             <span class="badge sale">sale</span>
-                            <img src="assets/football.jpg" alt="Match Ball">
+                            <img src="assets/football.png" alt="Match Ball">
                         </div>
-                        <div class="product-title">CLUB FOOTBALL</div>
+                        <div class="product-title">CLUB FOOTBALL SHORT</div>
                         <div class="price-container">
                             <span class="price-normal">N8,000</span>
                         </div>
@@ -1407,7 +1388,7 @@
                     </div>
                     <div class="product-card">
                         <div class="image-container">
-                            <img src="assets/cap.jpg" alt="Club Cap">
+                            <img src="assets/cap.png" alt="Club Cap">
                         </div>
                         <div class="product-title">TEAM CAP</div>
                         <div class="price-container">
@@ -1418,7 +1399,7 @@
                     <div class="product-card">
                         <div class="image-container">
                             <span class="badge limited">limited</span>
-                            <img src="assets/jacket.jpg" alt="Anthem Jacket">
+                            <img src="assets/jacket.png" alt="Anthem Jacket">
                         </div>
                         <div class="product-title">ANTHEM JACKET</div>
                         <div class="price-container">
@@ -1428,7 +1409,7 @@
                     </div>
                     <div class="product-card">
                         <div class="image-container">
-                            <img src="assets/shorts.jpg" alt="Shorts">
+                            <img src="assets/shorts.png" alt="Shorts">
                         </div>
                         <div class="product-title">SHORTS 2026</div>
                         <div class="price-container">
@@ -1439,7 +1420,7 @@
                     <div class="product-card">
                         <div class="image-container">
                             <div class="stock-banner">Out of Stock</div>
-                            <img src="assets/training.jpg" alt="Training Top">
+                            <img src="assets/training.png" alt="Training Top">
                         </div>
                         <div class="product-title">TRAINING TOP</div>
                         <div class="price-container">
