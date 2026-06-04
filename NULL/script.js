@@ -128,14 +128,14 @@ const allMatches = [
     {
         id: 'men-1',
         league: 'men',
-        leagueLogo: 'assets/nlo-logo.png',
+        leagueLogo: '../All Asset/assets/nlo-logo.png',
         leagueName: 'NLO Abia Centre',
         matchDate: '2026-06-14T15:00:00',
         score: null,
         status: 'upcoming',
         homeTeam: 'Ahudiyannem FC',
         homeCity: 'Abiriba, Abia State',
-        homeLogo: 'assets/logo.png',
+        homeLogo: '../All Asset/assets/logo.png',
         awayTeam: 'Galadima FC',
         awayCity: 'Abia State',
         awayLogo: null,
@@ -147,7 +147,7 @@ const allMatches = [
     {
         id: 'men-2',
         league: 'men',
-        leagueLogo: 'assets/nlo-logo.png',
+        leagueLogo: '../All Asset/assets/nlo-logo.png',
         leagueName: 'NLO Abia Centre',
         matchDate: '2026-06-07T15:00:00',
         score: null,
@@ -157,7 +157,7 @@ const allMatches = [
         homeLogo: null,
         awayTeam: 'Ahudiyannem FC',
         awayCity: 'Abiriba, Abia State',
-        awayLogo: 'assets/logo.png',
+        awayLogo: '../All Asset/assets/logo.png',
         stadium: 'Ubakala Mini Stadium',
         city: 'Ubakala, Umuahia',
         hostDesc: 'Right 2 Win FC Abia, current league leaders, host Ahudiyannem FC in a top-of-the-table NLO clash. The home side has been formidable this season with an impressive goal difference.',
@@ -167,14 +167,14 @@ const allMatches = [
     {
         id: 'women-1',
         league: 'women',
-        leagueLogo: 'assets/nwfl-logo.png',
+        leagueLogo: '../All Asset/assets/nwfl-logo.png',
         leagueName: 'NWFL Premiership',
         matchDate: '2026-06-10T16:00:00',
         score: null,
         status: 'upcoming',
         homeTeam: 'Ahudiyannem Queens',
         homeCity: 'Abiriba, Abia State',
-        homeLogo: 'assets/logo.png',
+        homeLogo: '../All Asset/assets/logo.png',
         awayTeam: 'Remo Stars Ladies',
         awayCity: 'Ogun State',
         awayLogo: null,
@@ -186,14 +186,14 @@ const allMatches = [
     {
         id: 'women-2',
         league: 'women',
-        leagueLogo: 'assets/nwfl-logo.png',
+        leagueLogo: '../All Asset/assets/nwfl-logo.png',
         leagueName: 'NWFL Premiership',
         matchDate: '2026-05-03T16:00:00',
         score: '0 - 2',
         status: 'concluded',
         homeTeam: 'Ahudiyannem Queens',
         homeCity: 'Abiriba, Abia State',
-        homeLogo: 'assets/logo.png',
+        homeLogo: '../All Asset/assets/logo.png',
         awayTeam: 'Nasarawa Amazons',
         awayCity: 'Lafia, Nasarawa State',
         awayLogo: null,
@@ -205,14 +205,14 @@ const allMatches = [
     {
         id: 'women-3',
         league: 'women',
-        leagueLogo: 'assets/nwfl-logo.png',
+        leagueLogo: '../All Asset/assets/nwfl-logo.png',
         leagueName: 'NWFL Premiership',
         matchDate: '2026-04-26T16:00:00',
         score: '3 - 0',
         status: 'concluded',
         homeTeam: 'Ahudiyannem Queens',
         homeCity: 'Abiriba, Abia State',
-        homeLogo: 'assets/logo.png',
+        homeLogo: '../All Asset/assets/logo.png',
         awayTeam: 'Osun Babes',
         awayCity: 'Osogbo, Osun State',
         awayLogo: null,
@@ -225,14 +225,14 @@ const allMatches = [
     {
         id: 'friendly-1',
         league: 'friendly',
-        leagueLogo: 'assets/logo.png',
+        leagueLogo: '../All Asset/assets/logo.png',
         leagueName: 'Friendly Match',
         matchDate: '2026-06-28T17:00:00',
         score: null,
         status: 'upcoming',
         homeTeam: 'Ahudiyannem FC',
         homeCity: 'Abiriba, Abia State',
-        homeLogo: 'assets/logo.png',
+        homeLogo: '../All Asset/assets/logo.png',
         awayTeam: 'Abia Comets',
         awayCity: 'Umuahia, Abia State',
         awayLogo: null,
@@ -298,8 +298,8 @@ function updateMatchCards() {
         const hours = date.getHours().toString().padStart(2, '0');
         const mins = date.getMinutes().toString().padStart(2, '0');
         
-        const logo1 = match.homeLogo || 'assets/logo.png';
-        const logo2 = match.awayLogo || 'assets/logo.png';
+        const logo1 = match.homeLogo || '../All Asset/assets/logo.png';
+        const logo2 = match.awayLogo || '../All Asset/assets/logo.png';
         
         const statusText = liveStatus === 'concluded' ? 'FULL TIME' : (liveStatus === 'live' ? 'LIVE NOW' : `${hours}:${mins} WAT`);
         
@@ -438,11 +438,11 @@ function openModal(matchId) {
         }
     }
     
-    document.getElementById('modalHomeLogo').src = match.homeLogo || 'assets/logo.png';
+    document.getElementById('modalHomeLogo').src = match.homeLogo || '../All Asset/assets/logo.png';
     document.getElementById('modalHomeTeam').textContent = match.homeTeam;
     document.getElementById('modalHomeCity').textContent = match.homeCity;
     
-    document.getElementById('modalAwayLogo').src = match.awayLogo || 'assets/logo.png';
+    document.getElementById('modalAwayLogo').src = match.awayLogo || '../All Asset/assets/logo.png';
     document.getElementById('modalAwayTeam').textContent = match.awayTeam;
     document.getElementById('modalAwayCity').textContent = match.awayCity;
     
@@ -600,7 +600,7 @@ function closeNewsModal() {
 
 // Initialize news tiles click handlers
 document.addEventListener('DOMContentLoaded', function() {
-    const tiles = document.querySelectorAll('.tile');
+    const tiles = document.querySelectorAll('.news-card');
     tiles.forEach(tile => {
         tile.addEventListener('click', function() {
             openNewsModal(this);
@@ -903,171 +903,6 @@ function init() {
     });
 })();
 
-// ROSTER MODAL FUNCTIONS
-function openRosterModal(tab = 'players') {
-    const modal = document.getElementById('rosterModal');
-    if (modal) {
-        modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-        
-        // Generate players if not already generated
-        const playerGrid = document.getElementById('roster-players');
-        if (playerGrid && playerGrid.children.length === 0) {
-            generatePlayers(playerGrid, 40);
-        }
-        
-        // Generate staff if not already generated
-        const staffGrid = document.getElementById('roster-staff');
-        if (staffGrid && staffGrid.children.length === 0) {
-            generateStaff(staffGrid);
-        }
-        
-        // Show specified tab
-        if (tab === 'staff') {
-            showRosterTab('roster-staff', document.querySelector('#rosterModal .roster-tab-btn:last-child'));
-        } else {
-            showRosterTab('roster-players', document.querySelector('#rosterModal .roster-tab-btn:first-child'));
-        }
-    }
-}
-
-function closeRosterModal() {
-    const modal = document.getElementById('rosterModal');
-    if (modal) {
-        modal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    }
-}
-
-function showRosterTab(tabId, btn) {
-    const modal = btn.closest('.roster-modal');
-    modal.querySelectorAll('.roster-container').forEach(el => el.classList.remove('active'));
-    modal.querySelectorAll('.roster-tab-btn').forEach(el => el.classList.remove('active'));
-    
-    document.getElementById(tabId).classList.add('active');
-    if (btn) btn.classList.add('active');
-}
-
-// MEN'S ROSTER MODAL FUNCTIONS
-function openMenRosterModal(tab = 'men-players') {
-    const modal = document.getElementById('menRosterModal');
-    if (modal) {
-        modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-        
-        // Generate players if not already generated (33 for men)
-        const playerGrid = document.getElementById('men-roster-players');
-        if (playerGrid && playerGrid.children.length === 0) {
-            generateMenPlayers(playerGrid, 33);
-        }
-        
-        // Generate staff if not already generated
-        const staffGrid = document.getElementById('men-roster-staff');
-        if (staffGrid && staffGrid.children.length === 0) {
-            generateMenStaff(staffGrid);
-        }
-        
-        // Show specified tab
-        if (tab === 'men-staff') {
-            showMenRosterTab('men-roster-staff', document.querySelector('#menRosterModal .roster-tab-btn:last-child'));
-        } else {
-            showMenRosterTab('men-roster-players', document.querySelector('#menRosterModal .roster-tab-btn:first-child'));
-        }
-    }
-}
-
-function closeMenRosterModal() {
-    const modal = document.getElementById('menRosterModal');
-    if (modal) {
-        modal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    }
-}
-
-function showMenRosterTab(tabId, btn) {
-    const modal = btn.closest('.roster-modal');
-    modal.querySelectorAll('.roster-container').forEach(el => el.classList.remove('active'));
-    modal.querySelectorAll('.roster-tab-btn').forEach(el => el.classList.remove('active'));
-    
-    document.getElementById(tabId).classList.add('active');
-    if (btn) btn.classList.add('active');
-}
-
-function generatePlayers(container, count) {
-    for (let i = 1; i <= count; i++) {
-        const card = document.createElement('div');
-        card.className = 'roster-card';
-        card.innerHTML = `
-            <div class="roster-number">${i}</div>
-            <img src="https://placeholder.com/300x360?text=Player+${i}" class="roster-photo" alt="Player ${i}">
-            <div class="roster-name">PLAYER NAME</div>
-        `;
-        container.appendChild(card);
-    }
-}
-
-function generateMenPlayers(container, count) {
-    for (let i = 1; i <= count; i++) {
-        const card = document.createElement('div');
-        card.className = 'roster-card';
-        card.innerHTML = `
-            <div class="roster-number">${i}</div>
-            <img src="https://placeholder.com/300x360?text=Player+${i}" class="roster-photo" alt="Player ${i}">
-            <div class="roster-name">PLAYER NAME</div>
-        `;
-        container.appendChild(card);
-    }
-}
-
-function generateStaff(container) {
-    const staffTitles = ["HEAD COACH", "ASSISTANT COACH", "MANAGER", "PHYSIO", "TRAINER"];
-    for (let i = 0; i < 5; i++) {
-        const card = document.createElement('div');
-        card.className = 'roster-card';
-        card.innerHTML = `
-            <div class="roster-number">${i + 1}</div>
-            <img src="https://placeholder.com/300x360?text=${staffTitles[i]}" class="roster-photo" alt="${staffTitles[i]}">
-            <div class="roster-name">${staffTitles[i]}</div>
-        `;
-        container.appendChild(card);
-    }
-}
-
-function generateMenStaff(container) {
-    const staffTitles = ["HEAD COACH", "ASSISTANT COACH", "MANAGER", "PHYSIO", "TRAINER"];
-    for (let i = 0; i < 5; i++) {
-        const card = document.createElement('div');
-        card.className = 'roster-card';
-        card.innerHTML = `
-            <div class="roster-number">${i + 1}</div>
-            <img src="https://placeholder.com/300x360?text=${staffTitles[i]}" class="roster-photo" alt="${staffTitles[i]}">
-            <div class="roster-name">${staffTitles[i]}</div>
-        `;
-        container.appendChild(card);
-    }
-}
-
-// Close modal on Escape key
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-        closeRosterModal();
-        closeMenRosterModal();
-    }
-});
-
-// Close modal when clicking outside content
-document.addEventListener('click', function(e) {
-    const modal = document.getElementById('rosterModal');
-    if (modal && e.target === modal) {
-        closeRosterModal();
-    }
-    
-    const menModal = document.getElementById('menRosterModal');
-    if (menModal && e.target === menModal) {
-        closeMenRosterModal();
-    }
-});
-
 // FUTURISTIC RESULTS TOGGLE
 function toggleFuturisticResults(tab) {
     const mens = document.getElementById('futuristicMens');
@@ -1189,8 +1024,8 @@ function updateBannerMatch(gender) {
     
     var ahudiyannemName = match.homeTeam.indexOf('Ahudiyannem') !== -1 ? match.homeTeam : match.awayTeam;
     var opponentName = match.homeTeam.indexOf('Ahudiyannem') !== -1 ? match.awayTeam : match.homeTeam;
-    var ahudiyannemLogo = match.homeTeam.indexOf('Ahudiyannem') !== -1 ? (match.homeLogo || 'assets/logo.png') : (match.awayLogo || 'assets/logo.png');
-    var opponentLogo = match.homeTeam.indexOf('Ahudiyannem') !== -1 ? (match.awayLogo || 'assets/logo.png') : (match.homeLogo || 'assets/logo.png');
+    var ahudiyannemLogo = match.homeTeam.indexOf('Ahudiyannem') !== -1 ? (match.homeLogo || '../All Asset/assets/logo.png') : (match.awayLogo || '../All Asset/assets/logo.png');
+    var opponentLogo = match.homeTeam.indexOf('Ahudiyannem') !== -1 ? (match.awayLogo || '../All Asset/assets/logo.png') : (match.homeLogo || '../All Asset/assets/logo.png');
     
     var teamA = document.getElementById('bannerTeamA');
     var teamB = document.getElementById('bannerTeamB');
@@ -1388,8 +1223,8 @@ function openFixtureModal(matchId) {
     var timeStr = hours + ':' + mins + ' WAT';
     
     var isAhudiyannemHome = match.homeTeam.indexOf('Ahudiyannem') !== -1;
-    var ahudiyannemLogo = isAhudiyannemHome ? (match.homeLogo || 'assets/logo.png') : (match.awayLogo || 'assets/logo.png');
-    var opponentLogo = isAhudiyannemHome ? (match.awayLogo || 'assets/logo.png') : (match.homeLogo || 'assets/logo.png');
+    var ahudiyannemLogo = isAhudiyannemHome ? (match.homeLogo || '../All Asset/assets/logo.png') : (match.awayLogo || '../All Asset/assets/logo.png');
+    var opponentLogo = isAhudiyannemHome ? (match.awayLogo || '../All Asset/assets/logo.png') : (match.homeLogo || '../All Asset/assets/logo.png');
     
     document.getElementById('modalHomeLogo').src = ahudiyannemLogo;
     document.getElementById('modalHomeName').textContent = isAhudiyannemHome ? match.homeTeam : match.awayTeam;

@@ -343,7 +343,7 @@ body {
     right: 12px;
     width: auto;
     height: 4.5in;
-    background: url('../assets/dropbck.png') center/cover no-repeat;
+    background: url('../All Asset/assets/dropbck.png') center/cover no-repeat;
     border: none;
     opacity: 0;
     visibility: hidden;
