@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahudiyannem Football Club</title>
+    <link rel="icon" href="All Asset/assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css?v=18">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Saira:wght@400;500;600;700&family=Playwrite+IE:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/../css/all.min.css">
+    <link rel="preload" as="image" href="All Asset/news_asset/news1.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="All Asset/news_asset/news2.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="All Asset/news_asset/news3.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="All Asset/news_asset/news4.jpg">
+    <link rel="preload" as="image" href="All Asset/news_asset/news5.jpg">
+    <link rel="preload" as="image" href="All Asset/news_asset/news6.jpg">
+<style>
+@media (max-width: 900px) {
+    .carousel-viewport { display: none !important; }
+    .hero-cta { flex-direction: column !important; gap: 12px; align-items: center; }
+    .hero-mobile-video { display: block; opacity: 0.15; }
+}
+</style>
+</head>
+<body>
+    <!-- Liquid Morph Background -->
+    <div class="liquid-bg" aria-hidden="true">
+        <svg class="liquid-svg-filter" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur"/>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="goo"/>
+                    <feBlend in="SourceGraphic" in2="goo"/>
+                </filter>
+            </defs>
+        </svg>
+        <div class="liquid-blob b1"></div>
+        <div class="liquid-blob b2"></div>
+        <div class="liquid-blob b3"></div>
+        <div class="liquid-blob b4"></div>
+        <div class="liquid-blob b5"></div>
+    </div>
+
+    <!-- ========================================
+         SECTION 1: HEADER
+         ======================================== -->
+    <header class="header" id="mainHeader">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <img src="All Asset/assets/logo.png" alt="Logo" class="logo-img" id="logoImg">
+                <span class="logo-text" id="logoText">Ahudiyannem FC</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#watch" class="nav-link">Watch</a>
+                        <div class="dropdown">
+                            <div class="dropdown-wrapper">
+                                <div class="dropdown-left">
+                                    <h4 class="dropdown-header">Watch</h4>
+                                    <div class="dropdown-links-grid">
+                                        <a href="https://www.youtube.com/@AhudiyannemFC2" target="_blank" class="dropdown-item">Men's TV</a>
+                                        <a href="https://www.youtube.com/@ahudiyannemqueensfc" target="_blank" class="dropdown-item">Women's TV</a>
+                                        <a href="https://www.youtube.com/@ahudiyannemqueensfc" target="_blank" class="dropdown-item">Podcasts</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-right">
+                                    <div class="logo-box">
+                                        <img src="All Asset/assets/logo.png" alt="Ahudiyannem FC Logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="All HTML/News.html" class="nav-link">News</a>
+                        <div class="dropdown">
+                            <div class="dropdown-wrapper">
+                                <div class="dropdown-left">
+                                    <h4 class="dropdown-header">News</h4>
+                                    <div class="dropdown-links-grid">
+                                        <a href="All HTML/News.html" class="dropdown-item">Latest News</a>
+                                        <a href="All HTML/News.html" class="dropdown-item">Match Reports</a>
+                                        <a href="All HTML/News.html" class="dropdown-item">Interviews</a>
+                                        <a href="All HTML/News.html" class="dropdown-item">Press Releases</a>
+                                        <a href="All HTML/Achievement.html" class="dropdown-item">Achievements</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-right">
+                                    <div class="logo-box">
+                                        <img src="All Asset/assets/logo.png" alt="Ahudiyannem FC Logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="All HTML/men-team.html" class="nav-link">Men's Team</a>
+                        <div class="dropdown">
+                            <div class="dropdown-wrapper">
+                                <div class="dropdown-left">
+                                    <h4 class="dropdown-header">Men's Team</h4>
+                                    <div class="dropdown-links-grid">
+                                        <a href="#futuristicResults" class="dropdown-item">Fixtures/Results/Table</a>
+                                        <a href="#news" class="dropdown-item">Latest News</a>
+                                        <a href="#results" class="dropdown-item">Match Report</a>
+                                        <a href="All HTML/men-team.html" class="dropdown-item">Players Profile</a>
+                                        <a href="All HTML/men-team.html#staff" class="dropdown-item">Coaching Crew</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-right">
+                                    <div class="logo-box">
+                                        <img src="All Asset/assets/logo.png" alt="Ahudiyannem FC Logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="All HTML/women-team.html" class="nav-link">Women's Team</a>
+                        <div class="dropdown">
+                            <div class="dropdown-wrapper">
+                                <div class="dropdown-left">
+                                    <h4 class="dropdown-header">Women's Team</h4>
+                                    <div class="dropdown-links-grid">
+                                        <a href="#futuristicResults" class="dropdown-item" onclick="toggleFuturisticResults('womens')">Fixtures/Results/Table</a>
+                                        <a href="#news" class="dropdown-item">Latest News</a>
+                                        <a href="#results" class="dropdown-item">Match Report</a>
+                                        <a href="All HTML/women-team.html" class="dropdown-item">Players Profile</a>
+                                        <a href="All HTML/women-team.html#staff" class="dropdown-item">Coaching Crew</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-right">
+                                    <div class="logo-box">
+                                        <img src="All Asset/assets/logo.png" alt="Ahudiyannem Women Logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="All HTML/our-fixtures.html" class="nav-link">Fixtures</a>
+                        <div class="dropdown">
+                            <div class="dropdown-wrapper">
+                                <div class="dropdown-left">
+                                    <h4 class="dropdown-header">Fixtures & Tickets</h4>
+                                    <div class="dropdown-links-grid">
+                                        <a href="All HTML/our-fixtures.html" class="dropdown-item">Men's Fixtures</a>
+                                        <a href="All HTML/our-fixtures.html" class="dropdown-item">Women's Fixtures</a>
+                                        <a href="#" class="dropdown-item">Buy Tickets</a>
+                                        <a href="#" class="dropdown-item">Stadium Info</a>
+                                        <a href="#" class="dropdown-item">Fan Packages</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-right">
+                                    <div class="logo-box">
+                                        <img src="All Asset/assets/logo.png" alt="Ahudiyannem FC Logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="All HTML/our-results.html" class="nav-link">Results</a>
+                        <div class="dropdown">
+                            <div class="dropdown-wrapper">
+                                <div class="dropdown-left">
+                                    <h4 class="dropdown-header">Results</h4>
+                                    <div class="dropdown-links-grid">
+                                        <a href="All HTML/our-results.html" class="dropdown-item">Men's Results</a>
+                                        <a href="All HTML/our-results.html" class="dropdown-item">Women's Results</a>
+                                        <a href="All HTML/our-results.html" class="dropdown-item">Match Reports</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-right">
+                                    <div class="logo-box">
+                                        <img src="All Asset/assets/logo.png" alt="Ahudiyannem FC Logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="All HTML/store.html" class="nav-link shop-btn-web3">Shop</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileOverlay">
+        <div class="mobile-wave-bg">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+            <div class="wave wave-4"></div>
+        </div>
+        <button class="close-mobile-menu" id="closeMenu">&times;</button>
+        <nav class="mobile-nav-links">
+            <a href="#">Home</a>
+            <a href="#watch">Watch</a>
+            <a href="All HTML/News.html">News</a>
+            <a href="All HTML/men-team.html">Men's Team</a>
+            <a href="All HTML/women-team.html">Women's Team</a>
+            <a href="#ourFixtures">Fixtures & Tickets</a>
+            <a href="All HTML/store.html" class="mobile-cta">Shop</a>
+        </nav>
+    </div>
+    
+    <!-- END SECTION 1: HEADER -->
+
+    <!-- ========================================
+         SECTION 1B: BANNER / HERO
+         ======================================== -->
+    <section class="hero-banner" id="hero">
+        <div class="hero-bg">
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-particles">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Background Video -->
+        <div class="hero-mobile-video">
+            <video autoplay muted loop playsinline src="All Asset/assets/mobile-bg.mp4"></video>
+        </div>
+
+        <!-- Men's Player Carousel (Left) -->
+        <div class="carousel-viewport left-pos" data-no-anim
+             onmouseover="startLeftRotation()" onmouseout="stopLeftRotation()">
+            <div class="carousel-3d" id="leftCarousel">
+                <div class="carousel-item"><img src="All Asset/Carousel Assets/BRIGHT BONIFACE.png" alt=""></div>
+                <div class="carousel-item"><img src="All Asset/Carousel Assets/IYIABO MONIMA.png" alt=""></div>
+                <div class="carousel-item"><img src="All Asset/Carousel Assets/NNAH NWANERI ADANNA GLORIA.png" alt=""></div>
+                <div class="carousel-item"><img src="All Asset/Carousel Assets/SEYI EBENEZER.png" alt=""></div>
+            </div>
+        </div>
+
+        <!-- Women's Player Carousel (Right) -->
+        <div class="carousel-viewport right-pos" data-no-anim
+             onmouseover="startRightRotation()" onmouseout="stopRightRotation()">
+            <div class="carousel-3d" id="rightCarousel">
+                <div class="carousel-item"><img src="All Asset/Carousel Assets/EBOTH DRAX KIM BATE(F).png" alt=""></div>
+                <div class="carousel-item"><img src="All Asset/Carousel Assets/KEHINDE ENIOLA(F).png" alt=""></div>
+                <div class="carousel-item"><img src="All Asset/Carousel Assets/MARY POPOOLA(F).png" alt=""></div>
+                <div class="carousel-item"><img src="All Asset/Carousel Assets/SEYI EBENEZER (F).png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge" data-reveal>Ahudiyannem Football Club</div>
+            <h1 class="hero-title" data-reveal>Where Passion<br><span class="hero-highlight">Meets Glory</span></h1>
+            <p class="hero-subtitle" data-reveal>Abiriba  •  Abia State  •  Nigeria</p>
+            <div class="hero-cta" data-reveal>
+                <a href="#news" class="hero-btn hero-btn-primary"><span class="btn-text">Latest News</span><span class="btn-wipe"></span></a>
+                <a href="#" class="hero-btn hero-btn-live" id="liveBtn" onclick="event.preventDefault();">
+                    <span class="btn-text">Live</span><span class="btn-wipe"></span>
+                </a>
+                <a href="#futuristicResults" class="hero-btn hero-btn-secondary"><span class="btn-text">View Results</span><span class="btn-wipe"></span></a>
+            </div>
+        </div>
+        <div class="hero-bottom-cycle">
+            <div class="hero-flash-indicator">
+                <span class="flash-arrow">↑</span>
+                <span class="flash-text">click to watch our live matches here</span>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 1B: BANNER / HERO -->
+
+    <!-- ========================================
+         SECTION 1C: WELCOME ABOUT
+         ======================================== -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-card">
+                <img src="All Asset/assets/logo.png" alt="Ahudiyannem FC" class="about-logo">
+                <h2 class="about-title">WELCOME TO AHUDIYANNEM<br><span class="about-title-highlight">FOOTBALL CLUB</span></h2>
+                <div class="about-divider"></div>
+                <p class="about-text">Ahudiyannem Football Club, founded by Dr. Robert Daniel Onyeani, is a Nigerian football club based in Abiriba, Abia State. The club has rapidly risen through the ranks of Nigerian football, with the men's team competing in the NLO 2026 (Nationwide League One) and the women's team (Ahudiyannem Queens) competing in the NWFL Premiership — the highest women's league in Nigeria.</p>
+                <p class="about-text">The men's team are the champions of the 2025 Abia State Presidential Cup (State FA Cup), a historic achievement that marked the club as one of Abia's brightest football prospects. They now compete in the NLO 2026, flying the flag of Abia State in the Nationwide League.</p>
+                <p class="about-text">The women's team, Ahudiyannem Queens, gained promotion to the Nigeria Women Football League (NWFL) Premiership in 2025, competing against the best teams in the country. They are the reigning champions of the Abia State FA Cup (Women), having retained their title as back-to-back champions of the Abia State Presidential Cup for the second consecutive year. Known for resilience, teamwork, and an unbreakable fighting spirit, Ahudiyannem FC continues to grow and make its mark on Nigerian football.</p>
+                <div class="about-stats">
+                    <div class="about-stat"><span class="stat-num">2025</span><span class="stat-label">Abia FA Cup</span></div>
+                    <div class="about-stat"><span class="stat-num">2026</span><span class="stat-label">Presidential Cup</span></div>
+                    <div class="about-stat"><span class="stat-num">NWFL</span><span class="stat-label">Premiership</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 1C: WELCOME ABOUT -->
+
+<!-- ========================================
+     SECTION 2C: UPCOMING MATCH DAY
+     ======================================== -->
+    <section class="match-banner-section" id="matchBanner">
+        <div class="container">
+            <div class="match-banner-inner">
+                <!-- Left: Title Block -->
+                <div class="banner-title-block scroll-trigger delay-1">
+                    <span class="banner-title-white">Upcoming</span>
+                    <span class="banner-title-neon">Match</span>
+                    <div class="banner-title-row">
+                        <div class="banner-ball-icon"></div>
+                        <span class="banner-title-white">Day</span>
+                    </div>
+                </div>
+
+                <!-- Right: Matchup Panel -->
+                <div class="banner-matchup-block">
+                    <!-- Toggle Men/Women -->
+                    <div class="banner-toggle">
+                        <button class="banner-toggle-btn active" id="bannerToggleMen" onclick="switchBannerGender('men')">Men</button>
+                        <button class="banner-toggle-btn" id="bannerToggleWomen" onclick="switchBannerGender('women')">Women</button>
+                    </div>
+
+                    <!-- VS Box -->
+                    <div class="banner-vs-box scroll-trigger delay-2">
+                        <div class="banner-teams-row">
+                            <div class="banner-team banner-team-a">
+                                <div class="banner-logo-slot">
+                                    <img src="All Asset/assets/logo.png" alt="Ahudiyannem" class="banner-logo-img" id="bannerLogoA">
+                                </div>
+                                <span class="banner-team-name" id="bannerTeamA">AHUDIYANNEM FC</span>
+                            </div>
+                            <div class="banner-vs-text">VS</div>
+                            <div class="banner-team banner-team-b">
+                                <div class="banner-logo-slot">
+                                    <img src="All Asset/assets/logo.png" alt="Opponent" class="banner-logo-img" id="bannerLogoB">
+                                </div>
+                                <span class="banner-team-name" id="bannerTeamB">OPPONENT</span>
+                            </div>
+                        </div>
+                        <div class="banner-schedule-info" id="bannerSchedule">SATURDAY, 09 APR 2026 AT 15:00 WAT</div>
+                    </div>
+
+                    <!-- Countdown -->
+                    <div class="banner-countdown scroll-trigger delay-3">
+                        <div class="banner-count-block">
+                            <span class="banner-count-num" id="bannerDays">00</span>
+                            <span class="banner-count-label">DAYS</span>
+                        </div>
+                        <span class="banner-count-divider">:</span>
+                        <div class="banner-count-block">
+                            <span class="banner-count-num" id="bannerHours">00</span>
+                            <span class="banner-count-label">HOURS</span>
+                        </div>
+                        <span class="banner-count-divider">:</span>
+                        <div class="banner-count-block">
+                            <span class="banner-count-num" id="bannerMins">00</span>
+                            <span class="banner-count-label">MINS</span>
+                        </div>
+                        <span class="banner-count-divider">:</span>
+                        <div class="banner-count-block">
+                            <span class="banner-count-num" id="bannerSecs">00</span>
+                            <span class="banner-count-label">SECS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 2C: UPCOMING MATCH BANNER -->
+
+    <!-- ========================================
+         SECTION 2B: UPCOMING MATCHES
+         ======================================== -->
+    <section class="match-section" id="matchSection">
+        <div class="container">
+            <h2 class="section-title">Upcoming Matches</h2>
+            
+            <!-- Category Tabs -->
+            <div class="tabs">
+                <button class="active" onclick="filterMatches('all', this)">All Category</button>
+                <button onclick="filterMatches('men', this)">Men</button>
+                <button onclick="filterMatches('women', this)">Women</button>
+                <button onclick="filterMatches('friendly', this)">Friendly</button>
+            </div>
+
+            <!-- Slider Container -->
+            <div class="slider-wrapper">
+                <button class="nav-btn prev" onclick="slideMatches('prev')">&#10094;</button>
+                
+                <div class="match-slider" id="matchSlider" data-no-anim>
+                    <!-- Match Card - Result (Women: Ahudiyannem Queens 3-0 Osun Babes) -->
+                    <div class="match-card result-card" data-category="women" data-match-id="match-1">
+                        <div class="league-info">
+                            <img src="All Asset/assets/nwfl-logo.png" alt="NWFL" class="league-badge">
+                            <p>NWFL Premiership<br><span>26 Apr 2026 • FULL TIME</span></p>
+                        </div>
+                        <div class="date-large">26 Apr</div>
+                        <div class="teams">
+                            <div class="team">
+                                <img src="All Asset/assets/logo.png" alt="Ahudiyannem" class="team-img">
+                                <span class="team-name">Ahudiyannem Queens</span>
+                            </div>
+                            <div class="score">3 - 0</div>
+                            <div class="team">
+                                <div class="team-logo">OB</div>
+                                <span class="team-name">Osun Babes</span>
+                            </div>
+                        </div>
+                        <div class="venue">Umuahia Township Stadium, Abia</div>
+                    </div>
+
+                    <!-- Match Card - Men's Result (Ahudiyannem 1-2 Plateau United) -->
+                    <div class="match-card result-card" data-category="men" data-match-id="match-2">
+                        <div class="league-info">
+                            <img src="All Asset/assets/nlo-logo.png" alt="NLO" class="league-badge">
+                            <p>President Federation Cup R64<br><span>19 May 2026 • FULL TIME</span></p>
+                        </div>
+                        <div class="date-large">19 May</div>
+                        <div class="teams">
+                            <div class="team">
+                                <img src="All Asset/assets/logo.png" alt="Ahudiyannem" class="team-img">
+                                <span class="team-name">Ahudiyannem FC</span>
+                            </div>
+                            <div class="score">1 - 2</div>
+                            <div class="team">
+                                <div class="team-logo">PU</div>
+                                <span class="team-name">Plateau United</span>
+                            </div>
+                        </div>
+                        <div class="venue">Ubakala Mini Stadium, Umuahia</div>
+                    </div>
+
+                    <!-- Match Card - Upcoming Men's -->
+                    <div class="match-card" data-category="men" data-match-id="match-3">
+                        <div class="league-info">
+                            <img src="All Asset/assets/nlo-logo.png" alt="NLO" class="league-badge">
+                            <p>NLO Abia Centre<br><span>07 Jun 2026 • 3:00 PM</span></p>
+                        </div>
+                        <div class="date-large">07 Jun</div>
+                        <div class="teams">
+                            <div class="team">
+                                <div class="team-logo">RW</div>
+                                <span class="team-name">Right 2 Win FC</span>
+                            </div>
+                            <div class="vs-text">VS</div>
+                            <div class="team">
+                                <img src="All Asset/assets/logo.png" alt="Ahudiyannem" class="team-img">
+                                <span class="team-name">Ahudiyannem FC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Match Card - Upcoming Women's -->
+                    <div class="match-card" data-category="women" data-match-id="match-4">
+                        <div class="league-info">
+                            <img src="All Asset/assets/nwfl-logo.png" alt="NWFL" class="league-badge">
+                            <p>NWFL Premiership<br><span>10 Jun 2026 • 4:00 PM</span></p>
+                        </div>
+                        <div class="date-large">10 Jun</div>
+                        <div class="teams">
+                            <div class="team">
+                                <img src="All Asset/assets/logo.png" alt="Ahudiyannem" class="team-img">
+                                <span class="team-name">Ahudiyannem Queens</span>
+                            </div>
+                            <div class="vs-text">VS</div>
+                            <div class="team">
+                                <div class="team-logo">RL</div>
+                                <span class="team-name">Remo Stars Ladies</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Match Card - Friendly -->
+                    <div class="match-card" data-category="friendly" data-match-id="match-5">
+                        <div class="league-info">
+                            <img src="All Asset/assets/logo.png" alt="Friendly" class="league-badge">
+                            <p>Friendly Match<br><span>28 Jun 2026 • 5:00 PM</span></p>
+                        </div>
+                        <div class="date-large">28 Jun</div>
+                        <div class="teams">
+                            <div class="team">
+                                <img src="All Asset/assets/logo.png" alt="Ahudiyannem" class="team-img">
+                                <span class="team-name">Ahudiyannem FC</span>
+                            </div>
+                            <div class="vs-text">VS</div>
+                            <div class="team">
+                                <div class="team-logo">AC</div>
+                                <span class="team-name">Abia Comets</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Match Card - Result (Women: Ahudiyannem 0-2 Nasarawa) -->
+                    <div class="match-card result-card" data-category="women" data-match-id="match-6">
+                        <div class="league-info">
+                            <img src="All Asset/assets/nwfl-logo.png" alt="NWFL" class="league-badge">
+                            <p>NWFL Premiership<br><span>03 May 2026 • FULL TIME</span></p>
+                        </div>
+                        <div class="date-large">03 May</div>
+                        <div class="teams">
+                            <div class="team">
+                                <img src="All Asset/assets/logo.png" alt="Ahudiyannem" class="team-img">
+                                <span class="team-name">Ahudiyannem Queens</span>
+                            </div>
+                            <div class="score">0 - 2</div>
+                            <div class="team">
+                                <div class="team-logo">NA</div>
+                                <span class="team-name">Nasarawa Amazons</span>
+                            </div>
+                        </div>
+                        <div class="venue">Umuahia Township Stadium, Abia</div>
+                    </div>
+
+                    <!-- Match Card - Upcoming Men's Home -->
+                    <div class="match-card" data-category="men" data-match-id="match-7">
+                        <div class="league-info">
+                            <img src="All Asset/assets/nlo-logo.png" alt="NLO" class="league-badge">
+                            <p>NLO Abia Centre<br><span>14 Jun 2026 • 3:00 PM</span></p>
+                        </div>
+                        <div class="date-large">14 Jun</div>
+                        <div class="teams">
+                            <div class="team">
+                                <img src="All Asset/assets/logo.png" alt="Ahudiyannem" class="team-img">
+                                <span class="team-name">Ahudiyannem FC</span>
+                            </div>
+                            <div class="vs-text">VS</div>
+                            <div class="team">
+                                <div class="team-logo">GF</div>
+                                <span class="team-name">Galadima FC</span>
+                            </div>
+                        </div>
+                        <div class="venue">Umuahia Township Stadium</div>
+                    </div>
+                </div>
+
+                <button class="nav-btn next" onclick="slideMatches('next')">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 2B: UPCOMING MATCHES -->
+
+
+    <!-- ========================================
+         SECTION 3: TABLE SECTION
+         ======================================== -->
+    <section class="section results-section" id="results">
+        <div class="container">
+            <div class="nwfl-section-container">
+                <!-- Left Column -->
+                <div class="left-panel-column">
+                    <h1 class="branded-heading">LEAGUE<br><span class="accent-text">TABLE</span></h1>
+                    <p class="branded-subtext">The battle for the title heats up. Our teams are pushing hard — every point matters.</p>
+
+                    <aside class="sidebar-display-card" id="maleSidebar">
+                        <div class="sidebar-card-header">
+                            <div class="badge-num bg-green">2</div>
+                            <div>
+                                <h3>AHUDIYANNEM FC</h3>
+                                <p class="meta-label">2ND PLACE — NLO 2026 Abia Centre</p>
+                            </div>
+                        </div>
+                        <div class="sidebar-stats-grid">
+                            <div class="grid-stat-box large-stat stat-points">
+                                <span class="v-num">17</span>
+                                <span class="v-lbl">POINTS</span>
+                            </div>
+                            <div class="grid-stat-box stat-played">
+                                <span class="v-num">8</span>
+                                <span class="v-lbl">PLAYED</span>
+                            </div>
+                            <div class="grid-stat-box stat-gd">
+                                <span class="v-num">+9</span>
+                                <span class="v-lbl">GD</span>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <aside class="sidebar-display-card" id="femaleSidebar" style="display:none;">
+                        <div class="sidebar-card-header">
+                            <div class="badge-num bg-maroon">4</div>
+                            <div>
+                                <h3>AHUDIYANNEM QUEENS</h3>
+                                <p class="meta-label">4TH PLACE — NWFL Premiership Group B</p>
+                            </div>
+                        </div>
+                        <div class="sidebar-stats-grid">
+                            <div class="grid-stat-box large-stat stat-points">
+                                <span class="v-num">25</span>
+                                <span class="v-lbl">POINTS</span>
+                            </div>
+                            <div class="grid-stat-box stat-played">
+                                <span class="v-num">18</span>
+                                <span class="v-lbl">PLAYED</span>
+                            </div>
+                            <div class="grid-stat-box stat-gd">
+                                <span class="v-num">+5</span>
+                                <span class="v-lbl">GD</span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-table-column">
+                    <div class="gender-toggle-bar">
+                        <span class="lbl-toggle">Men</span>
+                        <label class="switch-toggle">
+                            <input type="checkbox" id="genderCheckbox" onchange="toggleGender()">
+                            <span class="toggle-slider-rs"></span>
+                        </label>
+                        <span class="lbl-toggle">Women</span>
+                    </div>
+
+                    <!-- MALE TABLE -->
+                    <main class="table-card-wrapper" id="maleTable">
+                        <div class="nwfl-brand-header">
+                            <img src="All Asset/assets/nlo-logo.png" alt="NLO Logo" class="nwfl-logo-img">
+                            <div class="brand-text-block">
+                                <h2>NLO 2026 Abia Centre</h2>
+                                <p>Matchday 8</p>
+                            </div>
+                        </div>
+                        <table class="nwfl-league-table men-table">
+                            <thead>
+                                <tr>
+                                    <th>POS</th>
+                                    <th>CLUB</th>
+                                    <th>P</th>
+                                    <th>W</th>
+                                    <th>D</th>
+                                    <th>L</th>
+                                    <th>GD</th>
+                                    <th>PTS</th>
+                                    <th>FORM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="ahudiyannem-row">
+                                    <td><span class="row-index highlight-gold">1</span></td>
+                                    <td><span class="team-title-text">RIGHT 2 WIN FC ABIA</span></td>
+                                    <td>8</td><td>6</td><td>1</td><td>1</td><td>+12</td><td><strong>19</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot win"></span><span class="dot win"></span><span class="dot win"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr class="our-team-row">
+                                    <td><span class="row-index highlight-green">2</span></td>
+                                    <td><span class="team-title-text text-green">AHUDIYANNEM FC</span></td>
+                                    <td>8</td><td>5</td><td>2</td><td>1</td><td>+9</td><td><strong>17</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot draw"></span><span class="dot win"></span><span class="dot win"></span><span class="dot draw"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">3</span></td>
+                                    <td><span class="team-title-text">HYPEBUZZ FC</span></td>
+                                    <td>8</td><td>5</td><td>0</td><td>3</td><td>+5</td><td><strong>15</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot win"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">4</span></td>
+                                    <td><span class="team-title-text">JNR DANBURAN FC</span></td>
+                                    <td>8</td><td>3</td><td>2</td><td>3</td><td>0</td><td><strong>11</strong></td>
+                                    <td><div class="form-dots"><span class="dot draw"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot draw"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">5</span></td>
+                                    <td><span class="team-title-text">OZALLA FA</span></td>
+                                    <td>8</td><td>2</td><td>2</td><td>4</td><td>-4</td><td><strong>8</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot draw"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">6</span></td>
+                                    <td><span class="team-title-text">GALADIMA FC</span></td>
+                                    <td>8</td><td>1</td><td>1</td><td>6</td><td>-8</td><td><strong>4</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot loss"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">7</span></td>
+                                    <td><span class="team-title-text">LAPAI FA</span></td>
+                                    <td>8</td><td>1</td><td>0</td><td>7</td><td>-14</td><td><strong>3</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot loss"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </main>
+
+                    <!-- FEMALE TABLE -->
+                    <main class="table-card-wrapper" id="femaleTable" style="display:none;">
+                        <div class="nwfl-brand-header">
+                            <img src="All Asset/assets/nwfl-logo.png" alt="NWFL Logo" class="nwfl-logo-img">
+                            <div class="brand-text-block">
+                                <h2>NWFL Premiership Group B</h2>
+                                <p>Matchday 18</p>
+                            </div>
+                        </div>
+                        <table class="nwfl-league-table">
+                            <thead>
+                                <tr>
+                                    <th>POS</th>
+                                    <th>CLUB</th>
+                                    <th>P</th>
+                                    <th>W</th>
+                                    <th>D</th>
+                                    <th>L</th>
+                                    <th>GD</th>
+                                    <th>PTS</th>
+                                    <th>FORM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="row-index highlight-gold">1</span></td>
+                                    <td><span class="team-title-text">ROBO QUEENS</span></td>
+                                    <td>18</td><td>12</td><td>2</td><td>4</td><td>+19</td><td><strong>38</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot win"></span><span class="dot draw"></span><span class="dot win"></span><span class="dot win"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">2</span></td>
+                                    <td><span class="team-title-text">NASARAWA AMAZONS</span></td>
+                                    <td>18</td><td>9</td><td>5</td><td>4</td><td>+10</td><td><strong>32</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot draw"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot win"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">3</span></td>
+                                    <td><span class="team-title-text">ABIA ANGELS</span></td>
+                                    <td>18</td><td>8</td><td>4</td><td>6</td><td>+7</td><td><strong>28</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot draw"></span><span class="dot win"></span></div></td>
+                                </tr>
+                                <tr class="our-team-row">
+                                    <td><span class="row-index highlight-green">4</span></td>
+                                    <td><span class="team-title-text text-green">AHUDIYANNEM QUEENS</span></td>
+                                    <td>18</td><td>7</td><td>4</td><td>7</td><td>+5</td><td><strong>25</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot win"></span><span class="dot draw"></span><span class="dot win"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">5</span></td>
+                                    <td><span class="team-title-text">DELTA QUEENS</span></td>
+                                    <td>18</td><td>7</td><td>4</td><td>7</td><td>0</td><td><strong>25</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot loss"></span><span class="dot draw"></span><span class="dot win"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">6</span></td>
+                                    <td><span class="team-title-text">REMO STARS LADIES</span></td>
+                                    <td>18</td><td>6</td><td>6</td><td>6</td><td>+7</td><td><strong>24</strong></td>
+                                    <td><div class="form-dots"><span class="dot draw"></span><span class="dot win"></span><span class="dot draw"></span><span class="dot loss"></span><span class="dot win"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">7</span></td>
+                                    <td><span class="team-title-text">DANNAZ LADIES</span></td>
+                                    <td>18</td><td>7</td><td>2</td><td>9</td><td>-13</td><td><strong>23</strong></td>
+                                    <td><div class="form-dots"><span class="dot win"></span><span class="dot loss"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot loss"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">8</span></td>
+                                    <td><span class="team-title-text">SUNSHINE QUEENS</span></td>
+                                    <td>18</td><td>5</td><td>7</td><td>6</td><td>+2</td><td><strong>22</strong></td>
+                                    <td><div class="form-dots"><span class="dot draw"></span><span class="dot draw"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot draw"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">9</span></td>
+                                    <td><span class="team-title-text">OSUN BABES</span></td>
+                                    <td>18</td><td>5</td><td>3</td><td>10</td><td>-18</td><td><strong>18</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot loss"></span><span class="dot win"></span><span class="dot loss"></span><span class="dot draw"></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="row-index">10</span></td>
+                                    <td><span class="team-title-text">CONFLUENCE QUEENS</span></td>
+                                    <td>18</td><td>3</td><td>5</td><td>10</td><td>-19</td><td><strong>14</strong></td>
+                                    <td><div class="form-dots"><span class="dot loss"></span><span class="dot draw"></span><span class="dot loss"></span><span class="dot loss"></span><span class="dot draw"></span></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- END SECTION 3: TABLE SECTION -->
+
+    <!-- ========================================
+         SECTION 3C: OUR FIXTURES
+         ======================================== -->
+    <section class="section fixtures-section" id="ourFixtures">
+        <div class="container">
+            <h2 class="section-title">Our Fixtures</h2>
+            <div class="fixture-toggle-container">
+                <div class="fixture-toggle glass-toggle">
+                    <button class="fixture-tab-btn active" id="fixtureTabMen" onclick="switchFixtureGender('men')">Men's Fixtures</button>
+                    <button class="fixture-tab-btn" id="fixtureTabWomen" onclick="switchFixtureGender('women')">Women's Fixtures</button>
+                </div>
+            </div>
+            <div class="fixture-table-wrapper">
+                <table class="fixture-table" id="fixtureTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Home Team</th>
+                            <th></th>
+                            <th>Away Team</th>
+                            <th>Venue</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fixtureTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Fixture Modal -->
+        <div class="fixture-modal-overlay" id="fixtureModal">
+            <div class="fixture-modal-card">
+                <button class="fixture-modal-close" onclick="closeFixtureModal()">&times;</button>
+                <div class="fixture-modal-teams">
+                    <div class="fixture-modal-team">
+                        <img src="" alt="Home" class="team-logo" id="modalHomeLogo">
+                        <div class="team-name" id="modalHomeName">Home</div>
+                    </div>
+                    <div class="fixture-modal-vs">VS</div>
+                    <div class="fixture-modal-team">
+                        <img src="" alt="Away" class="team-logo" id="modalAwayLogo">
+                        <div class="team-name" id="modalAwayName">Away</div>
+                    </div>
+                </div>
+                <div class="fixture-modal-info">
+                    <div class="fixture-modal-info-item">
+                        <span class="label">Date</span>
+                        <span class="value" id="modalDate">--</span>
+                    </div>
+                    <div class="fixture-modal-info-item">
+                        <span class="label">Time</span>
+                        <span class="value" id="modalTime">--</span>
+                    </div>
+                    <div class="fixture-modal-info-item">
+                        <span class="label">Stadium</span>
+                        <span class="value" id="modalStadium">--</span>
+                    </div>
+                    <div class="fixture-modal-info-item">
+                        <span class="label">League</span>
+                        <span class="value" id="modalLeague">--</span>
+                    </div>
+                </div>
+                <div class="fixture-modal-desc" id="modalDesc">
+                    Get ready for an exciting match day at the stadium!
+                </div>
+            </div>
+        </div>
+        <div class="gallery-btn-wrapper">
+            <a href="All HTML/our-fixtures.html" class="btn-gallery-ultra btn-gallery-red" style="text-decoration:none;">
+                <span class="btn-gallery-text">View More</span>
+                <span class="btn-gallery-icon"><i class="fas fa-arrow-right"></i></span>
+                <div class="btn-gallery-shimmer"></div>
+            </a>
+        </div>
+    </section>
+    <!-- END SECTION 3C: OUR FIXTURES -->
+
+    <!-- ========================================
+         SECTION 3B: OUR RESULTS
+         ======================================== -->
+    <section class="section futuristic-results" id="futuristicResults">
+        <div class="container">
+            <h2 class="section-title">Our Results</h2>
+            <div class="tab-toggle-container">
+                <div class="tab-toggle glass-toggle">
+                    <button class="tab-btn active" onclick="toggleFuturisticResults('mens')">Men's Results</button>
+                    <button class="tab-btn" onclick="toggleFuturisticResults('womens')">Women's Results</button>
+                </div>
+            </div>
+
+            <div id="futuristicMens" class="futuristic-table-wrapper">
+                <table class="futuristic-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>League</th>
+                            <th>Home Team</th>
+                            <th>Score</th>
+                            <th>Away Team</th>
+                            <th>Venue</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="result-loss">
+                            <td>19 May 2026</td>
+                            <td>President Federation Cup R64</td>
+                            <td>Ahudiyannem FC</td>
+                            <td class="score-cell">1 - 2</td>
+                            <td>Plateau United</td>
+                            <td>Ubakala Mini Stadium</td>
+                            <td><span class="result-badge-table loss">L</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>10 May 2026</td>
+                            <td>NLO Abia Centre</td>
+                            <td>Right 2 Win FC Abia</td>
+                            <td class="score-cell">1 - 3</td>
+                            <td>Ahudiyannem FC</td>
+                            <td>Ubakala Mini Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>03 May 2026</td>
+                            <td>NLO Abia Centre</td>
+                            <td>Ahudiyannem FC</td>
+                            <td class="score-cell">2 - 0</td>
+                            <td>Ozal FA</td>
+                            <td>Umuahia Township Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-draw">
+                            <td>27 Apr 2026</td>
+                            <td>Abia State FA Cup Final</td>
+                            <td>Ahudiyannem FC</td>
+                            <td class="score-cell">0 - 4</td>
+                            <td>Enyimba FC</td>
+                            <td>Umuahia Township Stadium</td>
+                            <td><span class="result-badge-table loss">L</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>20 Apr 2026</td>
+                            <td>NLO Abia Centre</td>
+                            <td>Hypebuzz FC</td>
+                            <td class="score-cell">0 - 1</td>
+                            <td>Ahudiyannem FC</td>
+                            <td>Ubakala Mini Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>13 Apr 2026</td>
+                            <td>NLO Abia Centre</td>
+                            <td>Ahudiyannem FC</td>
+                            <td class="score-cell">4 - 1</td>
+                            <td>Lapai FA</td>
+                            <td>Umuahia Township Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-draw">
+                            <td>06 Apr 2026</td>
+                            <td>NLO Abia Centre</td>
+                            <td>Jnr Danburan FC</td>
+                            <td class="score-cell">1 - 1</td>
+                            <td>Ahudiyannem FC</td>
+                            <td>Ubakala Mini Stadium</td>
+                            <td><span class="result-badge-table draw">D</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="futuristicWomens" class="futuristic-table-wrapper" style="display:none;">
+                <table class="futuristic-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>League</th>
+                            <th>Home Team</th>
+                            <th>Score</th>
+                            <th>Away Team</th>
+                            <th>Venue</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="result-loss">
+                            <td>03 May 2026</td>
+                            <td>NWFL Premiership</td>
+                            <td>Ahudiyannem Queens</td>
+                            <td class="score-cell">0 - 2</td>
+                            <td>Nasarawa Amazons</td>
+                            <td>Umuahia Township Stadium</td>
+                            <td><span class="result-badge-table loss">L</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>26 Apr 2026</td>
+                            <td>NWFL Premiership</td>
+                            <td>Ahudiyannem Queens</td>
+                            <td class="score-cell">3 - 0</td>
+                            <td>Osun Babes</td>
+                            <td>Umuahia Township Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>19 Apr 2026</td>
+                            <td>NWFL Premiership</td>
+                            <td>Sunshine Queens</td>
+                            <td class="score-cell">0 - 1</td>
+                            <td>Ahudiyannem Queens</td>
+                            <td>Akure Township Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-loss">
+                            <td>12 Apr 2026</td>
+                            <td>NWFL Premiership</td>
+                            <td>Delta Queens</td>
+                            <td class="score-cell">2 - 1</td>
+                            <td>Ahudiyannem Queens</td>
+                            <td>Stephen Keshi Stadium</td>
+                            <td><span class="result-badge-table loss">L</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>05 Apr 2026</td>
+                            <td>NWFL Premiership</td>
+                            <td>Remo Stars Ladies</td>
+                            <td class="score-cell">1 - 2</td>
+                            <td>Ahudiyannem Queens</td>
+                            <td>Remo Stars Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                        <tr class="result-draw">
+                            <td>29 Mar 2026</td>
+                            <td>NWFL Premiership</td>
+                            <td>Ahudiyannem Queens</td>
+                            <td class="score-cell">0 - 0</td>
+                            <td>Sunshine Queens</td>
+                            <td>Umuahia Township Stadium</td>
+                            <td><span class="result-badge-table draw">D</span></td>
+                        </tr>
+                        <tr class="result-win">
+                            <td>22 Mar 2026</td>
+                            <td>NWFL Premiership</td>
+                            <td>Ahudiyannem Queens</td>
+                            <td class="score-cell">5 - 1</td>
+                            <td>Confluence Queens</td>
+                            <td>Umuahia Township Stadium</td>
+                            <td><span class="result-badge-table win">W</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="gallery-btn-wrapper">
+                <a href="All HTML/our-results.html" class="btn-gallery-ultra btn-gallery-blue" style="text-decoration:none;">
+                    <span class="btn-gallery-text">View More</span>
+                    <span class="btn-gallery-icon"><i class="fas fa-arrow-right"></i></span>
+                    <div class="btn-gallery-shimmer"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 3B: OUR RESULTS -->
+
+    <!-- ========================================
+         SECTION 4A: MEN'S TEAM
+         ======================================== -->
+    <section class="mens-team-section" id="teams-men" style="background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 50%, #eaeaea 100%) !important;">
+        <div class="team-row">
+            <div class="team-image-col">
+                <div class="team-slideshow">
+                    <img src="All Asset/men-team-slideshow/slide1.jpg" alt="Ahudiyannem FC Action" class="team-photo">
+                    <img src="All Asset/men-team-slideshow/slide2.jpg" alt="Ahudiyannem FC Action" class="team-photo">
+                    <img src="All Asset/men-team-slideshow/slide3.jpg" alt="Ahudiyannem FC Stadium" class="team-photo">
+                    <img src="All Asset/men-team-slideshow/slide4.jpg" alt="Ahudiyannem FC Training" class="team-photo">
+                    <img src="All Asset/men-team-slideshow/slide5.jpg" alt="Ahudiyannem FC Celebration" class="team-photo">
+                </div>
+            </div>
+            <div class="team-content-col">
+                <h1 class="team-heading-mens">AHUDIYANNEM FC</h1>
+                <p class="team-description">
+                    Discover the extraordinary talents, stories, and dedication behind our elite men's squad. From defensive pillars to clinical finishers, get to know the individuals who drive our club's success.
+                </p>
+                <div class="team-buttons">
+                    <a href="All HTML/men-team.html" class="team-btn-outline"><span class="btn-text">Explore the Squad</span><span class="btn-wipe"></span></a>
+                    <a href="All HTML/men-team.html#staff" class="team-btn-outline"><span class="btn-text">Coaching Crew</span><span class="btn-wipe"></span></a>
+                    <a href="mailto:ahudiyannemfootballclub@gmail.com" class="team-btn-solid-mens"><span class="btn-text">Request for a Trial</span><span class="btn-wipe"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 4B: WOMEN'S TEAM
+         ======================================== -->
+    <section class="team-section-womens" id="teams-women">
+        <div class="team-row">
+            <div class="team-image-col">
+                <div class="team-slideshow">
+                    <img src="All Asset/women-team-slideshow/slide1.jpg" alt="Ahudiyannem Queens Team" class="team-photo">
+                    <img src="All Asset/women-team-slideshow/slide2.jpg" alt="Ahudiyannem Queens Action" class="team-photo">
+                    <img src="All Asset/women-team-slideshow/slide3.jpg" alt="Ahudiyannem Queens Match" class="team-photo">
+                    <img src="All Asset/women-team-slideshow/slide4.jpg" alt="Ahudiyannem Queens Training" class="team-photo">
+                    <img src="All Asset/women-team-slideshow/slide5.jpg" alt="Ahudiyannem Queens Celebration" class="team-photo">
+                </div>
+            </div>
+            <div class="team-content-col">
+                <h1 class="team-heading-womens">AHUDIYANNEM QUEENS FC</h1>
+                <p class="team-description">
+                    Discover the extraordinary talents, stories, and dedication behind our elite women's squad. 
+                    From defensive pillars to clinical finishers, get to know the individuals who drive our club's success.
+                </p>
+                <div class="team-buttons">
+                    <a href="All HTML/women-team.html" class="team-btn-outline"><span class="btn-text">Explore the Squad</span><span class="btn-wipe"></span></a>
+                    <a href="All HTML/women-team.html#staff" class="team-btn-outline"><span class="btn-text">Coaching Crew</span><span class="btn-wipe"></span></a>
+                    <a href="mailto:ahudiyannemfootballclub@gmail.com" class="team-btn-solid-womens"><span class="btn-text">Request for a Trial</span><span class="btn-wipe"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 4: TEAMS -->
+
+    <!-- ========================================
+         SECTION 5: ACHIEVEMENTS / TROPHIES (Realistic)
+         ======================================== -->
+    <section class="section achievements-section" id="achievements">
+        <div class="ach-glow-orb ach-glow-orb-1"></div>
+        <div class="ach-glow-orb ach-glow-orb-2"></div>
+        <div class="ach-glow-orb ach-glow-orb-3"></div>
+        <div class="ach-particles">
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+            <div class="ach-particle"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid-modern">
+                <div class="achievement-card-modern ach-1">
+                    <div class="ach-trophy-wrap">
+                        <div class="ach-trophy-icon">
+                            <img src="All Asset/assets/trophy-gold-sm.png" alt="National League Trophy" class="ach-trophy-img">
+                        </div>
+                    </div>
+                    <div class="ach-content">
+                        <span class="ach-year">2024</span>
+                        <h4 class="ach-title">National League</h4>
+                        <div class="ach-divider"></div>
+                        <div class="ach-medal">
+                            <span class="ach-medal-text">Champions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card-modern ach-2">
+                    <div class="ach-trophy-wrap">
+                        <div class="ach-trophy-icon">
+                            <img src="All Asset/assets/trophy-silver-sm.png" alt="Abia FA Cup Trophy" class="ach-trophy-img">
+                        </div>
+                    </div>
+                    <div class="ach-content">
+                        <span class="ach-year">2025</span>
+                        <h4 class="ach-title">Abia FA Cup</h4>
+                        <div class="ach-divider"></div>
+                        <div class="ach-medal">
+                            <span class="ach-medal-text">Winners</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card-modern ach-3">
+                    <div class="ach-trophy-wrap">
+                        <div class="ach-trophy-icon">
+                            <img src="All Asset/assets/trophy-gold-v2-sm.png" alt="Super Cup Trophy" class="ach-trophy-img">
+                        </div>
+                    </div>
+                    <div class="ach-content">
+                        <span class="ach-year">2024</span>
+                        <h4 class="ach-title">Super Cup</h4>
+                        <div class="ach-divider"></div>
+                        <div class="ach-medal">
+                            <span class="ach-medal-text">Champions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card-modern ach-4">
+                    <div class="ach-trophy-wrap">
+                        <div class="ach-trophy-icon">
+                            <img src="All Asset/assets/trophy-gold-v3-sm.png" alt="State Championship Trophy" class="ach-trophy-img">
+                        </div>
+                    </div>
+                    <div class="ach-content">
+                        <span class="ach-year">2023</span>
+                        <h4 class="ach-title">State Championship</h4>
+                        <div class="ach-divider"></div>
+                        <div class="ach-medal">
+                            <span class="ach-medal-text">Gold</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card-modern ach-5">
+                    <div class="ach-trophy-wrap">
+                        <div class="ach-trophy-icon">
+                            <img src="All Asset/assets/trophy-bronze-sm.png" alt="Presidential Cup Trophy" class="ach-trophy-img">
+                        </div>
+                    </div>
+                    <div class="ach-content">
+                        <span class="ach-year">2026</span>
+                        <h4 class="ach-title">Presidential Cup</h4>
+                        <div class="ach-divider"></div>
+                        <div class="ach-medal">
+                            <span class="ach-medal-text">Finalists</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-btn-wrapper">
+                <a href="All HTML/Achievement.html" class="btn-gallery-ultra">
+                    <span class="btn-gallery-text">View Gallery</span>
+                    <span class="btn-gallery-icon"><i class="fas fa-arrow-right"></i></span>
+                    <div class="btn-gallery-shimmer"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 5: ACHIEVEMENTS / TROPHIES -->
+
+    <!-- ========================================
+         SECTION 5B: GALLERY
+         ======================================== -->
+    <section class="site-gallery-section">
+      <h2 class="site-gallery-heading">Gallery</h2>
+      <div class="site-gallery-grid">
+        
+        <!-- Item 1 -->
+        <div class="site-gallery-item">
+          <img src="All Asset/gallery_asset/gallery1.jpg" alt="Gym Layout">
+          <div class="site-gallery-overlay">
+            <div class="site-gallery-content">
+              <h3 class="site-gallery-title">HIGH-PERFORMANCE GYM</h3>
+              <p class="site-gallery-text">State-of-the-art fitness facility equipped with modern training gear for player strength and conditioning.</p>
+              <a href="All HTML/Gallery.html" class="site-gallery-link">Show More <span class="site-gallery-arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="site-gallery-item">
+          <img src="All Asset/gallery_asset/gallery2.jpg" alt="Soccer Field">
+          <div class="site-gallery-overlay">
+            <div class="site-gallery-content">
+              <h3 class="site-gallery-title">SOCCER ACADEMY</h3>
+              <p class="site-gallery-text">Youth development program nurturing the next generation of football talent.</p>
+              <a href="All HTML/Gallery.html" class="site-gallery-link">Show More <span class="site-gallery-arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="site-gallery-item">
+          <img src="All Asset/gallery_asset/gallery3.jpg" alt="Video Analysis">
+          <div class="site-gallery-overlay">
+            <div class="site-gallery-content">
+              <h3 class="site-gallery-title">TACTICAL VIDEO ANALYSIS</h3>
+              <p class="site-gallery-text">Match review sessions using advanced technology to refine team strategies.</p>
+              <a href="All HTML/Gallery.html" class="site-gallery-link">Show More <span class="site-gallery-arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="site-gallery-item">
+          <img src="All Asset/gallery_asset/gallery4.jpg" alt="Training Session">
+          <div class="site-gallery-overlay">
+            <div class="site-gallery-content">
+              <h3 class="site-gallery-title">TRAINING SESSION</h3>
+              <p class="site-gallery-text">Intense drills and tactical exercises on the training ground with the technical crew.</p>
+              <a href="All HTML/Gallery.html" class="site-gallery-link">Show More <span class="site-gallery-arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="site-gallery-item">
+          <img src="All Asset/gallery_asset/gallery5.jpg" alt="Fans Support">
+          <div class="site-gallery-overlay">
+            <div class="site-gallery-content">
+              <h3 class="site-gallery-title">FANS SUPPORT</h3>
+              <p class="site-gallery-text">The 12th man — our passionate supporters cheering from the stands every matchday.</p>
+              <a href="All HTML/Gallery.html" class="site-gallery-link">Show More <span class="site-gallery-arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="site-gallery-item">
+          <img src="All Asset/gallery_asset/gallery6.jpg" alt="Trophy Celebration">
+          <div class="site-gallery-overlay">
+            <div class="site-gallery-content">
+              <h3 class="site-gallery-title">TROPHY CELEBRATION</h3>
+              <p class="site-gallery-text">Celebrating our achievements and milestones together as one big family.</p>
+              <a href="All HTML/Gallery.html" class="site-gallery-link">Show More <span class="site-gallery-arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="site-gallery-footer">
+        <a href="All HTML/Gallery.html" class="site-gallery-viewmore"><span class="btn-text">View More</span><span class="btn-wipe"></span></a>
+      </div>
+    </section>
+    <!-- END SECTION 5B: GALLERY -->
+
+    <!-- ========================================
+         SECTION 6: LATEST NEWS (Windows 10 Tiles)
+         ======================================== -->
+    <section class="section news-grid-section" id="news">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="card-grid">
+
+                <article class="news-card" data-id="1" data-title="Ahudiyannem FC Battles Hard in Federation Cup Debut" data-date="19/05/2026" data-image="All Asset/news_asset/news1.jpg" data-highlight="Ahudiyannem FC fall 1-2 to Plateau United in President Federation Cup Round of 64" data-content="Ahudiyannem FC made their President Federation Cup debut, falling 1-2 to NPFL side Plateau United in the Round of 64 at Ubakala Mini Stadium. The NLO side showed tremendous spirit, taking the game to their more experienced opponents. After going behind early, Ahudiyannem equalized through a well-worked counter-attack. However, Plateau United's quality told in the second half as they scored the winner. Despite the defeat, the club earned respect nationwide for their fearless performance against top-flight opposition.">
+                    <div class="image-container">
+                        <img src="All Asset/news_asset/news1.jpg" alt="Ahudiyannem FC Federation Cup" fetchpriority="high" decoding="async">
+                        <span class="badge badge-highlights">MATCH HIGHLIGHTS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Ahudiyannem FC fall 1-2 to Plateau United in Federation Cup</h3>
+                        <p class="card-text">Ahudiyannem FC made their President Federation Cup debut, falling 1-2 to NPFL side Plateau United in the Round of 64 at Ubakala Mini Stadium.</p>
+                        <div class="card-footer">19/05/2026</div>
+                    </div>
+                </article>
+
+                <article class="news-card" data-id="2" data-title="NLO 2026 Season Kicks Off with Victory" data-date="10/04/2026" data-image="All Asset/news_asset/news2.jpg" data-highlight="Ahudiyannem FC begin NLO campaign with impressive away win" data-content="The 2026 NLO season kicked off with Ahudiyannem FC securing a vital away victory. The team has been training intensively under the coaching staff, focusing on a possession-based style of play. With a blend of experienced campaigners and exciting young talents, the club aims to challenge for the Abia Centre title this season.">
+                    <div class="image-container">
+                        <img src="All Asset/news_asset/news2.jpg" alt="NLO Season Kickoff" fetchpriority="high" decoding="async">
+                        <span class="badge badge-highlights">MATCH HIGHLIGHTS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">NLO 2026 season begins with away victory</h3>
+                        <p class="card-text">The 2026 NLO season kicked off with Ahudiyannem FC securing a vital away victory. The team has been training intensively under the coaching staff.</p>
+                        <div class="card-footer">10/04/2026</div>
+                    </div>
+                </article>
+
+                <article class="news-card" data-id="3" data-title="Ahudiyannem Queens Dominate Osun Babes" data-date="26/04/2026" data-image="All Asset/news_asset/news3.jpg" data-highlight="Grace Aaron brace powers Queens to commanding 3-0 home victory" data-content="Ahudiyannem Queens produced a dominant display at Umuahia Township Stadium, thrashing Osun Babes 3-0 in the NWFL Premiership. Star forward Grace Aaron was the standout performer, netting a brilliant brace that showcased her clinical finishing ability.">
+                    <div class="image-container">
+                        <img src="All Asset/news_asset/news3.jpg" alt="Queens Victory" fetchpriority="high" decoding="async">
+                        <span class="badge badge-interviews">INTERVIEWS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Grace Aaron brace powers Queens to 3-0 victory</h3>
+                        <p class="card-text">Ahudiyannem Queens produced a dominant display at Umuahia Township Stadium, thrashing Osun Babes 3-0 in the NWFL Premiership.</p>
+                        <div class="card-footer">26/04/2026</div>
+                    </div>
+                </article>
+
+                <article class="news-card" data-id="4" data-title="Ahudiyannem Reach Abia State FA Cup Final" data-date="27/04/2026" data-image="All Asset/news_asset/news4.jpg" data-highlight="Ahudiyannem FC finish runners-up in Abia State FA Cup after valiant run" data-content="Ahudiyannem FC's remarkable run in the Abia State FA Cup ended in the final with a 4-0 defeat to NPFL giants Enyimba FC at Umuahia Township Stadium. The journey to the final was nothing short of extraordinary, with the club defeating several higher-division opponents along the way.">
+                    <div class="image-container">
+                        <img src="All Asset/news_asset/news4.jpg" alt="FA Cup Final" loading="lazy" decoding="async">
+                        <span class="badge badge-highlights">MATCH HIGHLIGHTS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Ahudiyannem finish runners-up in Abia State FA Cup</h3>
+                        <p class="card-text">Ahudiyannem FC's remarkable run in the Abia State FA Cup ended in the final with a 4-0 defeat to NPFL giants Enyimba FC.</p>
+                        <div class="card-footer">27/04/2026</div>
+                    </div>
+                </article>
+
+                <article class="news-card" data-id="5" data-title="Queens Finish Fourth in NWFL Group B" data-date="06/05/2026" data-image="All Asset/news_asset/news5.jpg" data-highlight="Ahudiyannem Queens secure 4th place in NWFL Premiership Group B with 25 points" data-content="Ahudiyannem Queens concluded their debut NWFL Premiership season with a solid 4th-place finish in Group B, amassing 25 points from 18 matches. The Queens recorded 7 wins, 4 draws, and 7 losses, with notable victories including a 5-1 demolition of Confluence Queens.">
+                    <div class="image-container">
+                        <img src="All Asset/news_asset/news5.jpg" alt="Queens NWFL" loading="lazy" decoding="async">
+                        <span class="badge badge-interviews">INTERVIEWS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Queens finish 4th in NWFL Premiership Group B</h3>
+                        <p class="card-text">Ahudiyannem Queens concluded their debut NWFL Premiership season with a solid 4th-place finish in Group B, amassing 25 points from 18 matches.</p>
+                        <div class="card-footer">06/05/2026</div>
+                    </div>
+                </article>
+
+                <article class="news-card" data-id="6" data-title="Ahudiyannem Queens Secure Away Win at Sunshine" data-date="19/04/2026" data-image="All Asset/news_asset/news6.jpg" data-highlight="Ahudiyannem Queens claim vital away victory at Sunshine Queens" data-content="Ahudiyannem Queens secured a crucial 1-0 away victory against Sunshine Queens at the Akure Township Stadium. The solitary goal was enough to earn all three points as the Queens displayed impressive defensive organization and composure on the road.">
+                    <div class="image-container">
+                        <img src="All Asset/news_asset/news6.jpg" alt="Queens Away Win" loading="lazy" decoding="async">
+                        <span class="badge badge-highlights">MATCH HIGHLIGHTS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Queens secure vital away victory at Sunshine Queens</h3>
+                        <p class="card-text">Ahudiyannem Queens secured a crucial 1-0 away victory against Sunshine Queens at the Akure Township Stadium.</p>
+                        <div class="card-footer">19/04/2026</div>
+                    </div>
+                </article>
+
+            </div>
+            <div style="text-align:center;margin-top:50px;">
+                <a href="All HTML/News.html" style="display:inline-flex;align-items:center;gap:10px;padding:14px 36px;background:#111;color:#fff;text-decoration:none;font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;border-radius:0;transition:all 0.3s ease;border:2px solid #111;" onmouseover="this.style.background='#fff';this.style.color='#111';" onmouseout="this.style.background='#111';this.style.color='#fff';">More News <i class="fas fa-arrow-right" style="font-size:0.8rem;"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Modal Popup - Card Style -->
+    <div class="news-modal" id="newsModal">
+        <button class="modal-close" onclick="closeNewsModal()">&times;</button>
+        <div class="news-modal-content news-card-popup">
+            <div class="popup-image-wrap">
+                <img src="" alt="" class="popup-image" id="modalImage">
+                <span class="badge badge-highlights" id="modalBadge">MATCH HIGHLIGHTS</span>
+            </div>
+            <div class="popup-body">
+                <span class="popup-date" id="modalDate"></span>
+                <h2 class="popup-title" id="modalTitle"></h2>
+                <p class="popup-highlight" id="modalHighlight"></p>
+                <p class="popup-text" id="modalText"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Info Modal -->
+    <div class="news-modal" id="footerInfoModal">
+        <button class="modal-close" onclick="closeFooterInfoModal()">&times;</button>
+        <div class="news-modal-content">
+            <h2 class="modal-title" id="footerModalTitle"></h2>
+            <p class="modal-text" id="footerModalText" style="white-space: pre-line;"></p>
+        </div>
+    </div>
+    <!-- END SECTION 6: NEWS -->
+
+    <!-- ========================================
+         SECTION 6B: OUR KITS SHOP - COLLECTION
+         ======================================== -->
+    <section id="kits-shop" class="shop-vault">
+        <div class="fluid-blob"></div>
+        <div class="shop-container">
+            <div class="bg-watermark">store</div>
+            <div class="shop-header">
+                <div class="header-left">
+                    <div class="shop-tag">OUR STORE</div>
+                    <h1>SHOP OUR COLLECTION</h1>
+                </div>
+                <div class="header-right">
+                    <span>Get notified when new kits drop</span>
+                    <button class="btn-notify">Notify Me</button>
+                </div>
+            </div>
+            <div class="carousel-wrapper">
+                <button class="nav-arrow" id="prevBtn">&#10216;</button>
+                <div class="carousel-window">
+                    <div class="product-grid" id="productTrack">
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="badge bestseller">bestseller</span>
+                            <img src="All Asset/store_asset/jersey.png" alt="Home Kit">
+                        </div>
+                        <div class="product-title">HOME KIT 2026</div>
+                        <div class="price-container">
+                            <span class="price-normal">N20,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <img src="All Asset/store_asset/scarf.png" alt="Club Scarf">
+                        </div>
+                        <div class="product-title">MATCHDAY SCARF</div>
+                        <div class="price-container">
+                            <span class="price-normal">N5,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="badge sale">sale</span>
+                            <img src="All Asset/store_asset/football.png" alt="Match Ball">
+                        </div>
+                        <div class="product-title">CLUB FOOTBALL SHORT</div>
+                        <div class="price-container">
+                            <span class="price-normal">N8,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <img src="All Asset/store_asset/cap.png" alt="Club Cap">
+                        </div>
+                        <div class="product-title">TEAM CAP</div>
+                        <div class="price-container">
+                            <span class="price-normal">N5,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="badge limited">limited</span>
+                            <img src="All Asset/store_asset/jacket.png" alt="Anthem Jacket">
+                        </div>
+                        <div class="product-title">ANTHEM JACKET</div>
+                        <div class="price-container">
+                            <span class="price-normal">N15,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <img src="All Asset/store_asset/shorts.png" alt="Shorts">
+                        </div>
+                        <div class="product-title">SHORTS 2026</div>
+                        <div class="price-container">
+                            <span class="price-normal">N3,000</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="image-container">
+                            <div class="stock-banner">Out of Stock</div>
+                            <img src="All Asset/store_asset/training.png" alt="Training Top">
+                        </div>
+                        <div class="product-title">TRAINING TOP</div>
+                        <div class="price-container">
+                            <span class="price-normal">N12,000</span>
+                        </div>
+                        <button class="btn-order disabled">Order Now</button>
+                    </div>
+                    </div>
+                </div>
+                <button class="nav-arrow" id="nextBtn">&#10217;</button>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 6B: OUR KITS SHOP -->
+
+    <!-- ========================================
+         SECTION 7: OFFICIAL PARTNERS
+         ======================================== -->
+    <section class="section partners-section">
+        <div class="container">
+            <h2 class="section-title">Official Partners</h2>
+            <p class="partners-subtitle">Trusted brands that power our journey</p>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <a href="https://www.eliorindustries.com/" target="_blank" rel="noopener">
+                        <img src="All Asset/assets/elior.png" alt="Elior Nig Ltd">
+                    </a>
+                </div>
+            </div>
+            <div class="partner-info">
+                <p class="partner-description">
+                    Elior Industries Nig. Ltd. is a premier Nigerian import/export company specializing in premium Turkey doors, heavy-duty Turkey ladders, door accessories, and general merchandise. With over 25 years of experience, they deliver world-class building and interior solutions across Nigeria.
+                </p>
+                <a href="https://www.eliorindustries.com/" target="_blank" rel="noopener" class="partner-visit-link">
+                    Visit www.eliorindustries.com &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 7: OFFICIAL PARTNERS -->
+
+    <!-- ========================================
+         SECTION 7: FOOTER
+         ======================================== -->
+    <footer class="footer">
+        <div class="footer-inner">
+
+            <!-- Brand Strip -->
+            <div class="footer-brand-strip">
+                <div class="footer-brand">
+                    <img src="All Asset/assets/logo.png" alt="Ahudiyannem FC" class="footer-brand-logo">
+                    <div class="footer-brand-text">
+                        <h3>Ahudiyannem FC</h3>
+                        <p>Abiriba &bull; Abia State &bull; Nigeria</p>
+                    </div>
+                </div>
+                <div class="footer-social-row">
+                    <a href="https://www.instagram.com/ahudiyannemfcabiriba/" target="_blank" rel="noopener" aria-label="Instagram"><img src="All Asset/social-icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+                    <a href="https://web.facebook.com/profile.php?id=61551707370024" target="_blank" rel="noopener" aria-label="Facebook"><img src="All Asset/social-icons/facebook.svg" alt="Facebook" class="social-icon"></a>
+                    <a href="https://x.com/Ahudiyannemfc" target="_blank" rel="noopener" aria-label="X"><img src="All Asset/social-icons/x-twitter.svg" alt="X" class="social-icon"></a>
+                    <a href="https://www.youtube.com/@AHUDIYANNEMFOOTBALLCLUB" target="_blank" rel="noopener" aria-label="YouTube"><img src="All Asset/social-icons/youtube.svg" alt="YouTube" class="social-icon"></a>
+                </div>
+            </div>
+
+            <!-- Grid -->
+            <div class="footer-grid">
+
+                <!-- About -->
+                <div class="footer-col about-col">
+                    <h4>About the Club</h4>
+                    <p>
+                        Ahudiyannem Football Club is a Nigerian football club based in Abiriba, Abia State, 
+                        founded by Dr. Robert Daniel Onyeani. Competing in the NLO 2026 season and the NWFL 
+                        Premiership through our women's team, Ahudiyannem Queens.
+                    </p>
+                    <div class="footer-contact-item">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="text">
+                            <strong>Location</strong>
+                            Abiriba, Abia State, Nigeria
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="text">
+                            <strong>Email</strong>
+                            ahudiyannemfootballclub@gmail.com
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="All HTML/News.html"><i class="fas fa-chevron-right"></i> Latest News</a></li>
+                        <li><a href="All HTML/our-fixtures.html"><i class="fas fa-chevron-right"></i> Fixtures</a></li>
+                        <li><a href="All HTML/our-results.html"><i class="fas fa-chevron-right"></i> Results</a></li>
+                        <li><a href="All HTML/Achievement.html"><i class="fas fa-chevron-right"></i> Achievements</a></li>
+                        <li><a href="All HTML/store.html"><i class="fas fa-chevron-right"></i> Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- Teams -->
+                <div class="footer-col">
+                    <h4>Teams</h4>
+                    <ul>
+                        <li><a href="All HTML/men-team.html"><i class="fas fa-chevron-right"></i> Men's Team</a></li>
+                        <li><a href="All HTML/men-team.html#staff"><i class="fas fa-chevron-right"></i> Coaching Crew</a></li>
+                        <li><a href="All HTML/women-team.html"><i class="fas fa-chevron-right"></i> Women's Team</a></li>
+                        <li><a href="All HTML/women-team.html#staff"><i class="fas fa-chevron-right"></i> Queens Coaching Crew</a></li>
+                        <li><a href="#" onclick="event.preventDefault(); openFooterInfoModal('about')"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    <div class="footer-newsletter">
+                        <p>Subscribe to get the latest updates on matches, results, and club news.</p>
+                        <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed! (demo)')">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ahudiyannem Football Club. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#" onclick="event.preventDefault(); openFooterInfoModal('about')">About</a>
+                <a href="#" onclick="event.preventDefault(); openFooterInfoModal('history')">History</a>
+                <a href="#" onclick="event.preventDefault(); openFooterInfoModal('management')">Management</a>
+                <a href="mailto:ahudiyannemfootballclub@gmail.com">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <!-- END SECTION 7: FOOTER -->
+
+    <!-- Match Detail Modal -->
+    <div class="match-modal" id="matchModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <div class="modal-league">
+                    <img src="" alt="League" id="modalLeagueLogo">
+                    <span class="modal-league-text" id="modalLeagueName"></span>
+                </div>
+                <div class="modal-date">
+                    <span id="modalMatchDate"></span>
+                    <span class="live-btn" id="modalLiveBtn" style="display: none;">LIVE</span>
+                </div>
+            </div>
+            <div class="modal-teams">
+                <div class="modal-team">
+                    <img src="" alt="Home" id="modalHomeLogo">
+                    <div class="modal-team-name" id="modalHomeTeam"></div>
+                    <div class="modal-team-city" id="modalHomeCity"></div>
+                </div>
+                <div class="modal-vs">VS</div>
+                <div class="modal-team">
+                    <img src="" alt="Away" id="modalAwayLogo">
+                    <div class="modal-team-name" id="modalAwayTeam"></div>
+                    <div class="modal-team-city" id="modalAwayCity"></div>
+                </div>
+            </div>
+            <div class="modal-match-info">
+                <div class="modal-stadium">
+                    <span class="modal-stadium-icon">🏟️</span>
+                    <span id="modalStadium"></span> • <span id="modalCity"></span>
+                </div>
+                <div class="modal-sections">
+                    <div class="modal-host-info">
+                        <h3 id="modalHostTitle"></h3>
+                        <p id="modalHostDesc"></p>
+                    </div>
+                    <div class="modal-away-info">
+                        <h3 id="modalAwayTitle"></h3>
+                        <p id="modalAwayDesc"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
