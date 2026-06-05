@@ -712,33 +712,28 @@ body {
         bottom: -15%;
         border-radius: 45%;
         animation: mobileWave linear infinite;
+        will-change: transform;
     }
 
     .mobile-wave-bg .wave-1 {
         left: -50%;
         background: rgba(34, 197, 94, 0.06);
-        animation-duration: 7s;
+        animation-duration: 10s;
     }
 
     .mobile-wave-bg .wave-2 {
         left: -30%;
         background: rgba(139, 92, 246, 0.05);
-        animation-duration: 10s;
+        animation-duration: 14s;
         animation-delay: -3s;
     }
 
     .mobile-wave-bg .wave-3 {
-        left: -70%;
-        background: rgba(34, 197, 94, 0.04);
-        animation-duration: 13s;
-        animation-delay: -6s;
+        display: none;
     }
 
     .mobile-wave-bg .wave-4 {
-        left: -45%;
-        background: rgba(139, 92, 246, 0.04);
-        animation-duration: 9s;
-        animation-delay: -2s;
+        display: none;
     }
 
     @keyframes mobileWave {
@@ -9292,6 +9287,220 @@ body.news-modal-open {
         width: 130px;
         height: 130px;
         padding: 16px;
+    }
+}
+
+/* ---- MOBILE PERFORMANCE OPTIMIZATIONS ---- */
+@media (max-width: 768px) {
+    /* Remove gooey filter on mobile for performance (keep static blobs) */
+    .liquid-bg {
+        filter: none;
+        opacity: 0.4;
+    }
+    .liquid-blob.b1 {
+        width: 180px;
+        height: 180px;
+        animation: none;
+        top: -40px;
+        left: -40px;
+    }
+    .liquid-blob.b2 {
+        width: 140px;
+        height: 140px;
+        animation: none;
+        bottom: 5%;
+        right: -30px;
+    }
+    .liquid-blob.b3 {
+        display: none;
+    }
+    .liquid-blob.b4 {
+        display: none;
+    }
+    .liquid-blob.b5 {
+        width: 160px;
+        height: 160px;
+        animation: none;
+        bottom: -50px;
+        left: 20%;
+    }
+    /* Pause hero mobile video to save resources */
+    .hero-mobile-video video {
+        animation-play-state: paused;
+    }
+
+    /* Disable heavy anim-item stagger on mobile for performance */
+    .anim-item {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    /* Simplify header scroll on mobile */
+    .header {
+        transition: background 0.3s ease;
+    }
+    .header.scrolled {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* Reduce match card hover transforms */
+    .match-card:hover {
+        transform: none !important;
+    }
+
+    /* Simplify hero particles on mobile */
+    .hero-particles {
+        display: none;
+    }
+
+    /* Reduce glow sizes */
+    .hero-glow-1 {
+        width: 250px;
+        height: 250px;
+        filter: blur(50px);
+    }
+    .hero-glow-2 {
+        width: 200px;
+        height: 200px;
+        filter: blur(50px);
+    }
+    @keyframes heroGlowPulse {
+        0%, 100% { opacity: 0.2; }
+    }
+
+    /* Simplify trophy hover */
+    .achievement-card-modern:hover {
+        transform: none !important;
+    }
+
+    /* Disable liquid morph animations on achievements */
+    .about-logo {
+        animation: none;
+    }
+
+    /* Faster transitions on mobile */
+    .team-btn-outline, .team-btn-solid-mens, .team-btn-solid-womens {
+        transition: all 0.2s ease;
+    }
+
+    /* Simplify button hover on mobile */
+    .hero-btn:hover {
+        transform: none;
+    }
+    .hero-btn-primary:hover {
+        transform: none;
+    }
+
+    /* Footer mobile fixes */
+    .footer {
+        padding: 30px 0 0;
+    }
+    .footer-inner {
+        padding: 30px 15px 0;
+    }
+    .footer-brand-strip {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+    .footer-brand {
+        flex-direction: column;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 25px 0;
+    }
+    .footer-col h4 {
+        text-align: center;
+        padding-bottom: 12px;
+    }
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+    }
+    .footer-col.about-col p {
+        text-align: center;
+    }
+    .footer-col ul {
+        text-align: center;
+    }
+    .footer-col ul li a {
+        justify-content: center;
+    }
+    .footer-contact-item {
+        justify-content: center;
+    }
+    .footer-newsletter {
+        text-align: center;
+    }
+    .footer-social-row {
+        justify-content: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 18px 15px;
+    }
+    .footer-bottom-links {
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .footer-newsletter-form {
+        flex-direction: column;
+        border-radius: 12px;
+    }
+    .footer-newsletter-form input {
+        text-align: center;
+        padding: 12px;
+    }
+    .footer-newsletter-form button {
+        padding: 12px;
+        width: 100%;
+    }
+    .footer-brand-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .footer-brand-text h3 {
+        font-size: 1.3rem;
+    }
+    .footer-col ul li {
+        margin-bottom: 8px;
+    }
+    .footer-social-row a {
+        width: 38px;
+        height: 38px;
+    }
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Team section mobile */
+    .team-row {
+        flex-direction: column !important;
+    }
+    .team-image-col {
+        width: 100% !important;
+    }
+    .team-content-col {
+        width: 100% !important;
+    }
+
+    /* Hero bottom cycle hide on mobile */
+    .hero-bottom-cycle {
+        display: none;
+    }
+
+    /* Modal improvements */
+    .news-modal-content {
+        margin: 40px 10px;
+        border-radius: 16px;
     }
 }
 
